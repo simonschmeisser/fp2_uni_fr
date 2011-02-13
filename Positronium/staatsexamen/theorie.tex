@@ -94,4 +94,59 @@ Zum Beweis dieser Äquivalenz sei folgender Zustand betrachtet (s.Skizze 1):
  \item[-] \elektron befindet sich am Ort $\vec{r}$ mit Spin $\alpha$
  \item[-] \positron befindet sich am Ort $-\vec{r}$ mit Spin $\beta$
 \end{itemize}
- 
+
+1. Operation: Anwendung des Paritätsoperators P
+ (= TODO:entspricht Inversion aller Raumkoordinaten)
+
+Ergebnis:
+\begin{itemize}
+ \item[-] \elektron befindet sich am Ort $-\vec{r}$ mit Spin $\alpha$
+ \item[-] \positron befindet sich am Ort $\vec{r}$ mit Spin $\beta$
+\end{itemize}
+Da die Spins axiale Vektoren sind, werden sie bei räumlicher Spiegelung nicht verändert.
+
+2. Operation: Spin-Austausch
+Ergebnis:
+\begin{itemize}
+ \item[-] \elektron befindet sich am Ort $-\vec{r}$ mit Spin $\beta$
+ \item[-] \positron befindet sich am Ort $\vec{r}$ mit Spin $\alpha$
+\end{itemize}
+Offensichtlich erhält man nach beiden Operationen einen Zustand, in dem lediglich die Ladungen gegenüber dem Anfangszustand vertauscht sind.
+
+TODO: SEITE 9 EINFÜGEN
+
+Jetzt werden die beiden Operationen, die der Ladungskonjugation C äquivalent sind, auf den Positronium-Zustand angewendet.
+
+\begin{itemize}
+ \item[a)] Paritätsoperator P:
+Der Ortsanteil der Wellenfunktion, ausgedrückt in Kugelkoordinaten, hat $(-1)^l$-Symmetrie (l = Bahnquantenzahl).
+Die Gesamtparität ist:
+\begin{equation*}
+ P = \eta_i( \positron ) \cdot \eta_i (\elektron) \cdot (-1)^l
+\end{equation*}
+$\eta_i$ = definierte Eigenparität der einzelnen Elementarteilchen
+\begin{equation*}
+ \eta_i ( \elektron ) = - \eta_i ( \positron )
+\end{equation*}
+
+Beim Positron im Grundzustand (l = 0) erhalten wir also bei Inversion der Raumkoordinaten den Faktor:
+\begin{equation*}
+ P = (-1) \cdot (+1) \cdot (+1)
+\end{equation*}
+
+\item[b)] Spinaustausch $S_{ex}$:
+Beim Austausch der Spinkoordinaten von Elektron und Positron tritt in der Spinwellenfunktion ein Faktor $(-1)^{s+l}$ auf (S = Gesamtspin). Für den Singulett-Zustand (Spins antiparallel, S = 0) bedeutet das, daß die Spinwellenfunktion antisymmertrisch ist.
+\begin{equation*}
+ S_{ex} = (-1)
+\end{equation*}
+\end{itemize}
+
+Insgesamt besitzt der Singulett-Zustand folgende C-Parität:
+\begin{equation*}
+ C = P \cdot S_{ex} \\
+ C = (-1)(+1)(+1)\cdot(-1) \\
+ C = (+1)
+\end{equation*} %TODO: Mehrzeilige Gleichung
+
+Da der Ladungskonjugations-Operator C eine Konstante der Bewegung ist $ \frac{dC}{dt} = [H, C] = 0$, kann der Singulett-Zustand also nur in zwei Quanten zerstrahlen; denn der C-Eigenwert für die Photonen beträgt $C = (-1)^n$. Ganz analog erfolgt die Berechnung für den Triplett-Zustand, aus welcher hervorgeht, daß er nur in eine ungerade zahl von Quanten zerfallen kann.
+
