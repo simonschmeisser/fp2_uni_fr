@@ -1,0 +1,64 @@
+\documentclass[a4paper,oneside]{scrartcl} %twocolumn,
+\usepackage[utf8]{inputenc} %für MAC: applemac; für Windows: latin1 statt utf8
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage[nice]{nicefrac}
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{float}
+
+\setkomafont{captionlabel}{\upshape\bfseries}
+\setkomafont{caption}{\itshape}
+
+
+\title{Magnetisches Quenching des Positroniums}
+\subtitle{Zulassungsarbeit zur wissenschaftlichen Prüfung für das Lehramt an Gymnasien vorgelegt von}
+\author{Volker Bündge\\
+Fakultät für Physik der Universität Freiburg i. Br.}
+\date{Juli 1975}
+
+\hypersetup{
+pdftitle={Staatsexamen Positronium},
+pdfauthor={Volker Bündge}}
+
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\providecommand{\positron}[0]{\ensuremath{e^+}}
+\providecommand{\elektron}[0]{\ensuremath{e^-}}
+
+\begin{document}
+\begin{titlepage}
+  \maketitle
+  \vfill
+  \thispagestyle{empty}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+%*****************************************************************
+
+\input{einleitung}
+\input{theorie}
+\input{apparatur}
+\input{messung-auswertung}
+\input{appendix}
+\input{zusammenfassung}
+%\input{literaturverzeichnis}
+
+
+\clearpage
+
+%\bibliographystyle{alphadin} 
+%\bibliography{bib}
+
+
+\end{document}
