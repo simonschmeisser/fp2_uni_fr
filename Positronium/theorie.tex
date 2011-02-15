@@ -115,10 +115,96 @@ Eintreffende $\gamma$-Quanten haben Energien im Bereich von 0.1 bis 1 MeV, regen
 
 
 \subsection{Das Positronium \label{1}}
+
+\begin{figure}[H]
+	\begin{minipage}{0.5\textwidth}
+	\centering \includegraphics[width=\textwidth]{BilderTheorie/Positronium.png}
+	\caption{Das Positronium [cs.cdu.edu.au]}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+	Ein Positronium ist ein gebundener Zustand zwischen einem Elektron $e^-$ und dessen Antiteilchen, einem Positron $e^+$. Man kann es sich wie ein Wasserstoffatom vorstellen, bei dem das Proton durch das Positron vertauscht wurde. Der Schwerpunkt befindet sich in der Mitte der beiden Teilchen und somit ist die reduzierte Masse nur etwa halb so groß wie beim Wasserstoffatom, also genau die halbe Elektronen- bzw. Positronenmasse.
+	\end{minipage}
+\end{figure}
+Die Energieniveaus (ohne Feinstruktur etc.) im Positronium sind also durch folgende Formel gegeben:
+
+\begin{equation} E_n = -\frac{Ry}{2}\frac{1}{n^2} \label{3} \end{equation}
+
+Wie man leicht nachrechnen kann, ist somit die Bindungsenergie des Grundzustands 6.8 eV, und die des 1. angeregten Zustands nur noch 1.7 eV.
+
 \subsubsection{Erzeugung}
-\subsubsection{Ortho- und Parapositronium}
-\subsubsection{Vernichtung}%und Auswahlregeln
-\subsubsection{Energieniveaus}
+
+Ein Positron in Materie wird an den Atomen bzw. Molekülen gestreut und gibt somit einen großen Teil seiner kinetischen Energie ab. Kommt es zu einer Kollision mit einem Elektron, so annihilieren beide Teilchen. Ist die Energie des Positrons jedoch klein genug, so kann er wegen der Coulombkraft mit einem Elektron in einer äußeren Schale eines Atoms eine Bindung eingehen (Positronium), dessen Lebensdauer sich etwa im Nanosekunden-Bereich befindet und schließlich auch in einer Annihilation der beiden Teilchen endet. Mithilfe der Formel (\ref{3}), kann man erkennen, dass die Energie der Positronen über $V_i - 6.8$ eV sein muss, damit ein Positronium im Grundzustand erzeugt werden kann ($V_i$ ist die Ionisationsenergie der Atome oder Moleküle des Mediums). Die Erzeugung des 1. angeregten Zustands ist sehr unwahrscheinlich, da bei den betroffenen Energien die inelastische Streuung stark überwiegt. 
+
+Die Annihilation unterscheidet sich je nach Spinstellung der beiden Teilchen, nämlich zerfallen sie entweder in 2 oder 3 Photonen.
+Der Wirkungsquerschnitt für den 2$\gamma$-Zerfall ist gegeben durch
+
+\begin{equation} \sigma_{2\gamma}=\frac{\pi\cdot r_0^2\cdot c}{v} \end{equation}
+
+wobei $r_0=e^2/mc^2=2.8 fm$ der Thomson-Radius (klassischer Elektronenradius) ist und $v$ die Relativgeschwindigkeit zwischen dem Elektron und dem Positron. Der Wirkungsquerschnitt für den 3$\gamma$-Zerfall ist um $\alpha=1/137$ (Feinstrukturkonstante) kleiner. Auf die Spinstellungen und deren Unterschiede wird im nächsten Punkt näher eingegangen.
+
+\subsubsection{Para- und Orthopositronium}
+
+Da das Elektron und das Positron beide einen Spin von $j=1/2$ haben, können sie im gebundenen Zustand entweder zu einem Singulett oder zu einem Triplett koppeln.\\
+
+\begin{tabular}[H]{p{4cm} p{4cm} p{4cm}}
+ & Para-Positronium & Ortho-Positronium\\
+ & &\\
+Zustand & Singulett $^1S_0$ & Triplett $^3S_1$\\
+Spineinstellung & Antiparallel, $J=0$ & Parallel, $J=1$\\
+ & $m_J = 0$ & $m_J = -1,\ 0,\ 1$\\
+Hauptzerfall & 2$\gamma$ & 3$\gamma$\\
+Lebensdauer & $1.25\cdot 10^{-10} s$ & $1.39\cdot 10^{-7} s$\\
+\end{tabular}\\
+
+Der 1$\gamma$-Zerfall ist wegen der Impulserhaltung nicht möglich. Zerfälle in mehr als 3 Photonen sind durchaus möglich, wobei das Para-Positronium nur in eine gerade Zahl Photonen zerfallen kann und das Ortho-Positronium nur in ungerade Zahlen (siehe hierzu Kap. \ref{4}). Höhere Zerfälle sind jedoch relativ unwahrscheinlich und irrelevant für die Messung.
+Der Unterschied in der Lebensdauer beträgt den Faktor:
+
+\begin{equation} \frac{\tau_{2\gamma}}{\tau_{3\gamma}} = 1115 \end{equation}
+
+\subsubsection{Auswahlregeln der Zerfälle \label{4}}
+
+Um die Symmetrieauswahlregeln der Zerfälle der beiden Positronium-Zustände zu bestimmen, benutzen wir die C-Parität. Wir beweisen zuerst kurz, dass die Ladungskonjugation $\hat C$ auf ein Positronium angewandt genau die gleiche Operation macht, als würde man zuerst den Paritäts-Operator $\hat P$ und dann den Spinaustausch-Operator $\hat S$ auf das Positronium anwenden.
+
+Man habe zum Beispiel ein Elektron am Ort $\vec r$ mit Spin $\alpha$ und ein Positron mit Ort $-\vec r$ und dem Spin $\beta$:
+$$\hat S\cdot\hat P\mid e^-,\ \vec r,\ \alpha \rangle \otimes \mid e^+,\ -\vec r,\ \beta \rangle
+ = p\hat S\mid e^-,\ -\vec r,\ \alpha \rangle \otimes \mid e^+,\ \vec r,\ \beta \rangle 
+ = sp\mid e^-,\ -\vec r,\ \beta \rangle \otimes \mid e^+,\ \vec r,\ \alpha \rangle $$
+Wie man sieht entspricht der Endzustand genau der Ladungskonjugation der beiden Teilchen, also direkt der Ersetzung der beiden Teilchen durch ihr Antiteilchen. Der Eigenwert sp entspricht somit dem Eigenwert c. Diese Ersetzung macht man, um die Eigenwerte der Ladungskonjugation zu bestimmen.
+
+Da die Parität des Elektrons genau der Parität des Positrons entgegengesetzt ist, folgt für den Eigenwert
+$$p = -(-1)^l = -1 \text{\ \ im Grundzustand (l=0)}$$
+Der Eigenwert des Spinaustauschoperators ist gegeben durch $$s=(-1)^{J+1}$$
+Somit ist $s=-1$ für den Singulett-Zustand und $s=1$ für den Triplett-Zustand.
+Schlussendlich gilt also:
+
+\begin{equation} \hat C \mid ^1S_0 \rangle = 1 \mid ^1S_0 \rangle \end{equation}
+\begin{equation} \hat C \mid ^3S_1 \rangle = -1 \mid ^1S_0 \rangle \end{equation}
+
+Die Photonen, die beim Zerfall ausgestrahlt werden, besitzen die C-Parität -1. Somit hat ein n-Photonen-Zerfall die Parität $(-1)^n$, was erklärt, warum der Singulett-Zustand nur in 2n Photonen und der Triplett-Zustand nur in 2n+1 Photonen zerfallen kann.
+
+\subsubsection{Hyperfeinstruktur und Annihilationskraft}
+
+Der Hamiltonian der ''Grobstruktur'' lautet $$H = \frac{p_{e^-}^2}{2m_e}+\frac{p_{e^+}^2}{2m_e}-\frac{e}{r^2}$$ woraus die Energiezustände in Gl. (\ref{4}) folgen. Wenn man neben der Feinstruktur auch noch die Wechselwirkungen der magnetischen Spinmomente betrachtet, die sogenannte Hyperfeinstruktur, stößt man auf eine Energieaufspaltung der Triplett und Singulettzustände im Grundzustand. Neben der Hyperfeinstruktur spielt auch noch die Annihilationskraft eine genau so große Rolle in der Aufspaltung dieser Niveaus.
+
+\begin{itemize}
+
+\item Hyperfeinstruktur:\\
+Die Wechselwirkungsenergie der magnetischen Momente entspricht in erster Näherung
+\begin{equation} W = \frac{8\pi}{3}\mu^2\sigma^-\sigma^+|\Psi(0)|^2 \end{equation}
+wobei $\sigma^\pm$ die Spinzustände des Positrons/Elektrons sind und $\mu = \frac{e\hbar}{2mc}$ das Bohrsche Magneton. $\Psi(0)$ ist die Wellenfunktion am Ort des Positron und ihr Betragsquadrat ist
+$$|\Psi(0)|^2 = \frac{1}{\pi}\left(\frac{-1}{2a_0}\right)^3$$
+$a_0 = 0.53 \mathring A$ ist der Bohrsche Atomradius. Der Eigenwert des Spinoperators $\sigma^-\sigma^+$ beträgt für den Singulett-Zustand -3 und für den Triplett-Zustand +1. Man erhält somit die Energiebeiträge
+$$W(^1S_0) = -\frac{1}{4}\alpha^4mc^2 \text{\ \ \ \ und \ \ \ \ } W(^3S_1) = \frac{1}{12}\alpha^4mc^2$$
+und kann ausrechnen dass die Aufspaltung
+\begin{equation} \Delta W = 4.83 \cdot 10^{-4}\ eV \end{equation} beträgt, und der Triplett-Zuständ oberhalb des Singulett-Zustands liegt.
+
+\item Annihilationskraft:\\
+
+
+
+\end{itemize}
+
+
 
 \subsection{Der Zeeman-Effekt}
 
@@ -127,3 +213,26 @@ Eintreffende $\gamma$-Quanten haben Energien im Bereich von 0.1 bis 1 MeV, regen
 \subsubsection{Quenching beim Positronium}
 
 \subsection{Signalverarbeitung}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
