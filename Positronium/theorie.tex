@@ -199,10 +199,13 @@ und kann ausrechnen dass die Aufspaltung
 \begin{equation} \Delta W = 4.83 \cdot 10^{-4}\ eV \end{equation} beträgt, und der Triplett-Zuständ oberhalb des Singulett-Zustands liegt.
 
 \item Annihilationskraft:\\
-
 \begin{figure}[H]
 	\begin{minipage}{0.5\textwidth}
-	bla
+	Die sogenannte Annihilationskraft berücksichtigt den Fall, dass ein Elektron und ein Positron kurzzeitig in ein virtuelles Photon annihilieren können und dann wieder ein Positronium bilden können. Diese Tatsache liefert einen Energieterm für alle Zustände mit ungerader C-Parität, da nur diese in eine ungerade Zahl Photonen zerfallen können (siehe vorigen Abschnitt). Der Triplettzustand erhält hierdurch den Energiebeitrag:
+
+\begin{equation} W_A(^3S_1)=8\pi\mu^2|\Psi(0)|^2 = \frac{1}{4}\alpha^2mc^2 \end{equation}
+
+Der numerische Wert hierfür ist $W_A = 3.62\cdot10^{-4}$ eV und ist somit fast genau so groß wie der Term der Hyperfeinstruktur.
 	\end{minipage}
 	\begin{minipage}{0.5\textwidth}
 	\centering \includegraphics[width=0.8\textwidth]{BilderTheorie/epep.png}
@@ -210,12 +213,25 @@ und kann ausrechnen dass die Aufspaltung
 	\end{minipage}
 \end{figure}
 
-
+\item Die gesamte Aufspaltung beträgt somit 
+\begin{equation} \boxed{\Delta W = \frac{7}{12}\alpha^4mc^2 = 8.45\cdot10^{-4} eV} \end{equation}
 \end{itemize}
 
-
-
 \subsection{Der Zeeman-Effekt}
+
+Der Zeeman-Effekt beschreibt die Aufspaltung der Energiezustände eines gebundenen Zustands in einem Magnetfeld B. Man unterscheided zwischen dem normalen und dem anomalen Zeeman-Effekt. 
+Der normale Zeeman-Effekt spaltet die Energieniveaus eines bestimmten Bahndrehimpulses $l$ in $2l+1$ Terme, deren Energieaufspaltung abhängig von der z-Komponente $m_l$ des Bahdrehimpulses ist:
+$$\Delta E = \mu_B\cdot m_l \cdot B$$
+$\mu_B$ ist hier das Bohrsche Magneton. Der normale Zeeman-Effekt ist also die Aufspaltung aufgrund des mit dem Bahndrehimpulses verknüpften magnetischen Moment in einem externen Magnetfeld.
+Der anomale Zeeman-Effekt ist die zusätzliche Berücksichtigung des magnetischen Moments, das durch den Spin hervorgerufen wird. Hier muss also die $l-s$-Kopplung ($\vec J = \vec L + \vec S$) berücksichtigt werden, so dass die Aufspaltung
+$$\Delta E = g_J\cdot\mu_B\cdot m_J\cdot B$$
+beträgt, wobei $g_J$ der Landé-Faktor des Gesamtdrehimpulses ist.\\
+
+Das Positronium selber hat kein magnetisches Moment, da sich das vom Elektron mit dem vom Positron genau aufhebt. Da jedoch das externe Magnetfeld im Positronium ein magnetisches Moment erzeugt, kann dieses wiederum vom Magnetfeld aufgespalten werden, so dass man einen Zeeman-Effekt 2. Ordnung erhält. Dieser ist im Allgemeinen wesentlich schwächer als der Zeeman-Effekt 1. Ordnung, ist aber beim Positronium der einzige der beiträgt. Die Wirkung des Effekts lässt sich mittels quantenmechanischer Störungstheorie berechnen. Der Störungsoperator hat die Form:
+
+\begin{equation} V=\frac{eB}{mc}(S^- - S^+) \end{equation} 
+
+
 
 \subsection{Das Quenching}
 \subsubsection{Quantenmechanische Störungstheorie}
