@@ -1,16 +1,22 @@
 #! /usr/bin/python
-start_channel = 50
+# -*- coding: utf-8 -*-
+start_channel = 80
 end_channel = 150
 
-files = ("../Messdaten/quench/03-nach-2028.TKA",
-"../Messdaten/quench/03.TKA",
-"../Messdaten/quench/1065-423.TKA",
-"../Messdaten/quench/2028-384.TKA",
-"../Messdaten/quench/3070-316.TKA",
-"../Messdaten/quench/4032.TKA")
+datensaetze = (("../Messdaten/quench/03.TKA", 0.3),
+("../Messdaten/quench/1065-423.TKA", 1065.0),
+("../Messdaten/quench/2028-384.TKA", 2028.0),
+("../Messdaten/quench/03-nach-2028.TKA", 0.3),
+("../Messdaten/quench/3070-316.TKA", 3070.),
+("../Messdaten/quench/4032.TKA", 4032.0),
+("../Messdaten/quench/03-nach-4032.TKA", 0.3),
+("../Messdaten/quench/5075.TKA", 5075.0),
+("../Messdaten/quench/3551.TKA", 3551.0))
 
+outfile = open("quench.dat", "w")
 
-for datei in files:
+for datensatz in datensaetze:
+  datei, B = datensatz
   f = open(datei, "r")
   linenum = -2
   count = 0
@@ -19,4 +25,7 @@ for datei in files:
       count += int(zeile)
     linenum += 1
   
-  print datei, ": ", count
+  print datei, ": B= ", B, " counts : ", count
+  outfile.writelines("%i %i\n"%( B, count))
+  
+outfile.close()
