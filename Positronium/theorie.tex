@@ -294,13 +294,21 @@ $$ \Psi = b_{\ket{1,0}}\Psi_{\ket{1,0}}(\vec r)e^{-iW_{\ket{1,0}}t/\hbar} + b_{\
 
 \subsubsection{Quenching beim Positronium}
 
-Im Falle eines reinen Triplett-Zustandes (d.h. $c_2=d_2=0$) ergibt sich zur Zeit $t=0$ folgende Wahrscheinlichkeitsamplitude:
+Im Falle eines reinen Triplett-Zustandes (d.h. $c_2=d_2=0$) ergibt sich für kleine Zeiten $t$ folgende Wahrscheinlichkeitsamplitude:
 
 \begin{equation} \boxed{ |\Psi_{3\gamma}|^2 \sim e^{-2(y_{\ket{1,0}}+y\frac{x^2}{4})t} } \end{equation}
 
-und man kann annehmen, dass $y \approx y_{\ket{0,0}}$. Man erkennt, dass ohne externes Magnetfeld, also bei $x\to 0$ nur der $y_{\ket{1,0}}$-Term eine Rolle spielt, jedoch bei wachsendem B-Feld, der $y_{\ket{0,0}}$-Term wegen $x \sim B$ immer stärker wirkt und überwiegt. Dies nennt man das ''Quenching'' im Magnetfeld. Beim Positronium überwiegt also bei starkem externen Magnetfeld der $2\gamma$-Zerfall gegenüber dem $3\gamma$-Zerfall bei $m_S = 0$.
+und man kann annehmen, dass $y \approx y_{\ket{0,0}}$. Man erkennt, dass ohne externes Magnetfeld, also bei $x\to 0$ nur der $y_{\ket{1,0}}$-Term eine Rolle spielt, jedoch bei wachsendem B-Feld, der $y_{\ket{0,0}}$-Term wegen $x \sim B$ immer stärker wirkt und überwiegt. Dies nennt man das ''Quenching'' im Magnetfeld. Beim Positronium überwiegt also bei starkem externen Magnetfeld der $2\gamma$-Zerfall gegenüber dem $3\gamma$-Zerfall bei $m_S = 0$ da er mit $x^2$ ansteigt.
 
+Berechnet man den relativen Anteil des $3\gamma$-Zerfalls gegenüber dem $2\gamma$-Zerfall, erhält man den Faktor
 
+$$ F = \left( 1+\frac{\tau_{3\gamma}}{\tau_{2\gamma}}\frac{x^2}{4}\right)^{-1} $$
+
+Berücksichtigt man nun auch noch die Zustände $\ket{1,\pm1}$, so erhält man die Formel fürs Quenching beim Positronium:
+
+\begin{equation} \boxed{Q(B) = 1 + f - f\left( 1+\frac{\tau_{3\gamma}}{\tau_{2\gamma}}\frac{x^2}{4}\right)^{-1}} \end{equation}
+
+Der Faktor f ist abhängig von der Geometrie des Versuchsaufbaus, also des Winkels der Szintillatoren und der Richtung des Magnetfelds. Im Falle von 3 Szintillatoren in $120^\circ$-Anordnung in einer Ebene senkrecht zum Magnetfeld ist dieser Faktor $f=\frac{1}{2}$. Im Experiment kann man mit Hilfe des Verhältnisses der Zählraten mit und ohne Magnetfeld auf $x^2$ und somit auf die Feinstrukturaufspaltung schließen.
 
 \subsection{Signalverarbeitung}
 
