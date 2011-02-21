@@ -11,7 +11,10 @@ datensaetze = (("../Messdaten/quench/03.TKA", 0.3),
 ("../Messdaten/quench/4032.TKA", 4032.0),
 ("../Messdaten/quench/03-nach-4032.TKA", 0.3),
 ("../Messdaten/quench/5075.TKA", 5075.0),
-("../Messdaten/quench/3551.TKA", 3551.0))
+("../Messdaten/quench/3551.TKA", 3551.0),
+("../Messdaten/quench/03-nach-3551.TKA", 0.3),
+("../Messdaten/quench/4594.TKA", 4594.0))#,
+#("../Messdaten/quench/untergrund.TKA", 0.0))
 
 outfile = open("quench.dat", "w")
 
