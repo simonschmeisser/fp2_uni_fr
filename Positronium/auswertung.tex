@@ -69,11 +69,44 @@ SZ3 & $99,1 \pm 0,1$ & $268,4 \pm 0,1$
 \end{center}
 
 Somit konnten wir eine Energie-Channel-Eichung für die drei Szintillatoren vornehmen:
-
+%TODO: Fehlerrechnung
+SZ1: $E = 6,03 keV \cdot c + 74,77 keV$\\
+SZ2: $E = 5,10 keV \cdot c + 87,46 keV$\\
+SZ3: $E = 4,51 keV \cdot c + 63,79 keV$ \\
 
 \subsection{Zwei-Photonen-Zerfall}
 
 Beim Zerfall des 0S0-Singulett-Zustands des Positroniums können die Photonen, wie in der Theorie näher erläutert, nur in einem $180^\circ$-Winkel abgestrahlt werden. Dies wollen wir über eine Winkelkorrelationsmessung verifizieren. Dazu stellen wir die Szintilatoren auf ein 511keV Fenster ein und drehen SZ1 oder SZ3 gegen den festen SZ2. 
+
+\begin{center}
+\begin{tabular}{llll}
+ & SZ1 & SZ2 & SZ3\\
+Lower Level & 1,585 & 1,87 & 1,79\\
+Upper Level & 2,940 & 3,05 & 3,07\\
+511keV Peak & 81  & 80 & 94
+\end{tabular}
+\end{center}
+
+Die Position des 511keV Peaks zeigt also eine Abhängigkeit von der Einstellung der Energiefenster, insbesondere SZ1 mit $\Delta c_{511} = 8,6$. Dies könnte an einer falschen Delay-Einstellung liegen, der wir aber viel Zeit gewidmet haben, an der besseren Filterung durch den SCA oder an Defekten der Elektronik. Wir haben die Fenstereinstellung mit dem MCA und Computer "`auf Sicht"' vorgenommen und denken, dass wir den 511keV-Peak damit hinreichend genau einstellen konnten, auch wenn er nicht mit der vorher vorgenommenen Energieeichung übereinstimmt.
+
+\subsubsection{SZ2 - SZ3}
+
+Wir haben in $180^\circ$-Stellung von SZ2 und SZ3 die Koinzidenzrate mit der Koinzidenzeinheit optimiert. Dazu haben wir die Rate am Hex-Scaler betrachtet und die Delays angepasst.
+
+\begin{center}
+\begin{tabular}{llll}
+ & Delay\\
+SZ2 & 1,83 $\mu s$\\
+SZ3 & 2,83 $\mu s$
+\end{tabular}
+\end{center}
+
+Um den statistische Fehler möglichst klein zu halten (unter 2\%) berechnen wir die nötige Messzeit pro Winkeleinstellung. Bei $150^\circ$ beträgt die Zählrate etwa $n = 3 Hz$, sodass sich die nötige Dauer wie folgt berechnen läßt:
+\begin{equation}
+ 0,02 = \frac{s_N}{N} = \frac{1}{\sqrt{N}} = \frac{1}{\sqrt{n t}} \Leftrightarrow t = \frac{1}{n}\left( \frac{s_N}{N} \right)^{-2} = 833,3s
+\end{equation}
+ 
+
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/180K.png}
  \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls}
