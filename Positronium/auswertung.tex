@@ -105,11 +105,17 @@ Um den statistische Fehler möglichst klein zu halten (unter 2\%) berechnen wir 
 \begin{equation}
  0,02 = \frac{s_N}{N} = \frac{1}{\sqrt{N}} = \frac{1}{\sqrt{n t}} \Leftrightarrow t = \frac{1}{n}\left( \frac{s_N}{N} \right)^{-2} = 833,3s
 \end{equation}
- 
+Dies entspricht $t \approx 13,89 \text{min}$. Wir wählen daher eine Messzeit von $t = 16,67 \text{min}$ pro Winkeleinstellung, da sich damit die 100Hz-Clock als Stoppsignal für den Hex-Scaler verwenden lässt (100 000 Counts). 
+
+\begin{figure}
+ \includegraphics[width=\textwidth]{Graphen/2er/erste.pdf}
+ \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls (mit SZ2-SZ3}
+\end{figure}
+
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/180K.png}
- \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls}
+ \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls (mit SZ2-SZ1)}
 \end{figure}
 
 \subsection{Drei-Photonen-Zerfall}
