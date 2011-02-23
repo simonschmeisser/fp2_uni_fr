@@ -14,9 +14,9 @@
 
 \usepackage{booktabs}
 \usepackage{graphicx}
-\usepackage{hyperref}
 \usepackage{wrapfig}
 \usepackage{float}
+\usepackage[unicode]{hyperref}
 
 \setkomafont{captionlabel}{\upshape\bfseries}
 \setkomafont{caption}{\itshape}
@@ -29,6 +29,12 @@
 \hypersetup{
 pdftitle={Positronium},
 pdfauthor={Robi Pedersen, Simon Schmeißer}}
+
+\pdfstringdefDisableCommands{%
+\let\alpha\textalpha
+\let\beta\textbeta
+\let\gamma\textgamma
+}
 
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
 \providecommand{\Na}{\ensuremath{{}^{22}\text{Na}}}
