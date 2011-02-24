@@ -115,6 +115,7 @@ Dies entspricht $t \approx 13,89 \text{min}$. Wir wählen daher eine Messzeit vo
 Bei einem Winkel von $182^\circ$ brach die Zählrate leider zusammen. Statt den erwarteten ca. 180 000 Counts erhielten wir nur noch 27 752, also einen Zusammenbruch um eine Größenordnung. Bei einer weiteren Messung stieg die Anzahl zwar wieder etwas, dennoch blieb sie in etwa halb so groß wie erwartet. Dies lag vor allem an einer Reduktion der Zählrate an SZ3 um einen Faktor 5.  
 
 %TODO: Auswertung des Gauß-Fits
+%TODO: Untergrund
 
 \subsubsection{SZ2 - SZ1}
 
@@ -125,9 +126,16 @@ Um die Probleme mit SZ3 zu umgehen, haben wir eine erneute Messung mit SZ2-SZ1 d
  \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls (mit SZ2-SZ1)}
 \end{figure}
 
-
+Unsere Messungen ergeben also, dass die maximale Zählrate bei $xc = 178,36^\circ \pm 0,01^\circ$ liegt und bestätigt somit die theoretische Aussage, dass der Zwei-Photonen-Zerfall nur in einem Winkel von $180^\circ$ erlaubt ist. Die "`Linienbreite"' von $w = 11^circ \pm 0,15^\circ$ ergibt sich hauptsächlich aus der Bewegung des Schwerpunktsystems relativ zum Laborsystem. %TODO: Begriffe klären%
+%TODO: Abweichung von 180° erläutern
 
 \subsubsection{Zufällige Koinzidenzen}
+
+Um den Anteil der zufälligen Koinzidenzen, also Events die von zwei verschiedenen Zerfällen oder aus Störsignalen herrühren, zu bestimmen haben wir verschiedene Ansätze verfolgt. Zum Einen haben wir sie über die Zählraten und die Zeitauflösung der Koinzidenzeinheit abgeschätzt:
+\begin{equation*}
+ n_{ZK} = \tau \cdot n_{SZ2} \cdot n_{SZ3} = 
+\end{equation*}
+
 
 Wir haben die gesamte Elektronik ausführlich untersucht und daraufhin den SCA von SZ3 ausgetauscht, da bei diesem der Pseudo-Peak bei ca 2000 keV viel stärker als bei den anderen beiden war. Weiterhin haben wir die Verstärkung am AMP etwas reduziert, da wir auch ein Übersteuern nicht ausschließen konnten. Danach war zwar das Signal deutlich klarer und der Pseudo-Peak verschwunden.
 
