@@ -7,16 +7,35 @@ After switching on the laser diode and the thermoelectric cooler, we controlled 
 We then turned on the photodiode and the preamplifier, which we set to DC and the gain to 40 dB. We installed the etalon into the optical path and set it perpendicular to the beam. The laser was modulated by a sawtooth voltage in order to be able to see a few wavelength-peaks of the etalon.\\
 
 In the first part of this measurement, the current of the diode was held at a constant value of $I = (35.1\pm 0.3)\ mA$ while the temperature was varied from $34.0^\circ C$ to $36.5^\circ C$. We measured the scrolling of the peaks in dependence of the temperature.
-
-$$ AUSWERTUNG $$
-
 In the second part of the measurement, we held the temperature constant at a value of $T=(34.7 \pm 0.2)\ ^\circ C$ and changed the current from 20.4 to 36.7 mA.
+Our measurements were okay, but left room for improvement, which we did in the second week, with the following adjustments:\\
 
-$$ AUSWERTUNG $$
+\begin{center}
+\begin{tabular}[H]{l l c}
+First measurement & \\
+Temperature & $T=34.7 ^\circ C$\\
+Current & $I = 54.0 \dots 69.0\ mA$\\
+ & \\
+Second measurement & \\
+Current & $I = 64.4 mA$\\
+Temperature & $T=32.3 \dots 33.65\ ^\circ C$\\
+\end{tabular}
+\end{center}
+
+The calibration was done with a triangular tension. We fitted the peaks with a Gaussian and found out, that the average distance between two maxima is:
+
+$$\Delta t = (64.2 \pm 0.1)\ \mu s$$
+
+With this, we were able to calculate the conversion factor between time and frequency, which is given by
+
+$$\boxed{ f = \frac{FSR}{\Delta t} = (154.6 \pm 33.7)\ \frac{MHz}{\mu s} }$$
+
+where $FSR = (9924 \pm 30) Mhz$ is the \emph{free spectral range} of the etalon.
+
 
 \subsection{Hyperfine Structure}
 
-We installed the Rubidium cell into the optical path and removed the etalon. The laser diode was modulated by a triangular voltage with a peak-to-peak difference of $\sim 200\ mV$, and the temperature was set to $T = (34.6 \pm 0.2)^\circ C$, as described in the instructions. However, with these adjustments we weren't able to find the hyperfine structure of the Rubidium atoms. Furthermore, the current of the laser diode wasn't able to surpass 35 mA and the preamplifier of the photodiode  was overcharged. We then tried different adjustments and installed a neutral filter (\emph{D 4,3}) into the optical path. The new adjustment was:\\
+We installed the Rubidium cell into the optical path and removed the etalon. The laser diode was modulated by a triangular voltage with a peak-to-peak difference of $\sim 200\ mV$, and the temperature was set to $T = (34.6 \pm 0.2)^\circ C$, as described in the instructions. The preamplifier was set to AC from now on. However, with these adjustments we weren't able to find the hyperfine structure of the Rubidium atoms. Furthermore, the current of the laser diode wasn't able to surpass 35 mA and the preamplifier of the photodiode  was overcharged. We then tried different adjustments and installed a neutral filter (\emph{D 4,3}) into the optical path. The new adjustment was:\\
 
 \begin{center}
 \begin{tabular}[H]{l c}
@@ -25,4 +44,34 @@ Peak-to-Peak Voltage & $U_{pp} = 134\ mV$\\
 \end{tabular}
 \end{center}
 
-We were then able to see the hyperfine structure at a current of $I = (62.9 \pm 0.3)\ mA$. With the same adjustments, we did another calibration. For this, however, we had to remove the filter, because the peaks weren't visible else. 
+We were then able to see the hyperfine structure at a current of $I = (62.9 \pm 0.3)\ mA$. With the same adjustments, we did another calibration. For this, however, we had to remove the filter, because the peaks weren't visible else. This measurement was also redone in the second week with the following adjustments:
+
+\begin{center}
+\begin{tabular}[H]{l c}
+Temperature & $T=34.5 ^\circ C$\\
+Peak-to-Peak Voltage & $U_{pp} = 4\ V$\\
+Laser Current & $I = 63.9 mA$\\
+\end{tabular}
+\end{center}
+
+The measurements were even better this time.
+
+\subsection{Double Resonance}
+\subsection{Spin Precession}
+\subsection{Relaxation Time (Dehmelt)}
+\subsection{Relaxation Time (Franzen)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
