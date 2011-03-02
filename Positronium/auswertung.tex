@@ -133,20 +133,20 @@ Unsere Messungen ergeben also, dass die maximale Zählrate bei $xc = 178,36^\cir
 
 Um den Anteil der zufälligen Koinzidenzen, also Events die von zwei verschiedenen Zerfällen oder aus Störsignalen herrühren, zu bestimmen haben wir verschiedene Ansätze verfolgt. Zum Einen haben wir sie über die Zählraten und die Zeitauflösung der Koinzidenzeinheit abgeschätzt:
 \begin{equation*}
- n_{ZK} = \tau \cdot n_{SZ2} \cdot n_{SZ3} = 0.1262 \pm 0.0057
+ n_{ZK} = \tau \cdot n_{SZ2} \cdot n_{SZ3} = (0.1262 \pm 0.0057) s^{-1}
 \end{equation*}
 %Zufällige Koinzidenzen:  0.126152721707
 %Fehler:  0.00574067795172
 
 Weiterhin haben wir die Zahl der Koinzidenzen bei senkrechter Stellung der Szintillatoren gemessen:
 \begin{equation*}
- n_{ZK-90} = 1.67  \pm  0.13
+ n_{ZK-90} = (1.67  \pm  0.13) s^{-1}
 \end{equation*}
 
 Zu guter Letzt haben wir wieder die $180^\circ$-Konfiguration eingestellt und das Delay der beiden SCAs gegeneinander verstellt: 
 falsches Delay:
 \begin{equation*}
- n_{delay} = 0.019  \pm  0.004
+ n_{ZK-delay} = (0.019  \pm  0.004) s^{-1}
 \end{equation*}
   
 %TODO: was bedeutet das? größte verwenden?
@@ -156,33 +156,46 @@ Wir haben die gesamte Elektronik ausführlich untersucht und daraufhin den SCA v
 
 \subsection{Drei-Photonen-Zerfall}
 
+Bei diesem Versuchsteil geht es zuerst um die Untersuchung des Energiespektrums. Dazu haben wir die Fenster von SCA 1 (Abb \ref{graphen-3er-red-spektrum-sz1}) und SCA 3 (Abb \ref{graphen-3er-red-spektrum-sz3}) so eingestellt, dass nur Events unterhalb der 511keV-Linie registriert werden. Weiterhin haben wir die Signale aller Szintillatoren synchronisiert. Anschließend haben wir über den MCA das Energiespektrum von SZ2 aufgenommen. 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz1.pdf}
  \caption{Einstellung des Energiefensters unterhalb der 511keV-Linie für SZ1}
+ \label{graphen-3er-red-spektrum-sz1}
 \end{figure}
 
-\begin{figure}
- \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz2.pdf}
- \caption{TODO: WAS IST DAS?}
-\end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz3.pdf}
  \caption{Einstellung des Energiefensters unterhalb der 511keV-Linie für SZ3}
+ \label{graphen-3er-red-spektrum-sz3}
 \end{figure}
 
-\begin{figure}
- \includegraphics[width=\textwidth]{Graphen/3er/spektrum-1.pdf}
- \caption{Spektrum am SZ2 beim 3er-Koinzidenz}
-\end{figure}
+%\begin{figure}
+% \includegraphics[width=\textwidth]{Graphen/3er/spektrum-1.pdf}
+% \caption{Spektrum am SZ2 bei 3er-Koinzidenz}
+%\end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/3er/spektrum-2.pdf}
- \caption{Spektrum am SZ2 beim 3er-Koinzidenz}
+ \caption{Spektrum am SZ2 bei 3er-Koinzidenz}
+ \label{graphen-3er-spektrum-2}
 \end{figure}
 
+Wir haben dazu eine Messung von ca. 3h Dauer (11091s) durchgeführt. Im Graphen (Abb \ref{graphen-3er-spektrum-2}) haben wir zum Vergleich auch das komplette \Na-Spektrum eingezeichnet. Das Spektrum zeigt ein relativ breites Maximum bei ca. $320-350 keV$.
+
+%TODO: Parameter? Blabla
+
+\begin{figure}
+ \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz2.pdf}
+ \caption{Grobe Einstellung des Energiefensters von SZ2}
+ \label{graphen-3er-red-spektrum-sz2}
+\end{figure}
+
+Für die weiteren Messungen haben wir auch bei SZ2 ein Energiefenster eingestellt, allerdings nur recht grob da die Zählrate auch so schon niedrig war (Abb \ref{graphen-3er-red-spektrum-sz2}). Statt eventuell zulässige Ereignisse von vorneherein zu unterdrücken, haben wir dann lieber bei der Auswertung die Daten etwas beschnitten.
 
 \subsection{Quenching}
+
+Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zunehmendem Magnetfeld. Dazu haben wir zweistündige Messungen mit konstantem Magnetfeld durchgeführt und nach jeweils zwei Messungen eine Kontrollmessung ohne Magnetfeld. Diese erlaubt es uns, grobe Drifts und Schwankungen in der Messung zu erkennen und zu kompensieren.
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_0-3.pdf}
