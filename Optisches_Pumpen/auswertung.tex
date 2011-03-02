@@ -12,25 +12,74 @@ Our measurements were okay, but left room for improvement, which we did in the s
 
 \begin{center}
 \begin{tabular}[H]{l l c}
-First measurement & \\
+Constant Temperature & \\
 Temperature & $T=34.7 ^\circ C$\\
 Current & $I = 54.0 \dots 69.0\ mA$\\
  & \\
-Second measurement & \\
-Current & $I = 64.4 mA$\\
+Constant Current & \\
+Laser Current & $I = 64.4 mA$\\
 Temperature & $T=32.3 \dots 33.65\ ^\circ C$\\
 \end{tabular}
 \end{center}
 
-The calibration was done with a triangular tension. We fitted the peaks with a Gaussian and found out, that the average distance between two maxima is:
+For both measurements, we followed one peak and measured its position in dependence of the current or the temperature of the laser diode. We used the distance of the different peaks to calculate the calibration factor $f$ between the relative position $\Delta t$ and the relative frequency $\nu$ of the peak. It is given by
 
-$$\Delta t = (64.2 \pm 0.1)\ \mu s$$
+$$ f = \frac{FSR}{\Delta t} \ \ \ \ \ \text{with the error}\ \ \ \ \ \frac{s_f}{f} \approx \frac{s_{FSR}}{FSR} = 3.00 \cdot 10^{-3} $$
 
-With this, we were able to calculate the conversion factor between time and frequency, which is given by
+where FSR is the free spectral range of the etalon, whose numerical value is $FSR = (9924 \pm 30)\ MHz$. The error $s_t$ is negligible. The frequency is the given by:
 
-$$\boxed{ f = \frac{FSR}{\Delta t} = (154.6 \pm 33.7)\ \frac{MHz}{\mu s} }$$
+$$\nu = f\cdot t \ \ \ \ \ \text{with the error}\ \ \ \ \ \frac{s_\nu}{\nu} \approx \frac{s_f}{f} = 3.00 \cdot 10^{-3} $$
 
-where $FSR = (9924 \pm 30) Mhz$ is the \emph{free spectral range} of the etalon.
+\subsubsection{Constant Temperature}
+
+By measuring the distance between two peaks we were able to calculate the calibration factor between time and frequency.
+
+$$f = (70.886 \pm  0.214) \frac{MHz}{\mu s} $$
+
+We then were able to plot the relative frequency in dependence of the variation of the laser current and by linear regression find out their relation.
+
+\begin{figure}[H]
+\centering \includegraphics[width=0.9\textwidth]{BilderAusw/T_fest.pdf}
+\caption{Variation of the laser current with constant temperature}
+\end{figure}
+
+As one can see, the slope is negative, which means that by increasing the current, the light emitted by the laser has a lower frequency. We find that the slope is
+
+$$ a = (-3.858 \pm 0.056)\ \frac{GHz}{mA}$$
+
+which is the conversion factor between the frequency $\nu$ of the laser light and the current $I$ of the diode.
+
+\subsubsection{Constant Current}
+
+The calibration gave us the same conversion factor as before, i.e.
+
+$$f = (70.886 \pm  0.214) \frac{MHz}{\mu s} $$
+
+and we plotted the relative frequency in dependence of the temperature of the laser.
+
+\begin{figure}[H]
+\centering \includegraphics[width=0.9\textwidth]{BilderAusw/I_fest.pdf}
+\caption{Variation of the laser temperature with constant current}
+\end{figure}
+
+Here, one is also able to see, that with increasing temperature, the frequency decreases. Also, we can see a mode jump near 32.5$^\circ C$. Both parts were fitted by a straight line, and the slopes are as follows:
+
+\begin{center}
+\begin{tabular}[H]{l l}
+First Slope & $a_1 = (-31.81 \pm 2.05) \frac{GHz}{^\circ C}$\\
+Second Slope & $a_2 = (-31.70 \pm 1.12) \frac{GHz}{^\circ C}$\\
+\end{tabular}
+\end{center}
+
+For the rest of the measurements, we always used temperatures superior to 32,5 $^\circ C$, so the second slope is the one relevant as a conversion factor between temperature and frequency.
+
+\subsubsection{Results}
+
+\begin{tabular}[H]{l c}
+Conversion Factors: & \\
+Frequency-Current & $\Delta\nu = \Delta I \cdot (-3.858 \pm 0.056)\ {Ghz}/{mA}$\\
+Frequency-Temperature & $\Delta\nu = \Delta T \cdot (-31.70 \pm 1.12)\ {Ghz}/{^\circ C}$\\
+\end{tabular}
 
 
 \subsection{Hyperfine Structure}
