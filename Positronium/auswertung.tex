@@ -234,8 +234,26 @@ Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zune
  \includegraphics[width=\textwidth]{Auswertung/quench.pdf}
  \caption{Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
 \end{figure}
+Bei der Auswertung haben wir dann nur die Kanäle 90 bis 130 verwendet, was einem Energiefenster von bis %TODO: Eichung
+entspricht. Die Ereignisse in diesem Intervall haben wir dann summiert und den Untergrund aus der Koinzidenzmessung abgezogen. Um die Schwankungen in der Apparatur auszugleichen, die uns die Kontrollmessungen zeigen, haben wir zur Normierung ein gewichtetes Mittel dieser verwendet.
+\begin{equation*}
+ N' = \frac{N}{2/3 N_{k1} + 1/3 N_{k2}}
+\end{equation*}
+Wobei $N_{k1}$ die zeitlich näherliegende Kontrollmessung bezeichnet und $N_{k2}$ die weiter entfernte. An die resultierenden Datenpunkte haben wir dann die Quenching-Funktion über den Parameter A angepasst:
+\begin{equation*}
+ Q(B)/Q(0) = 0.5 + 0.5 \cdot (1 + A \cdot B^2)^{-1} 
+\end{equation*}
+wobei sich dann aus A die Feinstrukturaufspaltung $\Delta W$ ergibt
+\begin{equation*}
+ \Delta W = \sqrt{\frac{r}{A}} \cdot  2 \cdot \mu
+\end{equation*}
+
+Im Graph (Abb \ref{auswertung-quench-normiert}) ist sowohl ein Fit an die Datenpunkte dargestellt, die über das gewichtete Mittel normiert wurden (f(x)) als auch ein Fit an Datenpunkte, die mit dem durchschnittlichen $Q(0)$ normiert wurden. 
+
+
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Auswertung/quench-normiert.pdf}
  \caption{Normiertes Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
+ \label{auswertung-quench-normiert}
 \end{figure}

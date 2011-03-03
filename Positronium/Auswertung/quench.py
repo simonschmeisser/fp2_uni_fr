@@ -1,7 +1,7 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
-start_channel = 80
-end_channel = 150
+start_channel = 90
+end_channel = 130
 
 def getCounts(datei):
   f = open(datei, "r")
@@ -39,11 +39,16 @@ print "untergrund: ", untergrund
 
 outfile = open("quench.dat", "w")
 
+kontrollave = 0.0
 kontrolldict = dict()
 for kontroll in kontrollmessungen:
   count = getCounts("../Messdaten/quench/%s.TKA"%(kontroll)) - untergrund
   kontrolldict[kontroll] = count
+  kontrollave += count
 
+kontrollave /= 4.
+
+print "Durchschnittliche Counts bei Kontrollmessung: " , kontrollave
 
 for datensatz in datensaetze:
   datei, B, kontroll1s, kontroll2s = datensatz
