@@ -4,7 +4,7 @@ set output 'quench.pdf'
 set xlabel "B [G]"
 set ylabel "Counts"
 
-plot "quench.dat"
+plot "quench.dat" using 1:2
 
 set output "quench-normiert.pdf"
 
@@ -22,9 +22,9 @@ f(x) = 0.5 + 0.5/(1+A_fit*x**2)
 
 A_fit = A
 
-fit f(x) "quench.dat" using 1:($2/300) via A_fit
+fit f(x) "quench.dat" using 1:3 via A_fit
 
-plot "quench.dat" using 1:($2/300), t(x), f(x)
+plot "quench.dat" using 1:3, t(x), f(x)
 
 print "A aus Fit: "
 print A_fit
