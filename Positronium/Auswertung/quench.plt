@@ -20,7 +20,10 @@ t(x) = 0.5 + 0.5/(1+A*x**2)
 
 kontrollave = 238.25
 
+delta_W_fitw = delta_W
+
 f(x) = 0.5 + 0.5/(1+A_fit*x**2)
+fw(x) = 0.5 + 0.5/(1+r * ( 2 * mu / delta_W_fitw)**2*x**2)
 f2(x) = 0.5 + 0.5/(1+A_fit2*x**2)
 
 A_fit = A
@@ -28,9 +31,10 @@ A_fit = A
 A_fit2 = A
 
 fit f(x) "quench.dat" using 1:3 via A_fit
+fit fw(x) "quench.dat" using 1:3 via delta_W_fitw
 fit f2(x) "quench.dat" using 1:($2/kontrollave) via A_fit2
 
-plot "quench.dat" using 1:3, t(x), f(x), f2(x)
+plot "quench.dat" using 1:3, t(x) title "Theoretischer Verlauf", f(x), f2(x), fw(x)
 
 print "A aus Fit mit angepasster Normierung: "
 print A_fit
@@ -51,3 +55,13 @@ print "delta_W_theorie: ", delta_W
 print "delta_W_fit2: ", delta_W_fit2
 print "Fehler: ", delta_W_fit2-delta_W
 print "Fehler relativ: ", (delta_W_fit2-delta_W)/delta_W
+
+
+print "--------------------"
+
+print "delta_W direkt: "
+
+print "delta_W_theorie: ", delta_W
+print "delta_W_fitw: ", delta_W_fitw
+print "Fehler: ", delta_W_fitw-delta_W
+print "Fehler relativ: ", (delta_W_fitw-delta_W)/delta_W

@@ -144,7 +144,6 @@ Weiterhin haben wir die Zahl der Koinzidenzen bei senkrechter Stellung der Szint
 \end{equation*}
 
 Zu guter Letzt haben wir wieder die $180^\circ$-Konfiguration eingestellt und das Delay der beiden SCAs gegeneinander verstellt: 
-falsches Delay:
 \begin{equation*}
  n_{ZK-delay} = (0.019  \pm  0.004) s^{-1}
 \end{equation*}
@@ -239,14 +238,11 @@ entspricht. Die Ereignisse in diesem Intervall haben wir dann summiert und den U
 \begin{equation*}
  N' = \frac{N}{2/3 N_{k1} + 1/3 N_{k2}}
 \end{equation*}
-Wobei $N_{k1}$ die zeitlich näherliegende Kontrollmessung bezeichnet und $N_{k2}$ die weiter entfernte. An die resultierenden Datenpunkte haben wir dann die Quenching-Funktion über den Parameter A angepasst:
+Wobei $N_{k1}$ die zeitlich näherliegende Kontrollmessung bezeichnet und $N_{k2}$ die weiter entfernte. An die resultierenden Datenpunkte haben wir dann die Quenching-Funktion über den Parameter $Delta W$ angepasst:
 \begin{equation*}
- Q(B)/Q(0) = 0.5 + 0.5 \cdot (1 + A \cdot B^2)^{-1} 
+ Q(B)/Q(0) = 0.5 + 0.5 \cdot (1 + r \cdot ( \frac{2  \mu }{ \Delta W})^2 \cdot B^2)^{-1} 
 \end{equation*}
-wobei sich dann aus A die Feinstrukturaufspaltung $\Delta W$ ergibt
-\begin{equation*}
- \Delta W = \sqrt{\frac{r}{A}} \cdot  2 \cdot \mu
-\end{equation*}
+
 
 Im Graph (Abb \ref{auswertung-quench-normiert}) ist sowohl ein Fit an die Datenpunkte dargestellt, die über das gewichtete Mittel normiert wurden (f(x)) als auch ein Fit an Datenpunkte, die mit dem durchschnittlichen $Q(0)$ normiert wurden. 
 
@@ -257,3 +253,10 @@ Im Graph (Abb \ref{auswertung-quench-normiert}) ist sowohl ein Fit an die Datenp
  \caption{Normiertes Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
  \label{auswertung-quench-normiert}
 \end{figure}
+
+Wir erhalten aus dem Fit folgenden Wert für die Feinstrukturaufspaltung:
+\begin{equation*}
+ \Delta W = (9,57758 \pm 1,593) \e{-4} eV
+\end{equation*}
+
+Der Literaturwert [TODO: Staatsexamensarb?] beträgt $\Delta W = 8,412\e{-4} eV$ und liegt also innerhalb der ersten Standartabweichung des von uns ermittelten Wertes. 
