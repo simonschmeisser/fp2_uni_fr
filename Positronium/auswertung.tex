@@ -2,43 +2,44 @@
 
 \subsection{Verbleibende Aktivität}
 
-Die 22-Na Probe wurde laut Beschriftung am Versuchsaufbau am 29.09.1993 eingesetzt. Sie hatte damals eine Aktivität von $A_{93} = 3,7\e{6} Bq$ und die Halbwertszeit wird mit $t_{1/2} = 2,6 a$ angegeben. Somit ergibt sich für die Restaktivität:
+Die \Na-Probe wurde laut Beschriftung am Versuchsaufbau am 29.09.1993 eingesetzt. Sie hatte damals eine Aktivität von $A_{93} = 3,7\e{6} Bq$ und die Halbwertszeit wird mit $t_{1/2} = 2,6 a$ angegeben. Somit ergibt sich für die Restaktivität:
 \begin{eqnarray*}
  A(t) = & A_{93} * e^{-\frac{\ln 2}{t_{1/2}} t} \\
       \approx & 3,61\e{4} Bq
 \end{eqnarray*}
+\label{verbleibende_aktivitaet}
 Die Messungen in der Staatsexamensarbeit wurden bei $A_{St} = 0,15 mCurie = 5,55\e{6} Bq$ durchgeführt. Wir erwarten also dass die Rate der Ereignisse im Experiment bei uns in etwa zwei Größenordnungen kleiner sein wird. Für die statistische Genauigkeit der Messungen ist dies nicht von Vorteil.
 
 \subsection{Szintillatorspektren}
-Wir haben das Spektrum des 22Na mit jedem der drei Szintillatoren aufgenommen (siehe Abb. \ref{22na-schrottspektrum}). Dazu haben wir je einen direkt an den Multi Channel Analysator (MCA) angeschlossen und 20 min gemessen.
+Wir haben das Spektrum des \Na  mit jedem der drei Szintillatoren aufgenommen (siehe Abb. \ref{22na-schrottspektrum}). Dazu haben wir je einen direkt an den Multi Channel Analysator (MCA) angeschlossen und 20 min gemessen.
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/Na-Spektren/na-spektren-1.pdf}
- \caption{Spektrum des 22Na Zerfalls, aufgenommen mit drei ungefilterten Szintilatoren}
+ \caption{Spektrum des \Na-Zerfalls, aufgenommen mit drei ungefilterten Szintilatoren}
  \label{22na-schrottspektrum}
 \end{figure}
 
 Dabei haben wir folgende Verstärkungen eingestellt:
-SZ1: 8,13
-SZ2: 5,00
-SZ3: 10,00
+SZ1: 8,13\\
+SZ2: 5,00\\
+SZ3: 10,00\\
 
 Bei dem kleineren Peak mit hoher Energie (ca. Channel 850) handelt es sich nicht, wie von uns zuerst vermutet, um die 1270keV Gamma-Quanten des 22Ka-Zerfalls. Vielmehr scheint es sich um einen von der Elektronik erzeugten Störeffekt zu handeln. Der Peak mit der zweithöchsten Energie (Ch.250 bzw. 180) ist dann der eigentliche 1270keV Peak. Die 511keV des Zwei-Photonen-Zerfalls, die Photonen des 3er-Zerfalls und die Bremsstrahlung sind nur schlecht aufgelöst (SZ1 und SZ2) bzw. gar nicht unterscheidbar (SZ3).
 
 Da wir außerdem beim Zuschalten des Single Channel Analysators (SCA) eine Verschiebung des Spektrums beobachteten, haben wir die Energiekalibration dann mit diesem durchgeführt.
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/SZ1.png}
- \caption{22Na Spektrum mit SZ1}
+ \caption{\Na-Spektrum mit SZ1}
 \end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/SZ2.png}
- \caption{22Na Spektrum mit SZ2}
+ \caption{\Na-Spektrum mit SZ2}
 \end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/SZ3.png}
- \caption{\Na Spektrum mit SZ3}
+ \caption{\Na-Spektrum mit SZ3}
 \end{figure}  
 
 Dazu haben wir, wie in Abb \ref{schaltplan_sca_lin_mca} dargestellt, das unipolare Signal des Verstärkers (AMP) zur Einstellung des Energiefensters am SCA verwendet. Liegt ein Ereigniss innerhalb dieses Fensters, so wird ein Signal an das Linear Gate gegeben. Dieses lässt dann für einen kurzen Moment das eigentliche (bipolare) Signal durch. Um die Verzögerung durch den SCA (mindestens ca. $0,05\mu s$) kompensieren zu können, wurde zwischen AMP und Linear Gate noch ein Delay eingebaut. Durch die Verzögerungseinstellung des SCA kann jetzt die Laufzeit beider Signale synchronisiert werden. Dazu wurden der positive Normausgang des SCA und der Ausgang des Delays an die Koinzidenz angeschlossen. Über die feinere Verzögerungseinstellung des SCA wurde die Zählrate maximiert. Anschließend wurden beide Signale an das Linear Gate angeschlossen und dessen Ausgangssignal mit dem MCA analysiert. Das genaue Anpassen der Signallaufzeiten ist wichtig, da sonst einerseits zufällige Ereignisse außerhalb des gewünschten Energiefensters gemessen werden, andererseits aber auch das eigentliche Signal abgeschnitten werden kann. Dies würde dann ebenfalls zu einer falschen Energiemessung führen.
@@ -46,7 +47,9 @@ Dazu haben wir, wie in Abb \ref{schaltplan_sca_lin_mca} dargestellt, das unipola
 Für eine erneute Messung des \Na-Spektrums haben wir folgende Einstellungen verwendet:
 \begin{center}
 \begin{tabular}{llll}
+\toprule
  & SZ1 & SZ2 & SZ3\\
+\midrule
 Verstärkung & 8,12 & 10,0 & 10,0\\
 Coarse Gain & 20 & 20 & 20\\
 Shaping Time & 0,5 $\mu s$ & 0,5 $\mu s$ & 0,5 $\mu s$\\
@@ -54,25 +57,32 @@ Lower Level & 0,04 & 0,04 & 0,0\\
 Upper Level & 10,02 & 10,02 & 10,0\\
 Delay & 2,14 $\mu s$ & 1,83 $\mu s$ & 2,05 $\mu s$\\
 Messdauer & 20 min & 20 min & 20 min\\
-Delay SCA & 2 $\mu s$ & 2 $\mu s$ & 2 $\mu s$
+Delay SCA & 2 $\mu s$ & 2 $\mu s$ & 2 $\mu s$\\
+\bottomrule
 \end{tabular}
 \end{center}
 
 Aus den Spektren haben wir die Position der 511keV- und 1275keV-Peaks abgelesen: %TODO: gauss-fit? 
 \begin{center}
 \begin{tabular}{llll}
+\toprule
  & 511keV - Peak (Channel) & 1275 keV-Peak (Channel) \\
+\midrule
 SZ1 & $72,4 \pm 0,1$ & $199,2 \pm 0,1$ \\
 SZ2 & $83,1 \pm 0,1$ & $233,0 \pm 0,03$ \\
-SZ3 & $99,1 \pm 0,1$ & $268,4 \pm 0,1$ 
+SZ3 & $99,1 \pm 0,1$ & $268,4 \pm 0,1$ \\
+\bottomrule 
 \end{tabular}
 \end{center}
 
 Somit konnten wir eine Energie-Channel-Eichung für die drei Szintillatoren vornehmen:
 %TODO: Fehlerrechnung
-SZ1: $E = 6,03 keV \cdot c + 74,77 keV$\\
-SZ2: $E = 5,10 keV \cdot c + 87,46 keV$\\
-SZ3: $E = 4,51 keV \cdot c + 63,79 keV$ \\
+\begin{tabular}{ll}
+ SZ1 & $E = 6,03 keV \cdot c + 74,77 keV$\\
+ SZ2 & $E = 5,10 keV \cdot c + 87,46 keV$\\
+ SZ3 & $E = 4,51 keV \cdot c + 63,79 keV$ 
+\end{tabular}
+
 
 \subsection{Zwei-Photonen-Zerfall}
 
@@ -80,10 +90,13 @@ Beim Zerfall des 0S0-Singulett-Zustands des Positroniums können die Photonen, w
 
 \begin{center}
 \begin{tabular}{llll}
+\toprule
  & SZ1 & SZ2 & SZ3\\
+\midrule
 Lower Level & 1,585 & 1,87 & 1,79\\
 Upper Level & 2,940 & 3,05 & 3,07\\
-511keV Peak & 81  & 80 & 94
+511keV Peak & 81  & 80 & 94\\
+\bottomrule
 \end{tabular}
 \end{center}
 
@@ -133,20 +146,19 @@ Unsere Messungen ergeben also, dass die maximale Zählrate bei $xc = 178,36^\cir
 
 Um den Anteil der zufälligen Koinzidenzen, also Events die von zwei verschiedenen Zerfällen oder aus Störsignalen herrühren, zu bestimmen haben wir verschiedene Ansätze verfolgt. Zum Einen haben wir sie über die Zählraten und die Zeitauflösung der Koinzidenzeinheit abgeschätzt:
 \begin{equation*}
- n_{ZK} = \tau \cdot n_{SZ2} \cdot n_{SZ3} = 0.1262 \pm 0.0057
+ n_{ZK} = \tau \cdot n_{SZ2} \cdot n_{SZ3} = (0.1262 \pm 0.0057) s^{-1}
 \end{equation*}
 %Zufällige Koinzidenzen:  0.126152721707
 %Fehler:  0.00574067795172
 
 Weiterhin haben wir die Zahl der Koinzidenzen bei senkrechter Stellung der Szintillatoren gemessen:
 \begin{equation*}
- n_{ZK-90} = 1.67  \pm  0.13
+ n_{ZK-90} = (1.67  \pm  0.13) s^{-1}
 \end{equation*}
 
 Zu guter Letzt haben wir wieder die $180^\circ$-Konfiguration eingestellt und das Delay der beiden SCAs gegeneinander verstellt: 
-falsches Delay:
 \begin{equation*}
- n_{delay} = 0.019  \pm  0.004
+ n_{ZK-delay} = (0.019  \pm  0.004) s^{-1}
 \end{equation*}
   
 %TODO: was bedeutet das? größte verwenden?
@@ -156,33 +168,41 @@ Wir haben die gesamte Elektronik ausführlich untersucht und daraufhin den SCA v
 
 \subsection{Drei-Photonen-Zerfall}
 
+Bei diesem Versuchsteil geht es zuerst um die Untersuchung des Energiespektrums. Dazu haben wir die Fenster von SCA 1 (Abb \ref{graphen-3er-red-spektrum-sz1}) und SCA 3 (Abb \ref{graphen-3er-red-spektrum-sz3}) so eingestellt, dass nur Events unterhalb der 511keV-Linie registriert werden. Weiterhin haben wir die Signale aller Szintillatoren synchronisiert. Anschließend haben wir über den MCA das Energiespektrum von SZ2 aufgenommen. 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz1.pdf}
  \caption{Einstellung des Energiefensters unterhalb der 511keV-Linie für SZ1}
+ \label{graphen-3er-red-spektrum-sz1}
 \end{figure}
 
-\begin{figure}
- \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz2.pdf}
- \caption{TODO: WAS IST DAS?}
-\end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz3.pdf}
  \caption{Einstellung des Energiefensters unterhalb der 511keV-Linie für SZ3}
-\end{figure}
-
-\begin{figure}
- \includegraphics[width=\textwidth]{Graphen/3er/spektrum-1.pdf}
- \caption{Spektrum am SZ2 beim 3er-Koinzidenz}
+ \label{graphen-3er-red-spektrum-sz3}
 \end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/3er/spektrum-2.pdf}
- \caption{Spektrum am SZ2 beim 3er-Koinzidenz}
+ \caption{Spektrum am SZ2 bei 3er-Koinzidenz}
+ \label{graphen-3er-spektrum-2}
 \end{figure}
 
+Wir haben dazu eine Messung von ca. 3h Dauer (11091s) durchgeführt. Im Graphen (Abb \ref{graphen-3er-spektrum-2}) haben wir zum Vergleich auch das komplette \Na-Spektrum eingezeichnet. Das Spektrum zeigt ein relativ breites Maximum bei ca. $320-350 keV$.
+
+%TODO: Parameter? Blabla
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz2.pdf}
+ \caption{Grobe Einstellung des Energiefensters von SZ2}
+\label{graphen-3er-red-spektrum-sz2}
+\end{figure}
+
+Für die weiteren Messungen haben wir auch bei SZ2 ein Energiefenster eingestellt, allerdings nur recht grob da die Zählrate auch so schon niedrig war (Abb \ref{graphen-3er-red-spektrum-sz2}). Statt eventuell zulässige Ereignisse von vorneherein zu unterdrücken, haben wir dann lieber bei der Auswertung die Daten etwas beschnitten.
 
 \subsection{Quenching}
+
+Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zunehmendem Magnetfeld. Dazu haben wir zweistündige Messungen mit konstantem Magnetfeld durchgeführt und nach jeweils zwei Messungen eine Kontrollmessung ohne Magnetfeld. Diese erlaubt es uns, grobe Drifts und Schwankungen in der Messung zu erkennen und zu kompensieren.
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_0-3.pdf}
@@ -202,12 +222,6 @@ Wir haben die gesamte Elektronik ausführlich untersucht und daraufhin den SCA v
 
 
 \begin{figure}
- \includegraphics[width=\textwidth]{Graphen/quench/spektrum_0-3_nach_2028.pdf}
- \caption{Spektrum 0,3A nach 2028G}
-\end{figure}
-
-
-\begin{figure}
  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_3070.pdf}
  \caption{Spektrum 3070G}
 \end{figure}
@@ -221,8 +235,30 @@ Wir haben die gesamte Elektronik ausführlich untersucht und daraufhin den SCA v
  \includegraphics[width=\textwidth]{Auswertung/quench.pdf}
  \caption{Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
 \end{figure}
+Bei der Auswertung haben wir dann nur die Kanäle 90 bis 130 verwendet, was einem Energiefenster von bis %TODO: Eichung
+entspricht. Die Ereignisse in diesem Intervall haben wir dann summiert und den Untergrund aus der Koinzidenzmessung abgezogen. Um die Schwankungen in der Apparatur auszugleichen, die uns die Kontrollmessungen zeigen, haben wir zur Normierung ein gewichtetes Mittel dieser verwendet.
+\begin{equation*}
+ N' = \frac{N}{2/3 N_{k1} + 1/3 N_{k2}}
+\end{equation*}
+Wobei $N_{k1}$ die zeitlich näherliegende Kontrollmessung bezeichnet und $N_{k2}$ die weiter entfernte. An die resultierenden Datenpunkte haben wir dann die Quenching-Funktion über den Parameter $\Delta W$ angepasst:
+\begin{equation*}
+ Q(B)/Q(0) = 0.5 + \frac{0.5}{1 + r \cdot ( \frac{2  \mu }{ \Delta W})^2 \cdot B^2} 
+\end{equation*}
+
+
+Im Graph (Abb \ref{auswertung-quench-normiert}) ist sowohl ein Fit an die Datenpunkte dargestellt, die über das gewichtete Mittel normiert wurden (f(x)) als auch ein Fit an Datenpunkte, die mit dem durchschnittlichen $Q(0)$ normiert wurden. 
+
+
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Auswertung/quench-normiert.pdf}
  \caption{Normiertes Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
+ \label{auswertung-quench-normiert}
 \end{figure}
+
+Wir erhalten aus dem Fit folgenden Wert für die Feinstrukturaufspaltung:
+\begin{equation*}
+ \Delta W = (9,57758 \pm 1,593) \e{-4} eV
+\end{equation*}
+
+Der Literaturwert [TODO: Staatsexamensarb?] beträgt $\Delta W = 8,412\e{-4} eV$ und liegt also innerhalb der ersten Standartabweichung des von uns ermittelten Wertes. Die relativen Zählraten sind bei mehreren Einstellungen zu hoch. Dies deutet darauf hin, dass falsche Ereignisse registriert werden, also zB von 2-Photonen-Zerfällen, Bremsstrahlung oder auch Rauschen. Diese werden nicht vom Magnetfeld unterdrückt und führen somit zu einer zu großen Zählrate. Theoretisch ließen sich solche Ereignisse weiter reduzieren, indem engere Energiefenster und auch ein kleineres Koinzidenzintervall gewählt werden. Praktisch müsste dann allerdings die Meßzeit noch weiter verlängert werden, um statistisch relevante Ergebnisse zu erhalten. Da wir aber bereits so deutliche Drifts in den Messwerten sehen, scheint dies nicht sinnvoll. Besser wäre es sicherlich die \Na-Probe zu erneuern, wodurch sich ca. 100-fach höhere Zählraten ergeben würden (siehe \ref{verbleibende_aktivitaet}).
