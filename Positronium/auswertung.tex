@@ -2,7 +2,7 @@
 
 \subsection{Verbleibende Aktivität}
 
-Die 22-Na Probe wurde laut Beschriftung am Versuchsaufbau am 29.09.1993 eingesetzt. Sie hatte damals eine Aktivität von $A_{93} = 3,7\e{6} Bq$ und die Halbwertszeit wird mit $t_{1/2} = 2,6 a$ angegeben. Somit ergibt sich für die Restaktivität:
+Die \Na-Probe wurde laut Beschriftung am Versuchsaufbau am 29.09.1993 eingesetzt. Sie hatte damals eine Aktivität von $A_{93} = 3,7\e{6} Bq$ und die Halbwertszeit wird mit $t_{1/2} = 2,6 a$ angegeben. Somit ergibt sich für die Restaktivität:
 \begin{eqnarray*}
  A(t) = & A_{93} * e^{-\frac{\ln 2}{t_{1/2}} t} \\
       \approx & 3,61\e{4} Bq
@@ -11,11 +11,11 @@ Die 22-Na Probe wurde laut Beschriftung am Versuchsaufbau am 29.09.1993 eingeset
 Die Messungen in der Staatsexamensarbeit wurden bei $A_{St} = 0,15 mCurie = 5,55\e{6} Bq$ durchgeführt. Wir erwarten also dass die Rate der Ereignisse im Experiment bei uns in etwa zwei Größenordnungen kleiner sein wird. Für die statistische Genauigkeit der Messungen ist dies nicht von Vorteil.
 
 \subsection{Szintillatorspektren}
-Wir haben das Spektrum des \Na mit jedem der drei Szintillatoren aufgenommen (siehe Abb. \ref{22na-schrottspektrum}). Dazu haben wir je einen direkt an den Multi Channel Analysator (MCA) angeschlossen und 20 min gemessen.
+Wir haben das Spektrum des \Na  mit jedem der drei Szintillatoren aufgenommen (siehe Abb. \ref{22na-schrottspektrum}). Dazu haben wir je einen direkt an den Multi Channel Analysator (MCA) angeschlossen und 20 min gemessen.
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/Na-Spektren/na-spektren-1.pdf}
- \caption{Spektrum des 22Na Zerfalls, aufgenommen mit drei ungefilterten Szintilatoren}
+ \caption{Spektrum des \Na-Zerfalls, aufgenommen mit drei ungefilterten Szintilatoren}
  \label{22na-schrottspektrum}
 \end{figure}
 
@@ -29,17 +29,17 @@ Bei dem kleineren Peak mit hoher Energie (ca. Channel 850) handelt es sich nicht
 Da wir außerdem beim Zuschalten des Single Channel Analysators (SCA) eine Verschiebung des Spektrums beobachteten, haben wir die Energiekalibration dann mit diesem durchgeführt.
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/SZ1.png}
- \caption{\Na Spektrum mit SZ1}
+ \caption{\Na-Spektrum mit SZ1}
 \end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/SZ2.png}
- \caption{\Na Spektrum mit SZ2}
+ \caption{\Na-Spektrum mit SZ2}
 \end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/SZ3.png}
- \caption{\Na Spektrum mit SZ3}
+ \caption{\Na-Spektrum mit SZ3}
 \end{figure}  
 
 Dazu haben wir, wie in Abb \ref{schaltplan_sca_lin_mca} dargestellt, das unipolare Signal des Verstärkers (AMP) zur Einstellung des Energiefensters am SCA verwendet. Liegt ein Ereigniss innerhalb dieses Fensters, so wird ein Signal an das Linear Gate gegeben. Dieses lässt dann für einen kurzen Moment das eigentliche (bipolare) Signal durch. Um die Verzögerung durch den SCA (mindestens ca. $0,05\mu s$) kompensieren zu können, wurde zwischen AMP und Linear Gate noch ein Delay eingebaut. Durch die Verzögerungseinstellung des SCA kann jetzt die Laufzeit beider Signale synchronisiert werden. Dazu wurden der positive Normausgang des SCA und der Ausgang des Delays an die Koinzidenz angeschlossen. Über die feinere Verzögerungseinstellung des SCA wurde die Zählrate maximiert. Anschließend wurden beide Signale an das Linear Gate angeschlossen und dessen Ausgangssignal mit dem MCA analysiert. Das genaue Anpassen der Signallaufzeiten ist wichtig, da sonst einerseits zufällige Ereignisse außerhalb des gewünschten Energiefensters gemessen werden, andererseits aber auch das eigentliche Signal abgeschnitten werden kann. Dies würde dann ebenfalls zu einer falschen Energiemessung führen.
@@ -181,11 +181,6 @@ Bei diesem Versuchsteil geht es zuerst um die Untersuchung des Energiespektrums.
  \caption{Einstellung des Energiefensters unterhalb der 511keV-Linie für SZ3}
  \label{graphen-3er-red-spektrum-sz3}
 \end{figure}
-
-%\begin{figure}
-% \includegraphics[width=\textwidth]{Graphen/3er/spektrum-1.pdf}
-% \caption{Spektrum am SZ2 bei 3er-Koinzidenz}
-%\end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/3er/spektrum-2.pdf}
