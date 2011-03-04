@@ -103,10 +103,175 @@ Laser Current & $I = 63.9 mA$\\
 \end{tabular}
 \end{center}
 
-The measurements were even better this time.
+\begin{figure}[H]
+\centering \includegraphics[width=0.96\textwidth]{BilderAusw/HFS.pdf}
+\caption{Hyperfine spectrum of Rubidium}
+\end{figure}
 
+With the etalon, we were able to calibrate our measurements, i.e. to determine the time-frequency conversion factor $f$:
+
+\begin{center}
+\begin{tabular}[H]{l l}
+Left side (descending laser current) & $f = (36.99 \pm 0.11) \frac{MHz}{\mu s}$\\
+Right side (ascending laser current) &  $ f = (34.46 \pm 0.10) \frac{MHz}{\mu s}$\\ 
+\end{tabular}
+\end{center}
+
+With this calibration and the position of the maxima, we can calculate their relative frequency. We assume the $^{85}Rb$ 3-2 and 3-3 peak to be known, so that we can determine the other peaks from the relative frequency in dependence of this one. The results are summarized in the following table:
+
+\footnotetext[1]{Relative frequency to the $^{85}Rb$ 3-2 and 3-3 peak}
+
+
+
+\begin{center}
+\begin{tabular}[H]{l | c c c c l}
+Right Side & Rel. Freq.\footnotemark[1] & RF to D1 & RF$_{Theory}$ & Difference exp-theo & Transition \\
+ & MHz & MHz & MHz & MHz \\ \hline
+1 & -1934.4 & -3414.4 & -3070 & -344.4 & $^{87}Rb$ F: 2-1 \\
+2 & -1320.4 & -2800.4 & -2250 & -550.4 & $^{87}Rb$ F: 2-2 \\
+3 &        0      & -1480 & -1480 & 0 & $^{85}Rb$ F: 3-2,3 \\
+4 & 3650.5  & 2170.5 & 1560 & 610.5 & $^{85}Rb$ F: 2-2,3\\
+5 & 5662.6  & 4182.6 & 3760 & 422.6 &$^{87}Rb$ F: 1-1\\
+6 & 6328.3  & 4848.3 & 4580 & 268.3 & $^{87}Rb$ F: 1-2\\
+\end{tabular}\\
+\end{center}
+
+
+
+\begin{center}
+\begin{tabular}[H]{l | c c c c l}
+Right Side & Rel. Freq.\footnotemark[1] & RF to D1 & RF$_{Theory}$ & Difference exp-theo & Transition \\
+ & MHz & MHz & MHz & MHz \\ \hline
+6 & 6943.3 & 5463.3 & 4580 & 883.3 & $^{87}Rb$ F: 1-2 \\
+5 & 6271.4 & 4791.4 & 3760 & 1031.4 &$^{87}Rb$ F: 1-1 \\
+4 & 3907.6 & 2427.6 & 1560 & 867.6 & $^{85}Rb$ F: 2-2,3\\
+3 & 0 	  & -1480   & -1480 & 0 & $^{85}Rb$ F: 3-2,3 \\
+2 & -765.0  & -2245.0& -2250 & 5.0 & $^{87}Rb$ F: 2-2 \\
+1 & -1705.7& -3185.7& -3070 & -115.7 & $^{87}Rb$ F: 2-1 \\
+\end{tabular}
+\end{center}
+
+\subsubsection{Determination of the interval constant}
+
+\clearpage
 \subsection{Double Resonance}
+
+For this part, we inserted the quarter-wave plate. We controlled its correct adjustment using a linear polarizer. Then, the radio frequency inductor coil (RF), situated on the Rubidium cell, was switched on. The current was set to about 10 V and the frequency was $\nu_{RF} = (499.3 \pm 0.3) kHz$, which we measured with a frequency counter. We then tried to find the correct adjustments for the laser diode. We did this by modulating the inductor coil 2 with a sawtooth function with a large amplitude and then varying the laser current until absorptions were visible. Having found the correct laser current, we changed the sawtooth function to a sine modulation in order to start the measurements.
+
+With the sawtooth, we found the following laser currents to show absorption lines in the spectrum:
+
+$$ I_1 = (65.4 \pm 0.2)\ mA $$
+$$ I_2 = (64.9 \pm 0.2 )\ mA $$
+
+The temperature of the laser diode was $T=(34.0 \pm 0.2)^\circ C$
+ 
+\begin{figure}[H] 
+\begin{minipage}{0.5\textwidth} 
+\centering \includegraphics[width=\textwidth]{BilderAusw/DR_1.pdf}
+\caption{Absorption at $I = 64.9\ mA$}
+\end{minipage}
+\begin{minipage}{0.5\textwidth} 
+\centering \includegraphics[width=\textwidth]{BilderAusw/DR_2.pdf}
+\caption{Absorption at $I = 65.4\ mA$}
+\end{minipage}
+\end{figure}
+
+The inductor coil 2 was then modulated with a sine function of 50 Hz and the laser was set to one of the two resonance frequencies. The current through the inductor coil 1 was then changed until the visible absorption peaks were equidistant and then the current of the inductor coil 4 was changed in order to make the peaks as high as possible. After the adjustment of the coil 4, we readjusted the coil 1, to assure equidistance of the peaks. Then the polarity of inductor coil 1 was reversed and the equidistance was readjusted. We got the following values:
+
+\begin{center}
+\begin{tabular}[H]{c | c c c}
+Resonance Current & $I(coil1)/mA$ & $I(coil1)_{rev.pol.}$ & $I(coil4)/mA$ \\ \hline
+$I_1 = (65.4 \pm 0.2)\ mA$ & $102 \pm 1$ & $79 \pm 1$ & $80 \pm 5$ \\
+$I_2 = (64.9 \pm 0.2 )\ mA$ & $144 \pm 1$ & $123\pm1$ & $84\pm5$ \\
+\end{tabular}
+\end{center}
+
+These values allow us to determine the earth's magnetic field. The magnetic field of the induction coil 4 cancels the vertical magnetic field of the earth, which means, that it should have the same value. The difference between the two magnetic fields of both polarities should be twice the earth's horizontal magnetic field.\\
+
+\begin{figure}[H]
+\centering \includegraphics[width=0.75\textwidth]{BilderAusw/DRequi.pdf}
+\caption{Equidistant Absorption Peaks}
+\end{figure}
+
+
+To calculate the magnetic field from the current through the coils, we use the measured values given in the experiment's description:
+
+\begin{figure}[H]
+\centering \includegraphics[width=0.75\textwidth]{BilderAusw/Spulenumr.png}
+\end{figure}
+
+So, $B=a\cdot I$ whereas $a$ is the conversion factor. Since for coil 1: \ $I=\frac{1}{2}|I_{pol1}-I_{pol2}|$, the error is $$s_I^{coil1} = \sqrt{s_{I_{pol1}}^2 + s_{I_{pol2}}^2} = 1.41$$
+The error for B is then:
+
+$$s_B = B\cdot\sqrt{\left(\frac{s_a}{a}\right)^2 + \left(\frac{s_I}{I}\right)^2}$$
+
+We calculate the following values:
+
+\begin{center}
+\begin{tabular}[H]{c | c c}
+ & Horizontal magnetic field & Vertical magnetic field \\ \hline
+Current $I_1$ & $B_{hor}^{(1)} = (9.19 \pm 1.1)\ \mu T$ & $B_{vert}^{(1)} = (38.08 \pm 2.38)\ \mu T$\\
+Current $I_2$& $B_{hor}^{(2)} = (8.39 \pm 1.1)\ \mu T$ & $B_{vert}^{(2)} = (39.98 \pm 2.38)\ \mu T$\\
+Theoretical Values & $B_{hor} = 20.9 \mu T$ & $B_{vert} = 42.9 \mu T$\\
+Standard Deviations & 11, 12 & 3, 2\\
+\end{tabular}
+\end{center}
+
+As one can see, the values for the horizontal field clearly differ from the theoretical values ($\sim$ factor 2). Since the theoretical horizontal value is meant to be the magnetic field in north-south direction, it occurred to us that maybe the optical bench didn't point in that specific direction. We used a compass to realign the table, so that the photo diode pointed towards north and the laser diode was south from it. The table now had an angle of about 30$^\circ$ towards its initial position. By using the compass, we detected that the optical bench itself was magnetized, which we assumed to be a potential disturbance source.
+
+\begin{figure}[H]
+\centering \includegraphics[width=\textwidth]{BilderAusw/Nordsued.png}
+\caption{North-South orientation of the optical bench}
+\end{figure}
+
+With this new orientation, we redid all the measurements from scratch. The results are summarized in the following tables. (Laser temperature : $T=(34.1 \pm 0.2)^\circ C$)
+
+\begin{center}
+\begin{tabular}[H]{c | c c c c c}
+ & $I(pol1)_{coil1}/mA$ & $I(pol2)_{coil1}/mA$ & $I_{colt4}/mA$ & $B_{hor}/\mu T$ & $B_{vert}/\mu T$\\ \hline
+$I_{Laser} = (65.3 \pm 0.2)$ & $105 \pm 1$ & $74 \pm 1$ & $ 81\pm 5$ & $12.38 \pm 1.13$ & $38.56 \pm 2.38$\\
+$I_{Laser} = (64.9 \pm 0.2)$ & $151 \pm 1$ & $120 \pm 1$ & $ 83\pm 5$ & $12.38 \pm 1.13$ & $39.51 \pm 2.38$\\
+\end{tabular}
+\end{center}
+
+The theoretical value for the horizontal field lies within the 8th standard deviation of both our calculated values and the theoretical value of the vertical field lies within the 2nd. The value for the horizontal field greatly improved, the one for the vertical field slightly worsened. We can assume, as discussed before, that the fact that our values lie underneath the theoretical value, is due to the magnetization of the optical bench. Also, the abrasion of the induction colts could be an error source.
+
+\subsubsection{The nuclear spin}
+
+We determine the nuclear spin of the Rubidium isotopes with the formula:
+
+$$ I = \frac{\mu_BB}{h\nu_{RF}}-\frac{1}{2} $$
+
+The vertical magnetic field was compensated by the induction colt 4. $B$ is the magnetic field of colt 1 when the peaks are equidistant subtracted by (resp. added to) the earth's horizontal magnetic field. $\mu_B$ is the Bohr magneton.
+
+The error of the nuclear spin is determined by:
+
+$$ s_I = I\cdot\sqrt{\left(\frac{s_B}{B}\right)^2 + \left(\frac{s_{\nu_{RF}}}{\nu_{RF}}\right)^2} $$
+
+We have
+
+$$I_1 = (84.5 \pm 1.5) mA \Rightarrow B_1 = (67.52 \pm 1.20)\mu T$$
+$$I_2 = (130.5 \pm 1.5) mA \Rightarrow B_2 = (104.27 \pm 1.21)\mu T$$
+
+The nuclear spins are:
+
+\begin{center}
+\begin{tabular}[H]{| l c c c c |}\hline
+Isotope & Value & Theoretical Value & Error & Standard Deviations \\ \hline
+(1)\ \ $^{87}Rb$ & $1.39 \pm 0.02$ & 1.5 & 7.3\% & 6 \\
+(2)\ \ $^{85}Rb$ & $2.42 \pm 0.01$ & 2.5 & 3.2\% & 8\\  \hline
+\end{tabular}
+\end{center}
+
+The measured values lie close to the theoretical ones. The error on the value is very small, so that a systematical error seems to cause most of the deviation. Again, the disturbing fields, such as the magnetization of the optical bench and other magnetic fields seem to have a non-negligible effect on the experiment and lead to this error.
+
+\clearpage
 \subsection{Spin Precession}
+
+Firstly, we compensated the horizontal field with the induction coil 1, i.e. we set it to 15.5 mA (we adjusted it in a way that the ampere meter flickered between 15 and 16 mA since it doesn't have more digits). The coil 4 and the RF were turned off.
+
+We modulated the current of the induction coil 5 with a rectangular function and adjusted the offset, so that the minima of the rectangular function lie on 0. The result is that periodically the magnetic field is turned on and off, so that the atoms are aligned by the magnetic field and then suddenly the field ceases. The result is, that the atoms' angular momentum precesses around the earth's vertical magnetic field the moment the field is turned off. 
+
 \subsection{Relaxation Time (Dehmelt)}
 \subsection{Relaxation Time (Franzen)}
 
