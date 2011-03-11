@@ -1,10 +1,22 @@
 set terminal pdf enhanced
 set output 'red-spektrum-sz3.pdf'
 
-set xlabel "Energie [keV]"
-set ylabel "Counts"
-set pointsize 0.5
+datafile = "../../Messdaten/3er/sz3-volles-spektrum.TKA"
+datafile_red = "../../Messdaten/3er/sz3-red-spektrum.TKA"
+sz = "SZ3"
+szred = "SZ3 red"
 
-set xrange [0:1500]
 
-plot "../../Messdaten/3er/sz3-volles-spektrum.TKA" every ::3 using ($0*4.51+63.79):1 title "SZ3" with points, "../../Messdaten/3er/sz3-red-spektrum.TKA" every ::3 using ($0*4.51+63.79):1 title "SZ3 red."  with points
+x0511 = 180
+s511 = 5
+A511 = 5500
+xmin511 = 160 
+xmax511 = 200
+
+xmin1275 = 340
+xmax1275 = 360
+x01275 = 350
+s1275 = 13
+A1275 = 400
+
+load "3er-fenster.plt"
