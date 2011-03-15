@@ -4,7 +4,7 @@
 
 Die \Na-Probe wurde laut Beschriftung am Versuchsaufbau am 29.09.1993 eingesetzt. Sie hatte damals eine Aktivität von $A_{93} = 3,7\e{6} Bq$ und die Halbwertszeit wird mit $t_{1/2} = 2,6 a$ angegeben. Somit ergibt sich für die Restaktivität:
 \begin{eqnarray*}
- A(t) = & A_{93} \cdot e^{-\frac{\ln 2}{t_{1/2}} t} \\
+ A(t) = & A_{93} \cdot e^{-\frac{\ln 2}{t_{\nicefrac{1}{2}}} t} \\
       \approx & 3,61\e{4} Bq
 \end{eqnarray*}
 \label{verbleibende_aktivitaet}
@@ -13,7 +13,7 @@ Die Messungen in der Staatsexamensarbeit wurden bei $A_{St} = 0,15\, mCurie = 5,
 \subsection{Szintillatorspektren}
 Wir haben das Spektrum des \Na  mit jedem der drei Szintillatoren aufgenommen (siehe Abb. \ref{22na-schrottspektrum}). Dazu haben wir je einen direkt an den Multi Channel Analysator (MCA) angeschlossen und 20 min gemessen.
 
-\begin{figure}
+\begin{figure}[ht]
  \includegraphics[width=\textwidth]{Graphen/Na-Spektren/na-spektren-1.pdf}
  \caption{Spektrum des \Na-Zerfalls, aufgenommen mit drei ungefilterten Szintilatoren}
  \label{22na-schrottspektrum}
@@ -32,17 +32,17 @@ Bei dem kleineren Peak mit hoher Energie (ca. Channel 850) handelt es sich nicht
 
 Da wir außerdem beim Zuschalten des Single Channel Analysators (SCA) eine Verschiebung des Spektrums beobachteten, haben wir die Energiekalibration dann mit diesem durchgeführt.
 \begin{figure}
- \includegraphics[width=\textwidth]{Graphen/SZ1.png}
+ \includegraphics[height=0.3\textheight]{Graphen/SZ1.png}
  \caption{\Na-Spektrum mit SZ1}
 \end{figure}
 
 \begin{figure}
- \includegraphics[width=\textwidth]{Graphen/SZ2.png}
+ \includegraphics[height=0.3\textheight]{Graphen/SZ2.png}
  \caption{\Na-Spektrum mit SZ2}
 \end{figure}
 
 \begin{figure}
- \includegraphics[width=\textwidth]{Graphen/SZ3.png}
+ \includegraphics[height=0.3\textheight]{Graphen/SZ3.png}
  \caption{\Na-Spektrum mit SZ3}
 \end{figure}  
 
@@ -143,7 +143,7 @@ Um die Probleme mit SZ3 zu umgehen, haben wir eine erneute Messung mit SZ2-SZ1 d
  \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls (mit SZ2-SZ1)}
 \end{figure}
 
-Unsere Messungen ergeben also, dass die maximale Zählrate bei $xc = 178,36^\circ \pm 0,01^\circ$ liegt und bestätigt somit die theoretische Aussage, dass der Zwei-Photonen-Zerfall nur in einem Winkel von $180^\circ$ erlaubt ist. Die "`Linienbreite"' von $w = 11^\circ \pm 0,15^\circ$ ergibt sich hauptsächlich aus der Bewegung des Schwerpunktsystems relativ zum Laborsystem. %TODO: Begriffe klären%
+Unsere Messungen ergeben also, dass die maximale Zählrate bei $xc = 178,36^\circ \pm 0,01^\circ$ liegt und bestätigt somit die theoretische Aussage, dass der Zwei-Photonen-Zerfall nur in einem Winkel von $180^\circ$ erlaubt ist. Die "`Linienbreite"' von $w = 11^\circ \pm 0,15^\circ$ ergibt sich hauptsächlich aus der Bewegung des Schwerpunktsystems relativ zum Laborsystem. Das Positronium hat eine bestimmten Impuls der erhalten werden muss. Somit bewegt sich also das Schwerpunktsystem der beiden Photonen mit diesem weiter. Die resultierende %TODO: Begriffe klären%
 %TODO: Abweichung von 180° erläutern
 
 \subsubsection{Zufällige Koinzidenzen}
@@ -152,8 +152,6 @@ Um den Anteil der zufälligen Koinzidenzen, also Events die von zwei verschieden
 \begin{equation*}
  n_{ZK} = \tau \cdot n_{SZ2} \cdot n_{SZ3} = (0,1262 \pm 0,0057) s^{-1}
 \end{equation*}
-%Zufällige Koinzidenzen:  0.126152721707
-%Fehler:  0.00574067795172
 
 Weiterhin haben wir die Zahl der Koinzidenzen bei senkrechter Stellung der Szintillatoren gemessen:
 \begin{equation*}
@@ -164,7 +162,8 @@ Zu guter Letzt haben wir wieder die $180^\circ$-Konfiguration eingestellt und da
 \begin{equation*}
  n_{ZK-delay} = (0,019  \pm  0,004) s^{-1}
 \end{equation*}
-  
+
+ 
 %TODO: was bedeutet das? größte verwenden?
 
 \subsubsection{Austausch von SZ3}
@@ -225,7 +224,15 @@ Somit konnten wir eine Energie-Channel-Eichung für die drei Szintillatoren vorn
  SZ3 & $E = (4,54 \pm 0,02) keV \cdot c + (-320,4 \pm 3,2) keV$ 
 \end{tabular}
 
-Dabei fällt bei SZ3 (Abb \ref{graphen-3er-red-spektrum-sz3}) auf, dass angeblich einige Kanäle des MCA Photonen mit negativer Energie gemessen haben. Dies ist eher unwahrscheinlich und wir vermuten daher zwei Hauptfehlerquellen: einerseits könnten wir die Peaks verwechselt haben. Der 511 keV-Peak müsste dann in der abfallenden Flanke der Bremsstrahlung "`versteckt sein"' (momentan ca. 200keV) und der 1275keV Peak wäre dann der von uns als 511keV angenommene. Die gute Übereinstimmung des Kurvenverlaufs spricht allerdings eher gegen diese These. Eine andere Möglichkeit wäre eine Nichtlinearität, vermutlich bereits direkt in SZ3 oder eventuell auch im Verstärker. Diese erscheint uns wahrscheinlicher. Sollten wir allerdings tatsächlich die Peaks verwechselt haben, würde dies zwar die weitere Messgenauigkeit verschlechtern und zusätzliche Ereignisse erzeugen, nicht jedoch gültige Ereignisse verwerfen.  
+Dabei fällt bei SZ3 (Abb \ref{graphen-3er-red-spektrum-sz3}) auf, dass angeblich einige Kanäle des MCA Photonen mit negativer Energie gemessen haben. Dies ist eher unwahrscheinlich und wir vermuten daher zwei Hauptfehlerquellen: einerseits könnten wir die Peaks verwechselt haben. Der 511 keV-Peak müsste dann in der abfallenden Flanke der Bremsstrahlung "`versteckt sein"' (momentan ca. 200keV) und der 1275keV Peak wäre dann der von uns als 511keV angenommene. Die gute Übereinstimmung des Kurvenverlaufs spricht allerdings eher gegen diese These. Eine andere Möglichkeit wäre eine Nichtlinearität, vermutlich bereits direkt in SZ3 oder eventuell auch im Verstärker. Diese erscheint uns wahrscheinlicher. Sollten wir allerdings tatsächlich die Peaks verwechselt haben, würde dies zwar die weitere Messgenauigkeit verschlechtern und zusätzliche Ereignisse erzeugen, nicht jedoch gültige Ereignisse verwerfen. Für die weitere Auswertung haben wir die Annahme getroffen, dass sich die Energie-Kanal-Einstellung auch im Bereich 0-551 keV linear ändert und haben Kanal 0 mit 0keV identifiziert. Es ergibt sich dann folgende (grobe) Energie-Kanal-Eichung:
+
+\begin{equation}
+ E(c) = \begin{cases}
+ ( 2.79 \pm 1.7) keV \cdot c + (0 \pm 70) keV & c < 183 \\
+ (4,54 \pm 0,02) keV \cdot c + (-320,4 \pm 3,2) keV & c \geq 183
+ \end{cases}
+\end{equation}
+
 
 \subsection{Quenching}
 
@@ -262,8 +269,7 @@ Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zune
  \includegraphics[width=\textwidth]{Auswertung/quench.pdf}
  \caption{Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
 \end{figure}
-Bei der Auswertung haben wir dann nur die Kanäle 90 bis 130 verwendet, was einem Energiefenster von bis %TODO: Eichung
-entspricht. Die Ereignisse in diesem Intervall haben wir dann summiert und den Untergrund aus der Koinzidenzmessung abgezogen. Um die Schwankungen in der Apparatur auszugleichen, die uns die Kontrollmessungen zeigen, haben wir zur Normierung ein gewichtetes Mittel dieser verwendet.
+Bei der Auswertung haben wir dann nur die Kanäle 90 bis 130 verwendet, was einem Energiefenster von 250 bis 365 keV entspricht. Die Ereignisse in diesem Intervall haben wir dann summiert und den Untergrund aus der Koinzidenzmessung abgezogen. Um die Schwankungen in der Apparatur auszugleichen, die uns die Kontrollmessungen zeigen, haben wir zur Normierung ein gewichtetes Mittel dieser verwendet.
 \begin{equation*}
  N' = \frac{N}{2/3 N_{k1} + 1/3 N_{k2}}
 \end{equation*}
