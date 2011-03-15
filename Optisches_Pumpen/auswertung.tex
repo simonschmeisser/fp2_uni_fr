@@ -151,7 +151,36 @@ Right Side & Rel. Freq.\footnotemark[1] & RF to D1 & RF$_{Theory}$ & Difference 
 \end{tabular}
 \end{center}
 
+We estimate the error of the position (time) of a peak with about 0.01 ms. The error of the frequency is then given by:
+
+$$s_\nu = \nu\cdot\sqrt{\left(\frac{s_t}{t}\right)^2 + \left(\frac{s_f}{f}\right)^2}$$
+
+and then the error of the relative frequency by:
+
+$$s_{\nu_{rel}} = \sqrt{s_{\nu_1}^2+s_{\nu_2}^2}$$
+
+%HIER FEHLER AUSRECHNEN
+
+
 \subsubsection{Determination of the interval constant}
+
+The interval constant of the hyperfine structure is given by the formula:
+
+$$ A = \frac{\Delta\nu\cdot h}{F+1} $$
+
+whereas $\Delta\nu$ is the difference of the two frequencies for either the $^2S_{1/2}$ or $^2P_{1/2}$ state.
+
+%HIER FEHLER AUSRECHNEN
+
+\begin{center}
+\begin{tabular}[H]{l | c c}
+A in $10^{-6}$eV & $^{87}Rb$ & $^{85}Rb$\\ \hline
+$^2S_{1/2}$ & & \\ 
+$^2P_{1/2}$ & &  \\
+\end{tabular}\\
+\end{center}
+
+
 
 \clearpage
 \subsection{Double Resonance}
@@ -361,6 +390,7 @@ An absorption line looks as following:
 \begin{figure}[H]
 \centering \includegraphics[width=0.95\textwidth]{BilderAusw/DehmeltBsp.pdf}
 \caption{Example of an absorption line}
+\label{dehmeltbsp}
 \end{figure}
 
 We fitted the curve with an exponential function $y=y_0 + A\exp(R_0\cdot x)$, with $R_0 = -1/\tau$, where $\tau$ is the orientation time. We then plotted $\tau^{-1}$ against $U/U_0$ and fitted the curve by with a straight line. The intercept at the y-axis should then exactly be the sought relaxation time $T_R$. This is, because
@@ -374,15 +404,39 @@ and $T_P \sim I^{-1}$ is the pumping time. So if $I \to 0$, then we have $\frac{
 \caption{Determination of the Relaxation time}
 \end{figure}
 
-From the fit, we can read, that the intercept with the y-axis is at $\tau^{-1} = (926.82 \pm 311.22)\ s^{-1}$. So we find the relaxation time:
+From the fit, we can read, that the intercept with the y-axis is at $\tau^{-1} = (178.90 \pm 165.58)\ s^{-1}$. So we find the relaxation time:
 
-$$\boxed{T_R = (1.079 \pm 0.362)\ ms}$$ 
+$$\boxed{T_R = (5.590 \pm 5.174)\ ms}$$ \\
 
-This value lies in the correct range, however seems to be a bit to small.
-
-
+This value lies in the correct range which should be about in between 1 and 6 ms. Our value is so high because in our case the cell was very hot, since we constantly blow-dryed it. This is also the cause for the big value of the standard deviation, which is almost as large as the value itself. One can see in the plot, that most of the points don't really lie on the linear fit, too. We guess, that the plot and the values would have been much clearer without the constant blow-drying, however without it, the absorption was much less pronounced and harder to evaluate (\emph{see image \ref{dehmeltbsp} for reference}).
 
 \subsection{Relaxation Time (Franzen)}
+
+We tried a different method to determine the relaxation time of the Rubidium atoms, namely the method of Franzen. For this method, we also compensated the earth's vertical magnetic field using the induction coil 4. We set the laser to resonance ($I=64.4 mA$) and turned on the induction coil 1 in order to be able to fine-tune it. The temperature was set to $T=34.4^\circ C$.\\
+
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+\centering \includegraphics[width=0.5\textwidth]{BilderAusw/chopper.png}
+\caption{A chopper disc [scitec.uk.com]}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+We inserted a rotating chopper disc into the optical path, which cut off the laser beam periodically. The laser pumped the Rubidium into the maximal polarization state. When the laser was blocked by the chopper disc, the Rubidium atoms had time to relax. By letting the laser pass through the disc again, one was able to see absorption lines.\\
+
+\end{minipage}
+\end{figure}
+
+An absorption line looks like this:
+
+\begin{figure}[H]
+\centering \includegraphics[width=\textwidth]{BilderAusw/FranzenBsp.pdf}
+\caption{Absorption line with Franzen's method}
+\end{figure}
+
+
+
+
+
+
 
 
 
