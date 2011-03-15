@@ -1,5 +1,5 @@
 set terminal pdf enhanced
-set output 'red-spektrum-sz3.pdf'
+set output 'red-spektrum-sz3-abgeschnitten.pdf'
 
 datafile = "../../Messdaten/3er/sz3-volles-spektrum.TKA"
 datafile_red = "../../Messdaten/3er/sz3-red-spektrum.TKA"
@@ -20,3 +20,9 @@ s1275 = 13
 A1275 = 400
 
 load "3er-fenster.plt"
+
+set xrange [-300:1500]
+
+set output 'red-spektrum-sz3.pdf'
+
+replot

@@ -168,7 +168,7 @@ Zu guter Letzt haben wir wieder die $180^\circ$-Konfiguration eingestellt und da
 %TODO: was bedeutet das? größte verwenden?
 
 \subsubsection{Austausch von SZ3}
-Wir haben die gesamte Elektronik ausführlich untersucht und daraufhin den SCA von SZ3 ausgetauscht, da bei diesem der Pseudo-Peak bei ca 2000 keV viel stärker als bei den anderen beiden war. Weiterhin haben wir die Verstärkung am AMP etwas reduziert, da wir auch ein Übersteuern nicht ausschließen konnten. Danach war zwar das Signal deutlich klarer und der Pseudo-Peak verschwunden. Auf Grund der geänderten Verstärkereinstellungen wurde eine erneute Energie-Kanal-Eichung nötig, die in den Graphen des folgenden Kapitels mit abgebildet ist.
+Wir haben die gesamte Elektronik ausführlich untersucht und daraufhin den SCA von SZ3 ausgetauscht, da bei diesem der Pseudo-Peak bei ca 2000 keV viel stärker als bei den anderen beiden war. Weiterhin haben wir die Verstärkung am AMP etwas reduziert, da wir auch ein Übersteuern nicht ausschließen konnten. Danach war zwar das Signal deutlich klarer und der Pseudo-Peak verschwunden. Auf Grund der geänderten Verstärkereinstellungen wurde eine erneute Energie-Kanal-Eichung nötig, die in den Graphen des folgenden Kapitels mit abgebildet ist. 
 
 \subsection{Drei-Photonen-Zerfall}
 
@@ -204,31 +204,32 @@ Wir haben dazu eine Messung von ca. 3h Dauer (11091s) durchgeführt. Im Graphen 
 
 Für die weiteren Messungen haben wir auch bei SZ2 ein Energiefenster eingestellt, allerdings nur recht grob da die Zählrate auch so schon niedrig war (Abb \ref{graphen-3er-red-spektrum-sz2}). Statt eventuell zulässige Ereignisse von vorneherein zu unterdrücken, haben wir dann lieber bei der Auswertung die Daten etwas beschnitten.
 
-Aus den erneut aufgenommenen \Na-Spektren haben wir die Position der 511keV- und 1275keV-Peaks abgelesen: %TODO: gauss-fit? 
+Aus den erneut aufgenommenen \Na-Spektren haben wir die Position der 511keV- und 1275keV-Peaks abgelesen:  
 \begin{center}
 \begin{tabular}{lcc}
 \toprule
  & 511keV - Peak (Channel) & 1275 keV-Peak (Channel) \\
 \midrule
-SZ1 & $72,4 \pm 0,1$ & $199,2 \pm 0,1$ \\
-SZ2 & $83,1 \pm 0,1$ & $233,0 \pm 0,03$ \\
-SZ3 & $99,1 \pm 0,1$ & $268,4 \pm 0,1$ \\
+SZ1 & $64,04 \pm 0,07$ & $184,2 \pm 3,4$ \\
+SZ2 & $55,25 \pm 0,06$ & $161,54 \pm 0,17$ \\
+SZ3 & $183,2 \pm 0,2$ & $351,6 \pm 0,6$ \\
 \bottomrule 
 \end{tabular}
 \end{center}
 
 Somit konnten wir eine Energie-Channel-Eichung für die drei Szintillatoren vornehmen:
-%TODO: Fehlerrechnung
+
 \begin{tabular}{ll}
- SZ1 & $E = 6,03 keV \cdot c + 74,77 keV$\\
- SZ2 & $E = 5,10 keV \cdot c + 87,46 keV$\\
- SZ3 & $E = 4,51 keV \cdot c + 63,79 keV$ 
+ SZ1 & $E = (6,36 \pm 0,18) keV \cdot c + (103,7 \pm 11,6) keV$\\
+ SZ2 & $E = (7,19 \pm 0,01) keV \cdot c + (113,9 \pm 0,8) keV$\\
+ SZ3 & $E = (4,54 \pm 0,02) keV \cdot c + (-320,4 \pm 3,2) keV$ 
 \end{tabular}
 
+Dabei fällt bei SZ3 (Abb \ref{graphen-3er-red-spektrum-sz3}) auf, dass angeblich einige Kanäle des MCA Photonen mit negativer Energie gemessen haben. Dies ist eher unwahrscheinlich und wir vermuten daher zwei Hauptfehlerquellen: einerseits könnten wir die Peaks verwechselt haben. Der 511 keV-Peak müsste dann in der abfallenden Flanke der Bremsstrahlung "`versteckt sein"' (momentan ca. 200keV) und der 1275keV Peak wäre dann der von uns als 511keV angenommene. Die gute Übereinstimmung des Kurvenverlaufs spricht allerdings eher gegen diese These. Eine andere Möglichkeit wäre eine Nichtlinearität, vermutlich bereits direkt in SZ3 oder eventuell auch im Verstärker. Diese erscheint uns wahrscheinlicher. Sollten wir allerdings tatsächlich die Peaks verwechselt haben, würde dies zwar die weitere Messgenauigkeit verschlechtern und zusätzliche Ereignisse erzeugen, nicht jedoch gültige Ereignisse verwerfen.  
 
 \subsection{Quenching}
 
-Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zunehmendem Magnetfeld. Dazu haben wir zweistündige Messungen mit konstantem Magnetfeld durchgeführt und nach jeweils zwei Messungen eine Kontrollmessung ohne Magnetfeld. Diese erlaubt es uns, grobe Drifts und Schwankungen in der Messung zu erkennen und zu kompensieren.
+Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zunehmendem Magnetfeld. Dazu haben wir zweistündige Messungen mit konstantem Magnetfeld durchgeführt und nach je zwei Messungen eine Kontrollmessung ohne Magnetfeld. Diese erlaubt es uns, grobe Drifts und Schwankungen in der Messung zu erkennen und zu kompensieren.
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_0-3.pdf}

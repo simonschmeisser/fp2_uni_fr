@@ -312,25 +312,19 @@ Der Faktor f ist abhängig von der Geometrie des Versuchsaufbaus, also des Winke
 
 \subsection{Signalverarbeitung}
 
+\begin{figure}[ht]
+  \includegraphics[height=0.25\textheight]{BilderAufbau/amp.pdf}
+  \includegraphics[height=0.25\textheight]{BilderAufbau/sca.pdf}
+  \includegraphics[height=0.25\textheight]{BilderAufbau/delay.pdf}
+  \includegraphics[height=0.25\textheight]{BilderAufbau/linear_gate.pdf}
+  \includegraphics[height=0.25\textheight]{BilderAufbau/koinzidenz.pdf}
+  \includegraphics[height=0.25\textheight]{BilderAufbau/mca.pdf}
+ \caption{Verstärker (Amp), Einkanalanalysator (SCA), Verzögerung (Delay), Gate, Koinzidenz, und Mehrkanalanalysator (von links)}
+ \label{geraete}
+\end{figure}
 
 
 
+Wie bereits beschrieben geben die Szintillatoren für jedes Photon ein Signal aus, dessen Amplitude Rückschlüsse auf die Energie des Photons erlaubt. Der Verstärker integriert dieses Signal über die sogenannte "`shapping time"' um Rauschen zu unterdrücken. Weiterhin kann eine lineare Verstärkung des Signals eingestellt werden. Er besitzt zwei Ausgänge, die entweder ein unipolares oder ein bipolares Signal liefern. Dieses hat die Form der Lade- und Entladekurve des verwendeten Kondensators (Bipolar) bzw. dessen Betrag (Unipolar). Sollen nur Ereignisse einer bestimmten Energie weiterverarbeitet werden, kann man einen Single Channel Analyzer (SCA) verwenden. Bei diesem lässt sich eine minimale und maximale zulässige Energie einstellen (upper bzw. lower level) bei der ein neues Signal weitergeben werden soll. Über eine "`delay"' genannte Einstellung kann dieses über ein intrinsisches Minimum hinaus verzögert werden. Das ausgebene Signal hat die Form eines NIM-Standardsignals, also eine (neg.) Rechteckfunktion mit fest definierter Dauer und Amplitude. Da diese keine direkte Energieinformation mehr enthält, kann es nur zur Steuerung eines "`Gates"' oder als "`binäres"' Signal für eine Koinzidenzeinheit verwendet werden. Soll das eigentliche Energiesignal weiter untersucht werden, verwendet man das Signal des SCA als Auslöser für ein "`Linear Gate"'. Dieses Gate öffnet die Verbindung zwischen Input- und Output-Anschluß sobald es am Enable-Eingang ein NIM-Normsignal erhält für einen einstellbaren Zeitraum. Für ein gutes Signal-Rausch-Verhältnis sollte dieser recht kurz sein. Die Signallaufzeiten für das Enable- und das Energie-Signal dürfen daher nur minimal voneinander abweichen. Insbesondere muss das Energie-Signal verspätet gegenüber dem Enabler eintreffen, was durch ein weiteres Bauteil erreicht wird. Die Verzögerung (Delay) erlaubt es, eine grobe Verzögerung des Energiesignals vorzugeben. An diese kann dann das Enable-Signal angepasst werden. Das so gefilterte Signal kann nun von einem Mehrkanalanalysator aufgenommen werden und das resultierende Energiespektrum am PC betrachtet werden.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Soll die Gleichzeitigkeit von bis zu vier Signalen überprüft werden, kann anstelle mehrerer Gates auch eine Koinzidenzeinheit (Koinzidenz) verwendet werden. Diese überprüft ob in einem einstellbaren Zeitraum nach dem Eingang eines ersten Signals auch an allen anderen Eingängen Signale ankommen. Ist dies der Fall so wird am Ausgang ein Normsignal erzeugt. Dieses kann einfach mit einem Hex-Scaler (nicht dargestellt) gezählt werden oder auch als Enable-Signal an ein Gate angeschloßen werden. Dadurch erhält man dann z.B. das Energiespektrum des Drei-Photonen-Zerfalls.
