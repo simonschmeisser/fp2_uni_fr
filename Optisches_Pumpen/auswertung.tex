@@ -123,37 +123,37 @@ With this calibration and the position of the maxima, we can calculate their rel
 
 
 
-\begin{center}
+\begin{center}%--------- Kommastelle Fehler
 \begin{tabular}[H]{| l | c c c c c |} \hline
  & Relative & error on & RF to the & RF$_{Theory}$ & Difference theory \\
 Left Side & Frequency\footnotemark[1] (RF) & RF & D1-line & to D1 & experiment\\ \cline{2-6}
  & MHz & MHz & MHz & MHz & MHz \\ \hline \hline
-1, $^{87}Rb$ F: 2-1 & -1934.4 & 7.8 & -3414.4 & -3070 & -344.4  	\\
-2, $^{87}Rb$ F: 2-2 & -1320.4 & 6.5 & -2800.4 & -2250 & -550.4  	\\
+1, $^{87}Rb$ F: 2-1 & -1934.4 & 78 & -3414.4 & -3070 & -344.4  	\\
+2, $^{87}Rb$ F: 2-2 & -1320.4 & 65 & -2800.4 & -2250 & -550.4  	\\
 3, $^{85}Rb$ F: 3-2(,3) &        0    & 0 & -1480 & -1480 & 0 		 \\
-4, $^{85}Rb$ F: 2-2(,3) & 3650.5 & 12.1 & 2170.5 & 1560 & 610.5  		\\
-5, $^{87}Rb$ F: 1-1 & 5662.6  & 17.6 & 4182.6 & 3760 & 422.6 		\\
-6, $^{87}Rb$ F: 1-2 & 6328.3  & 19.5 & 4848.3 & 4580 & 268.3  		\\ \hline
+4, $^{85}Rb$ F: 2-2(,3) & 3650.5 & 121 & 2170.5 & 1560 & 610.5  		\\
+5, $^{87}Rb$ F: 1-1 & 5662.6  & 176 & 4182.6 & 3760 & 422.6 		\\
+6, $^{87}Rb$ F: 1-2 & 6328.3  & 195 & 4848.3 & 4580 & 268.3  		\\ \hline
 \end{tabular}\\ 
 \end{center}
 
 
 
-\begin{center}
+\begin{center}%--------- Kommastelle Fehler
 \begin{tabular}[H]{| l | c c c c c |} \hline
  & Relative & error on & RF to the & RF$_{Theory}$ & Difference theory \\
 Right Side & Frequency\footnotemark[1] (RF) & RF & D1-line & to D1 & experiment\\ \cline{2-6}
  & MHz & MHz & MHz & MHz & MHz \\ \hline \hline
-6, $^{87}Rb$ F: 1-2 & 6943.3 & 20.7 & 5463.3 & 4580 & 883.3 	\\
-5, $^{87}Rb$ F: 1-1 & 6271.4 & 18.8 & 4791.4 & 3760 & 1031.4 	\\
-4, $^{85}Rb$ F: 2-2(,3) & 3907.6 & 12.34 & 2427.6 & 1560 & 867.6 	\\
+6, $^{87}Rb$ F: 1-2 & 6943.3 & 207 & 5463.3 & 4580 & 883.3 	\\
+5, $^{87}Rb$ F: 1-1 & 6271.4 & 188 & 4791.4 & 3760 & 1031.4 	\\
+4, $^{85}Rb$ F: 2-2(,3) & 3907.6 & 123.4 & 2427.6 & 1560 & 867.6 	\\
 3, $^{85}Rb$ F: 3-2(,3) & 0 	  & 0 & -1480   & -1480 & 0  		\\
-2, $^{87}Rb$ F: 2-2 & -765.0  & 5.4 & -2245.0& -2250 & 5.0  		\\
-1, $^{87}Rb$ F: 2-1 & -1705.7& 6.9 & -3185.7& -3070 & -115.7 	\\ \hline
+2, $^{87}Rb$ F: 2-2 & -765.0  & 54 & -2245.0& -2250 & 5.0  		\\
+1, $^{87}Rb$ F: 2-1 & -1705.7& 69 & -3185.7& -3070 & -115.7 	\\ \hline
 \end{tabular}
 \end{center}
 
-We estimate the error of the position (time) of a peak with about 0.1 ms. The error of the frequency is then given by:
+We estimate the error of the position (time) of a peak with about 1 ms. The error of the frequency is then given by:
 
 $$s_\nu = \nu\cdot\sqrt{\left(\frac{s_t}{t}\right)^2 + \left(\frac{s_f}{f}\right)^2}$$
 
@@ -172,12 +172,12 @@ $$ s_A = A\cdot\frac{s_{\Delta\nu}}{\Delta\nu} = A\cdot\frac{\sqrt{s_{\nu_1}^2 +
 This leads to the following table:
 
 \begin{center}
-\begin{tabular}[H]{l | c c}
-Isotope & A in $10^{-6}$ eV & $A_{theoretical}$ in $10^{-6}$ eV \\ \hline
-$^{87}Rb$, $^2S_{1/2}$, left & $ 15.71 (\pm) $ & 14.13 \\ %11-12
-$^{87}Rb$, $^2S_{1/2}$, right & $(\pm)$ & 14.13 \\
-$^{87}Rb$, $^2P_{1/2}$, left & $1.38 (\pm) $ & 1.692 \\ %12 -11 
-$^{87}Rb$, $^2P_{1/2}$, right & $(\pm)$ & 1.692 \\
+\begin{tabular}[H]{l | c c c}
+Isotope & A in $10^{-6}$ eV & $A_{theoretical}$ in $10^{-6}$ eV & Standard deviations\\ \hline
+$^{87}Rb$, $^2S_{1/2}$, left & $ 15.71 \pm 0.40 $ & 14.13 	& 4 	\\ %11-21
+$^{87}Rb$, $^2S_{1/2}$, right & $ 16.50 \pm 0.41 $ & 14.13 	& 6	\\ %11-21
+$^{87}Rb$, $^2P_{1/2}$, left & $1.38 \pm 0.54 $ & 1.692 		& 6	\\ %12 -11 
+$^{87}Rb$, $^2P_{1/2}$, right & $ 1.39 \pm 0.58 $ & 1.692 	& 6	\\ %12-11
 $^{85}Rb$, $^2S_{1/2}$, left & $(\pm)$ & 4.185 \\
 $^{85}Rb$, $^2S_{1/2}$, right & $(\pm)$ & 4.185 \\
 $^{85}Rb$, $^2P_{1/2}$, left & $(\pm)$ & 0.499 \\
