@@ -124,43 +124,40 @@ With this calibration and the position of the maxima, we can calculate their rel
 
 
 \begin{center}
-\begin{tabular}[H]{l | c c c c l}
-Right Side & Rel. Freq.\footnotemark[1] & RF to D1 & RF$_{Theory}$ & Difference exp-theo & Transition \\
- & MHz & MHz & MHz & MHz \\ \hline
-1 & -1934.4 & -3414.4 & -3070 & -344.4 & $^{87}Rb$ F: 2-1 \\
-2 & -1320.4 & -2800.4 & -2250 & -550.4 & $^{87}Rb$ F: 2-2 \\
-3 &        0      & -1480 & -1480 & 0 & $^{85}Rb$ F: 3-2,3 \\
-4 & 3650.5  & 2170.5 & 1560 & 610.5 & $^{85}Rb$ F: 2-2,3\\
-5 & 5662.6  & 4182.6 & 3760 & 422.6 &$^{87}Rb$ F: 1-1\\
-6 & 6328.3  & 4848.3 & 4580 & 268.3 & $^{87}Rb$ F: 1-2\\
-\end{tabular}\\
+\begin{tabular}[H]{| l | c c c c c |} \hline
+ & Relative & error on & RF to the & RF$_{Theory}$ & Difference theory \\
+Left Side & Frequency\footnotemark[1] (RF) & RF & D1-line & to D1 & experiment\\ \cline{2-6}
+ & MHz & MHz & MHz & MHz & MHz \\ \hline \hline
+1, $^{87}Rb$ F: 2-1 & -1934.4 & 7.8 & -3414.4 & -3070 & -344.4  	\\
+2, $^{87}Rb$ F: 2-2 & -1320.4 & 6.5 & -2800.4 & -2250 & -550.4  	\\
+3, $^{85}Rb$ F: 3-2(,3) &        0    & 0 & -1480 & -1480 & 0 		 \\
+4, $^{85}Rb$ F: 2-2(,3) & 3650.5 & 12.1 & 2170.5 & 1560 & 610.5  		\\
+5, $^{87}Rb$ F: 1-1 & 5662.6  & 17.6 & 4182.6 & 3760 & 422.6 		\\
+6, $^{87}Rb$ F: 1-2 & 6328.3  & 19.5 & 4848.3 & 4580 & 268.3  		\\ \hline
+\end{tabular}\\ 
 \end{center}
 
 
 
 \begin{center}
-\begin{tabular}[H]{l | c c c c l}
-Right Side & Rel. Freq.\footnotemark[1] & RF to D1 & RF$_{Theory}$ & Difference exp-theo & Transition \\
- & MHz & MHz & MHz & MHz \\ \hline
-6 & 6943.3 & 5463.3 & 4580 & 883.3 & $^{87}Rb$ F: 1-2 \\
-5 & 6271.4 & 4791.4 & 3760 & 1031.4 &$^{87}Rb$ F: 1-1 \\
-4 & 3907.6 & 2427.6 & 1560 & 867.6 & $^{85}Rb$ F: 2-2,3\\
-3 & 0 	  & -1480   & -1480 & 0 & $^{85}Rb$ F: 3-2,3 \\
-2 & -765.0  & -2245.0& -2250 & 5.0 & $^{87}Rb$ F: 2-2 \\
-1 & -1705.7& -3185.7& -3070 & -115.7 & $^{87}Rb$ F: 2-1 \\
+\begin{tabular}[H]{| l | c c c c c |} \hline
+ & Relative & error on & RF to the & RF$_{Theory}$ & Difference theory \\
+Right Side & Frequency\footnotemark[1] (RF) & RF & D1-line & to D1 & experiment\\ \cline{2-6}
+ & MHz & MHz & MHz & MHz & MHz \\ \hline \hline
+6, $^{87}Rb$ F: 1-2 & 6943.3 & 20.7 & 5463.3 & 4580 & 883.3 	\\
+5, $^{87}Rb$ F: 1-1 & 6271.4 & 18.8 & 4791.4 & 3760 & 1031.4 	\\
+4, $^{85}Rb$ F: 2-2(,3) & 3907.6 & 12.34 & 2427.6 & 1560 & 867.6 	\\
+3, $^{85}Rb$ F: 3-2(,3) & 0 	  & 0 & -1480   & -1480 & 0  		\\
+2, $^{87}Rb$ F: 2-2 & -765.0  & 5.4 & -2245.0& -2250 & 5.0  		\\
+1, $^{87}Rb$ F: 2-1 & -1705.7& 6.9 & -3185.7& -3070 & -115.7 	\\ \hline
 \end{tabular}
 \end{center}
 
-We estimate the error of the position (time) of a peak with about 0.01 ms. The error of the frequency is then given by:
+We estimate the error of the position (time) of a peak with about 0.1 ms. The error of the frequency is then given by:
 
 $$s_\nu = \nu\cdot\sqrt{\left(\frac{s_t}{t}\right)^2 + \left(\frac{s_f}{f}\right)^2}$$
 
-and then the error of the relative frequency by:
-
-$$s_{\nu_{rel}} = \sqrt{s_{\nu_1}^2+s_{\nu_2}^2}$$
-
-%HIER FEHLER AUSRECHNEN
-
+The error on the ''-1480-Peak'' is zero since it is set fixed.
 
 \subsubsection{Determination of the interval constant}
 
@@ -168,19 +165,27 @@ The interval constant of the hyperfine structure is given by the formula:
 
 $$ A = \frac{\Delta\nu\cdot h}{F+1} $$
 
-whereas $\Delta\nu$ is the difference of the two frequencies for either the $^2S_{1/2}$ or $^2P_{1/2}$ state.
+whereas $\Delta\nu$ is the difference of the two frequencies for either the $^2S_{1/2}$ or $^2P_{1/2}$ state. The error is then given by:
 
-%HIER FEHLER AUSRECHNEN
+$$ s_A = A\cdot\frac{s_{\Delta\nu}}{\Delta\nu} = A\cdot\frac{\sqrt{s_{\nu_1}^2 + s_{\nu_2}^2}}{\Delta\nu} $$
+
+This leads to the following table:
 
 \begin{center}
 \begin{tabular}[H]{l | c c}
-A in $10^{-6}$eV & $^{87}Rb$ & $^{85}Rb$\\ \hline
-$^2S_{1/2}$ & & \\ 
-$^2P_{1/2}$ & &  \\
+Isotope & A in $10^{-6}$ eV & $A_{theoretical}$ in $10^{-6}$ eV \\ \hline
+$^{87}Rb$, $^2S_{1/2}$, left & $ 15.71 (\pm) $ & 14.13 \\ %11-12
+$^{87}Rb$, $^2S_{1/2}$, right & $(\pm)$ & 14.13 \\
+$^{87}Rb$, $^2P_{1/2}$, left & $1.38 (\pm) $ & 1.692 \\ %12 -11 
+$^{87}Rb$, $^2P_{1/2}$, right & $(\pm)$ & 1.692 \\
+$^{85}Rb$, $^2S_{1/2}$, left & $(\pm)$ & 4.185 \\
+$^{85}Rb$, $^2S_{1/2}$, right & $(\pm)$ & 4.185 \\
+$^{85}Rb$, $^2P_{1/2}$, left & $(\pm)$ & 0.499 \\
+$^{85}Rb$, $^2P_{1/2}$, right & $(\pm)$ & 0.499 \\
 \end{tabular}\\
 \end{center}
 
-
+%------------------------------------------------
 
 \clearpage
 \subsection{Double Resonance}
@@ -294,6 +299,8 @@ Isotope & Nuclear Spin & Theoretical Value & Error & Standard Deviations \\ \hli
 
 The measured values lie close to the theoretical ones. The error on the value is very small, so that a systematical error seems to cause most of the deviation. Again, the disturbing fields, such as the magnetization of the optical bench and other magnetic fields seem to have a non-negligible effect on the experiment and lead to this error.
 
+%------------------------------------------------
+
 \clearpage
 \subsection{Spin Precession}
 
@@ -328,7 +335,7 @@ This leads to a weighted average of
 
 $$ \bar T = (5.279 \pm 0.022)\ \mu s \ \ \ \Rightarrow \ \ \ \nu_{osz}=\frac{1}{\bar T}= (189.44 \pm 0.79)\ kHz$$
 
-Finally, we can calculate the earth's vertical magnetic field using the formula mentioned above and find:
+Finally, we can calculate the earth's vertical magnetic field using the formula mentioned above and using $g_F = 1/3$\footnote{The measurement was done for the $^{85}Rb$-Isotope in the ground state} and find:
 
 $$\boxed{ B_{vert} = (40.60 \pm 0.17)\ \mu T }$$\\
 
@@ -359,6 +366,7 @@ Both values lie pretty close to the theoretical value. The error of the latter o
 \caption{Spin precession around the resulting vertical magnetic field}
 \end{figure}
 
+%------------------------------------------------
 
 \subsection{Relaxation Time (Dehmelt)}
 
