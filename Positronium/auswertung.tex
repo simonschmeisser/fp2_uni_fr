@@ -66,7 +66,7 @@ Delay SCA & 2 $\mu s$ & 2 $\mu s$ & 2 $\mu s$\\
 \end{tabular}
 \end{center}
 
-Aus den Spektren haben wir die Position der 511keV- und 1275keV-Peaks abgelesen: %TODO: gauss-fit? 
+Aus den Spektren haben wir die Position der 511keV- und 1275keV-Peaks ermittelt:  
 \begin{center}
 \begin{tabular}{lcc}
 \toprule
@@ -80,13 +80,17 @@ SZ3 & $99,1 \pm 0,1$ & $268,4 \pm 0,1$ \\
 \end{center}
 
 Somit konnten wir eine Energie-Channel-Eichung für die drei Szintillatoren vornehmen:
-%TODO: Fehlerrechnung
+\begin{center}
 \begin{tabular}{ll}
- SZ1 & $E = 6,03 keV \cdot c + 74,77 keV$\\
- SZ2 & $E = 5,10 keV \cdot c + 87,46 keV$\\
- SZ3 & $E = 4,51 keV \cdot c + 63,79 keV$ 
+\toprule
+     & Energie-Channel-Eichung\\
+\midrule
+ SZ1 & $E = (6,03 \pm 0,01) keV \cdot c + (74,8 \pm 0.8) keV$\\
+ SZ2 & $E = (5,097 \pm 0,004) keV \cdot c + (87,5 \pm 0,6) keV$\\
+ SZ3 & $E = (4,513 \pm 0,004) keV \cdot c + (63,8 \pm 0,6) keV$\\
+\bottomrule 
 \end{tabular}
-
+\end{center}
 
 \subsection{Zwei-Photonen-Zerfall}
 
@@ -143,7 +147,7 @@ Um die Probleme mit SZ3 zu umgehen, haben wir eine erneute Messung mit SZ2-SZ1 d
  \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls (mit SZ2-SZ1)}
 \end{figure}
 
-Unsere Messungen ergeben also, dass die maximale Zählrate bei $xc = 178,36^\circ \pm 0,01^\circ$ liegt und bestätigt somit die theoretische Aussage, dass der Zwei-Photonen-Zerfall nur in einem Winkel von $180^\circ$ erlaubt ist. Die "`Linienbreite"' von $w = 11^\circ \pm 0,15^\circ$ ergibt sich hauptsächlich aus der Bewegung des Schwerpunktsystems relativ zum Laborsystem. Das Positronium hat eine bestimmten Impuls der erhalten werden muss. Somit bewegt sich also das Schwerpunktsystem der beiden Photonen mit diesem weiter. Die resultierende %TODO: Begriffe klären%
+Unsere Messungen ergeben also, dass die maximale Zählrate bei $xc = 178,36^\circ \pm 0,01^\circ$ liegt und bestätigt somit die theoretische Aussage, dass der Zwei-Photonen-Zerfall nur in einem Winkel von $180^\circ$ erlaubt ist. Die "`Linienbreite"' von $w = 11^\circ \pm 0,15^\circ$ ergibt sich hauptsächlich aus der Bewegung des Schwerpunktsystems relativ zum Laborsystem. Das Positronium hat einen bestimmten Impuls der erhalten bleiben muss. Somit bewegt sich also das Schwerpunktsystem der beiden Photonen mit diesem weiter. Die resultierende 
 %TODO: Abweichung von 180° erläutern
 
 \subsubsection{Zufällige Koinzidenzen}
@@ -191,9 +195,9 @@ Bei diesem Versuchsteil geht es zuerst um die Untersuchung des Energiespektrums.
  \label{graphen-3er-spektrum-2}
 \end{figure}
 
-Wir haben dazu eine Messung von ca. 3h Dauer (11091s) durchgeführt. Im Graphen (Abb \ref{graphen-3er-spektrum-2}) haben wir zum Vergleich auch das komplette \Na-Spektrum eingezeichnet. Das Spektrum zeigt ein relativ breites Maximum bei ca. $320-350 keV$.
+Wir haben dazu eine Messung von ca. 3h Dauer (11091s) durchgeführt. Im Graphen (Abb \ref{graphen-3er-spektrum-2}) haben wir zum Vergleich auch das komplette \Na-Spektrum eingezeichnet. Das Spektrum zeigt ein relativ breites Maximum bei ca. $320-350 keV$. Dies entspricht also gut dem erwarteten Maximum bei $340 keV$, dass sich ergibt, wenn man die bei der Anihilation frei werdenende Energie auf drei Photonen zu gleichen Teilen aufteilt. Die Breite des Maximums entsteht dadurch, dass nicht nur genau die $120^\circ$-Konfiguration, sondern auch ähnliche ein zulässiges Event produzieren.
 
-%TODO: Parameter? Blabla
+%TODO: Parameter?
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz2.pdf}
@@ -218,17 +222,23 @@ SZ3 & $183,2 \pm 0,2$ & $351,6 \pm 0,6$ \\
 
 Somit konnten wir eine Energie-Channel-Eichung für die drei Szintillatoren vornehmen:
 
+\begin{center}
 \begin{tabular}{ll}
+\toprule
+     & Energie-Channel-Eichung\\
+\midrule
  SZ1 & $E = (6,36 \pm 0,18) keV \cdot c + (103,7 \pm 11,6) keV$\\
  SZ2 & $E = (7,19 \pm 0,01) keV \cdot c + (113,9 \pm 0,8) keV$\\
- SZ3 & $E = (4,54 \pm 0,02) keV \cdot c + (-320,4 \pm 3,2) keV$ 
+ SZ3 & $E = (4,54 \pm 0,02) keV \cdot c + (-320,4 \pm 3,2) keV$\\
+\bottomrule 
 \end{tabular}
+\end{center}
 
 Dabei fällt bei SZ3 (Abb \ref{graphen-3er-red-spektrum-sz3}) auf, dass angeblich einige Kanäle des MCA Photonen mit negativer Energie gemessen haben. Dies ist eher unwahrscheinlich und wir vermuten daher zwei Hauptfehlerquellen: einerseits könnten wir die Peaks verwechselt haben. Der 511 keV-Peak müsste dann in der abfallenden Flanke der Bremsstrahlung "`versteckt sein"' (momentan ca. 200keV) und der 1275keV Peak wäre dann der von uns als 511keV angenommene. Die gute Übereinstimmung des Kurvenverlaufs spricht allerdings eher gegen diese These. Eine andere Möglichkeit wäre eine Nichtlinearität, vermutlich bereits direkt in SZ3 oder eventuell auch im Verstärker. Diese erscheint uns wahrscheinlicher. Sollten wir allerdings tatsächlich die Peaks verwechselt haben, würde dies zwar die weitere Messgenauigkeit verschlechtern und zusätzliche Ereignisse erzeugen, nicht jedoch gültige Ereignisse verwerfen. Für die weitere Auswertung haben wir die Annahme getroffen, dass sich die Energie-Kanal-Einstellung auch im Bereich 0-551 keV linear ändert und haben Kanal 0 mit 0keV identifiziert. Es ergibt sich dann folgende (grobe) Energie-Kanal-Eichung:
 
 \begin{equation}
  E(c) = \begin{cases}
- ( 2.79 \pm 1.7) keV \cdot c + (0 \pm 70) keV & c < 183 \\
+ ( 2,79 \pm 1,7) keV \cdot c + (0 \pm 70) keV & c < 183 \\
  (4,54 \pm 0,02) keV \cdot c + (-320,4 \pm 3,2) keV & c \geq 183
  \end{cases}
 \end{equation}
@@ -236,12 +246,12 @@ Dabei fällt bei SZ3 (Abb \ref{graphen-3er-red-spektrum-sz3}) auf, dass angeblic
 
 \subsection{Quenching}
 
-Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zunehmendem Magnetfeld. Dazu haben wir zweistündige Messungen mit konstantem Magnetfeld durchgeführt und nach je zwei Messungen eine Kontrollmessung ohne Magnetfeld. Diese erlaubt es uns, grobe Drifts und Schwankungen in der Messung zu erkennen und zu kompensieren.
+Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zunehmendem Magnetfeld. Dazu haben wir zweistündige Messungen mit konstantem Magnetfeld durchgeführt und nach je zwei Messungen eine Kontrollmessung ohne Magnetfeld. Diese erlaubt es uns, grobe Drifts und Schwankungen in der Messung zu erkennen und zu kompensieren. Im Anschluss haben wir das Delay von SZ1 verändert. Mit einer weiteren Messung konnten wir sodie Zahl der zufälligen Koinzidenzen ermitteln.
 
-\begin{figure}
- \includegraphics[width=\textwidth]{Graphen/quench/spektrum_0-3.pdf}
- \caption{Spektrum 0,3A}
-\end{figure}
+% \begin{figure}
+%  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_0-3.pdf}
+%  \caption{Spektrum 0,3A}
+% \end{figure}
 
 \begin{figure}
  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_1065.pdf}
@@ -249,27 +259,28 @@ Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zune
 \end{figure}
 
 
-\begin{figure}
- \includegraphics[width=\textwidth]{Graphen/quench/spektrum_2028.pdf}
- \caption{Spektrum 2028G}
-\end{figure}
+% \begin{figure}
+%  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_2028.pdf}
+%  \caption{Spektrum 2028G}
+% \end{figure}
+% 
+% 
+% \begin{figure}
+%  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_3070.pdf}
+%  \caption{Spektrum 3070G}
+% \end{figure}
+% 
+% \begin{figure}
+%  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_4032.pdf}
+%  \caption{Spektrum 4032G}
+% \end{figure}
 
+%\begin{figure}
+% \includegraphics[width=\textwidth]{Auswertung/quench.pdf}
+% \caption{Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
+%\end{figure}
 
-\begin{figure}
- \includegraphics[width=\textwidth]{Graphen/quench/spektrum_3070.pdf}
- \caption{Spektrum 3070G}
-\end{figure}
-
-\begin{figure}
- \includegraphics[width=\textwidth]{Graphen/quench/spektrum_4032.pdf}
- \caption{Spektrum 4032G}
-\end{figure}
-
-\begin{figure}
- \includegraphics[width=\textwidth]{Auswertung/quench.pdf}
- \caption{Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
-\end{figure}
-Bei der Auswertung haben wir dann nur die Kanäle 90 bis 130 verwendet, was einem Energiefenster von 250 bis 365 keV entspricht. Die Ereignisse in diesem Intervall haben wir dann summiert und den Untergrund aus der Koinzidenzmessung abgezogen. Um die Schwankungen in der Apparatur auszugleichen, die uns die Kontrollmessungen zeigen, haben wir zur Normierung ein gewichtetes Mittel dieser verwendet.
+Bei der Auswertung haben wir dann nur die Kanäle 90 bis 130 verwendet, was einem Energiefenster von 250 bis 365 keV entspricht. Die Ereignisse in diesem Intervall haben wir dann summiert und den Untergrund (2 zufällige Koinzidnezen in 2h) aus der Koinzidenzmessung abgezogen. Um die Schwankungen in der Apparatur auszugleichen, die uns die Kontrollmessungen zeigen, haben wir zur Normierung ein gewichtetes Mittel dieser verwendet.
 \begin{equation*}
  N' = \frac{N}{2/3 N_{k1} + 1/3 N_{k2}}
 \end{equation*}
@@ -277,7 +288,6 @@ Wobei $N_{k1}$ die zeitlich näherliegende Kontrollmessung bezeichnet und $N_{k2
 \begin{equation*}
  Q(B)/Q(0) = 0.5 + \frac{0.5}{1 + r \cdot ( \frac{2  \mu }{ \Delta W})^2 \cdot B^2} 
 \end{equation*}
-
 
 Im Graph (Abb \ref{auswertung-quench-normiert}) ist sowohl ein Fit an die Datenpunkte dargestellt, die über das gewichtete Mittel normiert wurden (f(x)) als auch ein Fit an Datenpunkte, die mit dem durchschnittlichen $Q(0)$ normiert wurden. 
 
@@ -291,7 +301,27 @@ Im Graph (Abb \ref{auswertung-quench-normiert}) ist sowohl ein Fit an die Datenp
 
 Wir erhalten aus dem Fit folgenden Wert für die Feinstrukturaufspaltung:
 \begin{equation*}
- \Delta W = (9,57758 \pm 1,593) \e{-4} eV
+ \Delta W = (9,068 \pm 0,66) \e{-4} eV
 \end{equation*}
 
 Der Literaturwert [TODO: Staatsexamensarb?] beträgt $\Delta W = 8,412\e{-4} eV$ und liegt also innerhalb der ersten Standartabweichung des von uns ermittelten Wertes. Die relativen Zählraten sind bei mehreren Einstellungen zu hoch. Dies deutet darauf hin, dass falsche Ereignisse registriert werden, also zB von 2-Photonen-Zerfällen, Bremsstrahlung oder auch Rauschen. Diese werden nicht vom Magnetfeld unterdrückt und führen somit zu einer zu großen Zählrate. Theoretisch ließen sich solche Ereignisse weiter reduzieren, indem engere Energiefenster und auch ein kleineres Koinzidenzintervall gewählt werden. Praktisch müsste dann allerdings die Meßzeit noch weiter verlängert werden, um statistisch relevante Ergebnisse zu erhalten. Da wir aber bereits so deutliche Drifts in den Messwerten sehen, scheint dies nicht sinnvoll. Besser wäre es sicherlich die \Na-Probe zu erneuern, wodurch sich ca. 100-fach höhere Zählraten ergeben würden (siehe \ref{verbleibende_aktivitaet}).
+
+Eine weitere Fehlerquelle ist natürlich das Magnetfeld, bzw. die Spule die es erzeugt. So zeigte sich während den Messungen ein Absinken der Stromstärke um bis zu 2\%. Weiterhin ist die Eichtabelle schon fast 30 Jahre alt, was uns dazu veranlasst hat diese mit einer Hall-Sonde zu kontrollieren. Die Ergebnisse liegen systematisch ca. 1,6 \% über den tabellierten Werten. Da sich beide Fehler also im Endeffekt kompensieren, haben wir die tabellierten Werte verwendet und einen Fehler von 2\% angenommen. Die Messwerte sind in der folgenden Tabelle nochmals zusammengefasst: 
+
+\begin{tabular}{lllll}
+\toprule
+I [A] & $B_{2011}$ [G] & $B_{1981}$ [G] & $\Delta B$ [G] \\
+\midrule
+0,03&	56,2&	0&	56,2\\
+5&	2050&	2028&	22\\
+7,6&	3120&	3070&	50\\
+10&	4100&	4032&	68\\
+12,6&	5120&	5075&	45\\
+8,8&	3620&	3551&	69\\
+11,4&	4650&	4594&	56\\
+9,78&	4020&	3952&	68\\
+10,68&	4360&	4280&	80\\
+9,13&	3750&	3680&	70\\
+10,47&	4280&	4200&	80\\
+\bottomrule
+\end{tabular}
