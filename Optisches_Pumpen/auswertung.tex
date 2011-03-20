@@ -71,7 +71,7 @@ Second Slope & $a_2 = (-31.70 \pm 1.12) \frac{GHz}{^\circ C}$\\
 \end{tabular}
 \end{center}
 
-For the rest of the measurements, we always used temperatures superior to 32,5 $^\circ C$, so the second slope is the one relevant as a conversion factor between temperature and frequency.
+For the rest of the measurements, we always used temperatures higher than 32,5 $^\circ C$, so the second slope is the one relevant as a conversion factor between temperature and frequency.
 
 \subsubsection{Results}
 
@@ -148,37 +148,6 @@ $$s_\nu = \nu\cdot\sqrt{\left(\frac{s_t}{t}\right)^2 + \left(\frac{s_f}{f}\right
 
 In order to calculate the relative frequency to the D1-line, we set the frequency of the $^{85}Rb$ F: 3-3 peak as fixed to have a reference point. One can see, that a higher distance from the reference peaks means a greater deviation from the theoretical value. This shows that the value for the conversion factor $f$ isn't quite correct, i.e. that the calibration with the etalon didn't work as exact as one would hope.
 
-
-%\begin{center}%--------- Kommastelle Fehler
-%\begin{tabular}[H]{| l | c c c c c |} \hline
-% & Relative & error on & RF to the & RF$_{Theory}$ & Difference theory \\
-%Left Side & Frequency\footnotemark[1] (RF) & RF & D1-line & to D1 & experiment\\ \cline{2-6}
-% & MHz & MHz & MHz & MHz & MHz \\ \hline \hline
-%1, $^{87}Rb$ F: 2-1 & -1934.4 & 77.7 & -3414.4 & -3070 & -344.4  	\\
-%2, $^{87}Rb$ F: 2-2 & -1320.4 & 65.4 & -2800.4 & -2250 & -550.4  	\\
-%3, $^{85}Rb$ F: 3-2(,3) &        0    & 0 & -1480 & -1480 & 0 		 \\
-%4, $^{85}Rb$ F: 2-2(,3) & 3650.5 & 120.5 & 2170.5 & 1560 & 610.5  		\\
-%5, $^{87}Rb$ F: 1-1 & 5662.6  & 176.3 & 4182.6 & 3760 & 422.6 		\\
-%6, $^{87}Rb$ F: 1-2 & 6328.3  & 195.3 & 4848.3 & 4580 & 268.3  		\\ \hline
-%\end{tabular}\\ 
-%\end{center}
-
-%
-
-%\begin{center}%--------- Kommastelle Fehler
-%\begin{tabular}[H]{| l | c c c c c |} \hline
-% & Relative & error on & RF to the & RF$_{Theory}$ & Difference theory \\
-%Right Side & Frequency\footnotemark[1] (RF) & RF & D1-line & to D1 & experiment\\ \cline{2-6}
-% & MHz & MHz & MHz & MHz & MHz \\ \hline \hline
-%6, $^{87}Rb$ F: 1-2 & 6943.3 & 207.3 & 5463.3 & 4580 & 883.3 	\\
-%5, $^{87}Rb$ F: 1-1 & 6271.4 & 188.4 & 4791.4 & 3760 & 1031.4 	\\
-%4, $^{85}Rb$ F: 2-2(,3) & 3907.6 & 123.4 & 2427.6 & 1560 & 867.6 	\\
-%3, $^{85}Rb$ F: 3-2(,3) & 0 	  & 0 & -1480   & -1480 & 0  		\\
-%2, $^{87}Rb$ F: 2-2 & -765.0  & 53.5 & -2245.0& -2250 & 5.0  		\\
-%1, $^{87}Rb$ F: 2-1 & -1705.7& 69.5 & -3185.7& -3070 & -115.7 	\\ \hline
-%\end{tabular}
-%\end{center}
-
 \subsubsection{Determination of the interval constant}
 
 The interval constant of the hyperfine structure is given by the formula:
@@ -218,11 +187,11 @@ The determined values for the hyperfine structure constant lie in the correct ra
 
 \subsection{Double Resonance}
 
-For this part, we inserted the quarter-wave plate. We controlled its correct adjustment using a linear polarizer. Then, the radio frequency inductor coil (RF), situated on the Rubidium cell, was switched on and the inductor coil 2 was modulated with a sawtooth function.
+For this part, we inserted the quarter-wave plate. We controlled its correct adjustment using a linear polarizer. Then, the radio frequency emitter (RF), situated on the Rubidium cell, was switched on and the inductor coil 2 was modulated with a sawtooth function.
 
-The principle of this measurement is, that the laser pumps all the atoms in a state of maximal polarization. On the other side, the induction coil is modulated, so that it eventually would split the energy levels (periodically) in such a way, that the radio frequency emitter could pump the atoms back from their polarized state into a less polarized state. This antagonism makes the Rubidium atoms be pumped ''up'' and ''down'' periodically, so that absorption spectra become visible at the oscilloscope. The coil 2 is firstly modulated by a large sawtooth function in order to roughly find the correct adjustments and then modulated by a sine function.
+The principle of this measurement is that the laser pumps all the atoms into a state of maximal polarization. On the other side, an induction coil is modulated with a sine function in order to periodically change the energy of the Zeeman levels. So, periodically the radio frequency emitter is resonant to the splitting energy of the Zeeman levels and then pumps back the atoms into a less polarized state. The Rubidium atoms are pumped ''up'' and ''down'' periodically, so that absorption spectra become visible at the oscilloscope. The coil 2 is firstly modulated by a large sawtooth function in order to find the correct adjustments for the laser and then modulated by a sine function in order to start the measurements.
 
-The current of the RF was set to about 10 V and the frequency was $\nu_{RF} = (499.3 \pm 0.3) kHz$, which we measured with a frequency counter. We then tried to find the correct adjustments for the laser diode. We did this by modulating the inductor coil 2 with a sawtooth function with a large amplitude and then varying the laser current until absorptions were visible. Having found the correct laser current, we changed the sawtooth function to a sine modulation in order to start the measurements.
+The current of the RF was set to about 10 V and the frequency was $\nu_{RF} = (499.3 \pm 0.3) kHz$, which we measured with a frequency counter.
 
 With the sawtooth, we found the following laser currents to show absorption lines in the spectrum:
 
@@ -450,9 +419,9 @@ $$\boxed{T_R = (5.590 \pm 5.174)\ ms}$$ \\
 
 This value lies in the correct range which should be in the low-ms-range. Our value is so high because in our case the cell was very hot, since we constantly blow-dryed it. This is also the cause for the big value of the standard deviation, which is almost as large as the value itself. One can see in the plot, that most of the points don't really lie on the linear fit, too. We guess, that the plot and the values would have been much clearer without the constant blow-drying, however without it, the absorption was much less pronounced and harder to evaluate (\emph{see image \ref{dehmeltbsp} for reference}).
 
-\subsection{Relaxation Time (Franzen)}
+\subsection{Relaxation Time (Franzen)} %----------------------------------------------------------------------
 
-We tried a different method to determine the relaxation time of the Rubidium atoms, namely the method of Franzen. For this method, we also compensated the earth's vertical magnetic field using the induction coil 4. We set the laser to resonance ($I=64.4 mA$) and turned on the induction coil 1 in order to be able to fine-tune it. The temperature was set to $T=34.4^\circ C$.\\
+We tried a different method to determine the relaxation time of the Rubidium atoms, namely the method of Franzen. For this method, we also compensated the earth's vertical magnetic field using the induction coil 4. We set the laser to resonance ($I=64.4 mA$) and turned on the induction coil 1 in order to be able to fine-tune it. The temperature was set to $T=34.4^\circ C$. This measurement was done without the preamplifier on the photo diode in order to improve the spectrum.\\
 
 \begin{figure}[H]
 \begin{minipage}{0.5\textwidth}
@@ -472,14 +441,14 @@ An absorption line looks like this:
 \caption{Absorption line with Franzen's method}
 \end{figure}
 
-By plotting the normalized difference in intensity against the dark time, i.e. the time during which the laser was blocked by the chopper disc, on gets the following curve
+By plotting the relative voltage (the voltage where the absorption sets in normalized by the maximal voltage) against the dark time (the time during which the laser was blocked by the chopper disc) on gets the following curve
 
 \begin{figure}[H]
 \centering \includegraphics[width=\textwidth]{BilderAusw/Franzen.pdf}
 \caption{Absorption line with Franzen's method}
 \end{figure}
 
-whose lifetime $t1$ is the relaxation time of the Rubidium, which leads to
+whose lifetime t1 is the relaxation time of the Rubidium, which leads to
 
 $$\boxed{T_R = (0.69 \pm 0.28)\ ms}$$
 
