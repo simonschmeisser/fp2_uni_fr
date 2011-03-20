@@ -448,7 +448,7 @@ From the fit, we can read, that the intercept with the y-axis is at $\tau^{-1} =
 
 $$\boxed{T_R = (5.590 \pm 5.174)\ ms}$$ \\
 
-This value lies in the correct range which should be about in between 1 and 6 ms. Our value is so high because in our case the cell was very hot, since we constantly blow-dryed it. This is also the cause for the big value of the standard deviation, which is almost as large as the value itself. One can see in the plot, that most of the points don't really lie on the linear fit, too. We guess, that the plot and the values would have been much clearer without the constant blow-drying, however without it, the absorption was much less pronounced and harder to evaluate (\emph{see image \ref{dehmeltbsp} for reference}).
+This value lies in the correct range which should be in the low-ms-range. Our value is so high because in our case the cell was very hot, since we constantly blow-dryed it. This is also the cause for the big value of the standard deviation, which is almost as large as the value itself. One can see in the plot, that most of the points don't really lie on the linear fit, too. We guess, that the plot and the values would have been much clearer without the constant blow-drying, however without it, the absorption was much less pronounced and harder to evaluate (\emph{see image \ref{dehmeltbsp} for reference}).
 
 \subsection{Relaxation Time (Franzen)}
 
@@ -456,7 +456,7 @@ We tried a different method to determine the relaxation time of the Rubidium ato
 
 \begin{figure}[H]
 \begin{minipage}{0.5\textwidth}
-\centering \includegraphics[width=0.5\textwidth]{BilderAusw/chopper.png}
+\centering \includegraphics[width=0.4\textwidth]{BilderAusw/chopper.png}
 \caption{A chopper disc [scitec.uk.com]}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
@@ -468,17 +468,30 @@ We inserted a rotating chopper disc into the optical path, which cut off the las
 An absorption line looks like this:
 
 \begin{figure}[H]
-%\centering \includegraphics[width=\textwidth]{BilderAusw/FranzenBsp.pdf}
+\centering \includegraphics[width=0.7\textwidth]{BilderAusw/FranzenBsp.pdf}
 \caption{Absorption line with Franzen's method}
 \end{figure}
 
+By plotting the normalized difference in intensity against the dark time, i.e. the time during which the laser was blocked by the chopper disc, on gets the following curve
 
+\begin{figure}[H]
+\centering \includegraphics[width=\textwidth]{BilderAusw/Franzen.pdf}
+\caption{Absorption line with Franzen's method}
+\end{figure}
 
+whose lifetime $t1$ is the relaxation time of the Rubidium, which leads to
 
+$$\boxed{T_R = (0.69 \pm 0.28)\ ms}$$
 
+Since it was hard to find the correct points in the location, we estimated a high error on the tension $s_U = 0.07 V$ which leads to $s_U^{norm} = 0.10$. The error on the dark time was estimated to be $s_t = 0.01 ms$
 
+\subsubsection{Synopsis}
 
+The two values determined for the relaxation time lie in the same range but differ a lot from each other. Since both errors are so big, we build a weighted average in order to find a satisfying value. We get:
 
+$$\boxed{T_R = (0.70 \pm 0.28) ms}$$
+
+One can clearly see that the value from Dehmelt's method is negligible because of its large error and that the value from Franzen's method is more significant.
 
 
 
