@@ -1,5 +1,8 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
+
+from math import *
+
 start_channel = 90
 end_channel = 130
 
@@ -55,7 +58,9 @@ for datensatz in datensaetze:
   kontroll1 = kontrolldict[kontroll1s]
   kontroll2 = kontrolldict[kontroll2s]
   count = getCounts(datei) - untergrund
-  print datei, ": B= ", B, " counts : ", count, " kontroll1: ", kontroll1, " kontroll2: ", kontroll2, " normiert: ", 3.* count /(2.*kontroll1 + kontroll2)
-  outfile.writelines("%i %i %g\n"%( B, count, 3.* count /(2.*kontroll1 + kontroll2)))
+  normiert = 3.* count /(2.*kontroll1 + kontroll2)
+  normiert_err = normiert * sqrt(1./count+(2./(2.*kontroll1+kontroll2))**2 * kontroll1 +(1./(2.*kontroll1+kontroll2))**2 * kontroll2)
+  print datei, ": B= ", B, " counts : ", count, " kontroll1: ", kontroll1, " kontroll2: ", kontroll2, " normiert: ", normiert, " normiert_err: ", normiert_err
+  outfile.writelines("%i %i %g %g %g\n"%( B, count, normiert, 0.02*B,  normiert_err))
   
 outfile.close()

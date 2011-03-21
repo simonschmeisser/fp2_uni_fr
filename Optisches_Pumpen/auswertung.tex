@@ -4,7 +4,7 @@
 
 After switching on the laser diode and the thermoelectric cooler, we controlled the progression and the coherence of the laser beam and verified the correct position of the lenses, so that the beam focused on the detector of the photodiode. We did this by using an infrared display unit and a white piece of paper in order to be able to see the actual progression of the beam.\\
 
-We then turned on the photodiode and the preamplifier, which we set to DC and the gain to 40 dB. We installed the etalon into the optical path and set it perpendicular to the beam. The laser was modulated by a sawtooth voltage in order to be able to see a few wavelength-peaks of the etalon.\\
+We then turned on the photodiode and the preamplifier, which we set to DC and the gain to 40 dB. The preamplifier was set to AC for all the other measurements. We installed the etalon into the optical path and set it perpendicular to the beam. The laser was modulated by a sawtooth voltage in order to be able to see a few wavelength-peaks of the etalon at once.\\
 
 In the first part of this measurement, the current of the diode was held at a constant value of $I = (35.1\pm 0.3)\ mA$ while the temperature was varied from $34.0^\circ C$ to $36.5^\circ C$. We measured the scrolling of the peaks in dependence of the temperature.
 In the second part of the measurement, we held the temperature constant at a value of $T=(34.7 \pm 0.2)\ ^\circ C$ and changed the current from 20.4 to 36.7 mA.
@@ -71,7 +71,7 @@ Second Slope & $a_2 = (-31.70 \pm 1.12) \frac{GHz}{^\circ C}$\\
 \end{tabular}
 \end{center}
 
-For the rest of the measurements, we always used temperatures superior to 32,5 $^\circ C$, so the second slope is the one relevant as a conversion factor between temperature and frequency.
+For the rest of the measurements, we always used temperatures higher than 32,5 $^\circ C$, so the second slope is the one relevant as a conversion factor between temperature and frequency.
 
 \subsubsection{Results}
 
@@ -82,7 +82,7 @@ Frequency-Temperature & $\Delta\nu = \Delta T \cdot (-31.70 \pm 1.12)\ {Ghz}/{^\
 \end{tabular}
 
 
-\subsection{Hyperfine Structure}
+\subsection{Hyperfine Structure} %------------------------------------------------------------------------------
 
 We installed the Rubidium cell into the optical path and removed the etalon. The laser diode was modulated by a triangular voltage with a peak-to-peak difference of $\sim 200\ mV$, and the temperature was set to $T = (34.6 \pm 0.2)^\circ C$, as described in the instructions. The preamplifier was set to AC from now on. However, with these adjustments we weren't able to find the hyperfine structure of the Rubidium atoms. Furthermore, the current of the laser diode wasn't able to surpass 35 mA and the preamplifier of the photodiode  was overcharged. We then tried different adjustments and installed a neutral filter (\emph{D 4,3}) into the optical path. The new adjustment was:\\
 
@@ -117,47 +117,36 @@ Right side (ascending laser current) &  $ f = (34.46 \pm 0.10) \frac{MHz}{\mu s}
 \end{tabular}
 \end{center}
 
-With this calibration and the position of the maxima, we can calculate their relative frequency. We assume the $^{85}Rb$ 3-2 and 3-3 peak to be known, so that we can determine the other peaks from the relative frequency in dependence of this one. The results are summarized in the following table:
 
-\footnotetext[1]{Relative frequency to the $^{85}Rb$ 3-2 and 3-3 peak}
+With this calibration and the position of the maxima, we can calculate their relative frequency $\nu$. We took a measurement of the right side of the hyperfine structure with a higher resolution in order to be able to better see the maxima. We used the conversion factor to calculate the relative frequency of the peaks. We set the first value of the registered spectrum to zero. The spectrum was flipped horizontally in order to make it easier to interpret the peaks since the spectrum is then in the correct order. If we then fit Gauss peaks into the spectrum, we find the following:
 
+\begin{figure}[H]
+\centering \includegraphics[width=1.1\textwidth]{BilderAusw/HFSAusw.pdf}
+\caption{Hyperfine spectrum fitted with Gauss functions}
+\end{figure}
 
+Summarized in a table, we then have the peaks
 
-\begin{center}%--------- Kommastelle Fehler
-\begin{tabular}[H]{| l | c c c c c |} \hline
- & Relative & error on & RF to the & RF$_{Theory}$ & Difference theory \\
-Left Side & Frequency\footnotemark[1] (RF) & RF & D1-line & to D1 & experiment\\ \cline{2-6}
- & MHz & MHz & MHz & MHz & MHz \\ \hline \hline
-1, $^{87}Rb$ F: 2-1 & -1934.4 & 77.7 & -3414.4 & -3070 & -344.4  	\\
-2, $^{87}Rb$ F: 2-2 & -1320.4 & 65.4 & -2800.4 & -2250 & -550.4  	\\
-3, $^{85}Rb$ F: 3-2(,3) &        0    & 0 & -1480 & -1480 & 0 		 \\
-4, $^{85}Rb$ F: 2-2(,3) & 3650.5 & 120.5 & 2170.5 & 1560 & 610.5  		\\
-5, $^{87}Rb$ F: 1-1 & 5662.6  & 176.3 & 4182.6 & 3760 & 422.6 		\\
-6, $^{87}Rb$ F: 1-2 & 6328.3  & 195.3 & 4848.3 & 4580 & 268.3  		\\ \hline
+\begin{center}
+\begin{tabular}[H]{| l | c c | c c c c c |} \hline
+Peak & $\nu$ & $s_{\nu}$ & RF to D1 & $s_{RF to D1}$ & $RF_{th}$ to D1 & Diff. theo-exp & St. dev. \\ \cline{2-8}
+ & GHz & GHz & GHz & GHz & GHz & GHz & \\ \hline \hline
+1, $^{87}Rb$ F: 2-1 & 1.247 & 0.172	 & -3.069	& 0.244	& -3.07	& 0.00 & 1		\\
+2, $^{87}Rb$ F: 2-2 & 2.105 & 0.172 & -2.211	& 0.244	& -2.25	& 0.04 & 1		\\
+3, $^{85}Rb$ F: 3-2 & 2.745 & 0.172	 & -1.571	& 0.244	& -1.48	& 0.17 & 1		\\
+4, $^{85}Rb$ F: 3-3 & 3.196 & 0.173	 & -1.12  	& 0.244	& -1.12	& 0	   & 0		\\
+5, $^{85}Rb$ F: 2-2 & 6.826 & 0.173	 & 2.510 	& 0.245	& 1.56	& 0.95 & 4		\\
+6, $^{85}Rb$ F: 2-3 & 7.093 & 0.174	 & 2.777 	& 0.245	& 1.92	& 0.86 & 4		\\
+7, $^{87}Rb$ F: 1-1 & 9.075 & 0.174	 & 4.759 	& 0.247	& 3.76	& 1.00 & 4		\\
+8, $^{87}Rb$ F: 1-2 & 9.941 & 0.175 & 5.625 	& 0.247	& 4.58	& 1.05 & 5		\\ \hline
 \end{tabular}\\ 
 \end{center}
 
-
-
-\begin{center}%--------- Kommastelle Fehler
-\begin{tabular}[H]{| l | c c c c c |} \hline
- & Relative & error on & RF to the & RF$_{Theory}$ & Difference theory \\
-Right Side & Frequency\footnotemark[1] (RF) & RF & D1-line & to D1 & experiment\\ \cline{2-6}
- & MHz & MHz & MHz & MHz & MHz \\ \hline \hline
-6, $^{87}Rb$ F: 1-2 & 6943.3 & 207.3 & 5463.3 & 4580 & 883.3 	\\
-5, $^{87}Rb$ F: 1-1 & 6271.4 & 188.4 & 4791.4 & 3760 & 1031.4 	\\
-4, $^{85}Rb$ F: 2-2(,3) & 3907.6 & 123.4 & 2427.6 & 1560 & 867.6 	\\
-3, $^{85}Rb$ F: 3-2(,3) & 0 	  & 0 & -1480   & -1480 & 0  		\\
-2, $^{87}Rb$ F: 2-2 & -765.0  & 53.5 & -2245.0& -2250 & 5.0  		\\
-1, $^{87}Rb$ F: 2-1 & -1705.7& 69.5 & -3185.7& -3070 & -115.7 	\\ \hline
-\end{tabular}
-\end{center}
-
-We estimate the error of the position (time) of a peak with about 1 ms. The error of the frequency is then given by:
+We estimated the error of the position (time) of a peak with about 5 $\mu s$. The error of the frequency is then given by:
 
 $$s_\nu = \nu\cdot\sqrt{\left(\frac{s_t}{t}\right)^2 + \left(\frac{s_f}{f}\right)^2}$$
 
-The error on the ''-1480-Peak'' is zero since it is set fixed.
+In order to calculate the relative frequency to the D1-line, we set the frequency of the $^{85}Rb$ F: 3-3 peak as fixed to have a reference point. One can see, that a higher distance from the reference peaks means a greater deviation from the theoretical value. This shows that the value for the conversion factor $f$ isn't quite correct, i.e. that the calibration with the etalon didn't work as exact as one would hope.
 
 \subsubsection{Determination of the interval constant}
 
@@ -165,28 +154,44 @@ The interval constant of the hyperfine structure is given by the formula:
 
 $$ A = \frac{\Delta\nu\cdot h}{F+1} $$
 
-whereas $\Delta\nu$ is the difference of the two frequencies for either the $^2S_{1/2}$ or $^2P_{1/2}$ state. The error is then given by:
+whereas $\Delta\nu$ is the frequency of the splitting of either the $^2S_{1/2}$ or $^2P_{1/2}$ state. The error is then given by:
 
 $$ s_A = A\cdot\frac{s_{\Delta\nu}}{\Delta\nu} = A\cdot\frac{\sqrt{s_{\nu_1}^2 + s_{\nu_2}^2}}{\Delta\nu} $$
 
-This leads to the following table:
+There are two ways to calculate $\Delta\nu$, for instance if one wants to calculate it for the $^2S_{1/2}$ state of the $^{87}Rb$ isotope, one can either calculate
+
+$$\Delta\nu( ^{87}Rb, ^2S_{1/2}) = \nu(F_{11}) - \nu(F_{21}) $$
+\begin{center} or \end{center}
+$$\Delta\nu( ^{87}Rb, ^2S_{1/2}) = \nu(F_{12}) - \nu(F_{22}) $$
+
+et cetera.\footnote{$F_{11}:= F: 1-1$} So we find 8 values:
 
 \begin{center}
-\begin{tabular}[H]{l | c c c}
-Isotope & A in $10^{-6}$ eV & $A_{theoretical}$ in $10^{-6}$ eV & Standard deviations\\ \hline
-$^{87}Rb$, $^2S_{1/2}$, left & $ 15.71 \pm 0.40 $ & 14.13 	& 4 	\\ %11-21
-$^{87}Rb$, $^2S_{1/2}$, right & $ 16.50 \pm 0.41 $ & 14.13 	& 6	\\ %11-21
-$^{87}Rb$, $^2P_{1/2}$, left & $1.38 \pm 0.54 $ & 1.692 		& 6	\\ %12 -11 
-$^{87}Rb$, $^2P_{1/2}$, right & $ 1.39 \pm 0.58 $ & 1.692 	& 6	\\ %12-11
+\begin{tabular}[H]{c c | c c c}
+Isotope & Determination & A in $\mu$eV & $A_{th.}$ in $\mu$eV & St. dev.\\ \hline
+$^{87}Rb$, $^2S_{1/2}$ &  $F_{11} - F_{21}$ & $16.19 \pm 0.51$ & 14.13  & 5 \\
+$^{87}Rb$, $^2S_{1/2}$ &  $F_{12} - F_{22}$ & $16.20 \pm 0.51$ & 14.13  & 5 \\
+$^{87}Rb$, $^2P_{1/2}$ &  $F_{12} - F_{11}$ &  $1.79 \pm 0.51$ & 1.692   & 1 \\
+$^{87}Rb$, $^2P_{1/2}$ &  $F_{22} - F_{21}$ &  $1.77 \pm 0.50$ & 1.692   & 1 \\
+$^{85}Rb$, $^2S_{1/2}$ &  $F_{22} - F_{32}$ &  $5.63 \pm 0.33$ & 4.185   & 5 \\
+$^{85}Rb$, $^2S_{1/2}$ &  $F_{23} - F_{33}$ &  $5.37 \pm 0.34$ & 4.185   & 4 \\
+$^{85}Rb$, $^2P_{1/2}$ &  $F_{23} - F_{22}$ &  $0.37 \pm 0.34$ & 0.499   & 1 \\
+$^{85}Rb$, $^2P_{1/2}$ &  $F_{33} - F_{32}$ &  $0.62 \pm 0.33$ & 0.499   & 1 \\
 \end{tabular}\\
 \end{center}
 
-%------------------------------------------------
+The determined values for the hyperfine structure constant lie in the correct range and are all near the theoretical value. Our values (except one) are all higher than the theoretical value, which seems to be the effect of a systematical error, whose origin is a mystery to us and could be purely coincidental.
 
-\clearpage
+%----------------------------------------------------------------------------------------
+
+
 \subsection{Double Resonance}
 
-For this part, we inserted the quarter-wave plate. We controlled its correct adjustment using a linear polarizer. Then, the radio frequency inductor coil (RF), situated on the Rubidium cell, was switched on. The current was set to about 10 V and the frequency was $\nu_{RF} = (499.3 \pm 0.3) kHz$, which we measured with a frequency counter. We then tried to find the correct adjustments for the laser diode. We did this by modulating the inductor coil 2 with a sawtooth function with a large amplitude and then varying the laser current until absorptions were visible. Having found the correct laser current, we changed the sawtooth function to a sine modulation in order to start the measurements.
+For this part, we inserted the quarter-wave plate. We controlled its correct adjustment using a linear polarizer. Then, the radio frequency emitter (RF), situated on the Rubidium cell, was switched on and the inductor coil 2 was modulated with a sawtooth function.
+
+The principle of this measurement is that the laser pumps all the atoms into a state of maximal polarization. On the other side, an induction coil is modulated with a sine function in order to periodically change the energy of the Zeeman levels. So, periodically the radio frequency emitter is resonant to the splitting energy of the Zeeman levels and then pumps back the atoms into a less polarized state. The Rubidium atoms are pumped ''up'' and ''down'' periodically, so that absorption spectra become visible at the oscilloscope. The coil 2 is firstly modulated by a large sawtooth function in order to find the correct adjustments for the laser and then modulated by a sine function in order to start the measurements.
+
+The current of the RF was set to about 10 V and the frequency was $\nu_{RF} = (499.3 \pm 0.3) kHz$, which we measured with a frequency counter.
 
 With the sawtooth, we found the following laser currents to show absorption lines in the spectrum:
 
@@ -412,15 +417,15 @@ From the fit, we can read, that the intercept with the y-axis is at $\tau^{-1} =
 
 $$\boxed{T_R = (5.590 \pm 5.174)\ ms}$$ \\
 
-This value lies in the correct range which should be about in between 1 and 6 ms. Our value is so high because in our case the cell was very hot, since we constantly blow-dryed it. This is also the cause for the big value of the standard deviation, which is almost as large as the value itself. One can see in the plot, that most of the points don't really lie on the linear fit, too. We guess, that the plot and the values would have been much clearer without the constant blow-drying, however without it, the absorption was much less pronounced and harder to evaluate (\emph{see image \ref{dehmeltbsp} for reference}).
+This value lies in the correct range which should be in the low-ms-range. Our value is so high because in our case the cell was very hot, since we constantly blow-dryed it. This is also the cause for the big value of the standard deviation, which is almost as large as the value itself. One can see in the plot, that most of the points don't really lie on the linear fit, too. We guess, that the plot and the values would have been much clearer without the constant blow-drying, however without it, the absorption was much less pronounced and harder to evaluate (\emph{see image \ref{dehmeltbsp} for reference}).
 
-\subsection{Relaxation Time (Franzen)}
+\subsection{Relaxation Time (Franzen)} %----------------------------------------------------------------------
 
-We tried a different method to determine the relaxation time of the Rubidium atoms, namely the method of Franzen. For this method, we also compensated the earth's vertical magnetic field using the induction coil 4. We set the laser to resonance ($I=64.4 mA$) and turned on the induction coil 1 in order to be able to fine-tune it. The temperature was set to $T=34.4^\circ C$.\\
+We tried a different method to determine the relaxation time of the Rubidium atoms, namely the method of Franzen. For this method, we also compensated the earth's vertical magnetic field using the induction coil 4. We set the laser to resonance ($I=64.4 mA$) and turned on the induction coil 1 in order to be able to fine-tune it. The temperature was set to $T=34.4^\circ C$. This measurement was done without the preamplifier on the photo diode in order to improve the spectrum.\\
 
 \begin{figure}[H]
 \begin{minipage}{0.5\textwidth}
-\centering \includegraphics[width=0.5\textwidth]{BilderAusw/chopper.png}
+\centering \includegraphics[width=0.4\textwidth]{BilderAusw/chopper.png}
 \caption{A chopper disc [scitec.uk.com]}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
@@ -432,17 +437,30 @@ We inserted a rotating chopper disc into the optical path, which cut off the las
 An absorption line looks like this:
 
 \begin{figure}[H]
-\centering \includegraphics[width=\textwidth]{BilderAusw/FranzenBsp.pdf}
+\centering \includegraphics[width=0.7\textwidth]{BilderAusw/FranzenBsp.pdf}
 \caption{Absorption line with Franzen's method}
 \end{figure}
 
+By plotting the relative voltage (the voltage where the absorption sets in normalized by the maximal voltage) against the dark time (the time during which the laser was blocked by the chopper disc) on gets the following curve
 
+\begin{figure}[H]
+\centering \includegraphics[width=\textwidth]{BilderAusw/Franzen.pdf}
+\caption{Absorption line with Franzen's method}
+\end{figure}
 
+whose lifetime t1 is the relaxation time of the Rubidium, which leads to
 
+$$\boxed{T_R = (0.69 \pm 0.28)\ ms}$$
 
+Since it was hard to find the correct points in the location, we estimated a high error on the tension $s_U = 0.07 V$ which leads to $s_U^{norm} = 0.10$. The error on the dark time was estimated to be $s_t = 0.01 ms$
 
+\subsubsection{Synopsis}
 
+The two values determined for the relaxation time lie in the same range but differ a lot from each other. Since both errors are so big, we build a weighted average in order to find a satisfying value. We get:
 
+$$\boxed{T_R = (0.70 \pm 0.28) ms}$$
+
+One can clearly see that the value from Dehmelt's method is negligible because of its large error and that the value from Franzen's method is more significant.
 
 
 
