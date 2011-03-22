@@ -16,8 +16,16 @@
 \titlepage
 \end{frame}
 
-\begin{frame}[shrink]{Inhalt}
-\tableofcontents
+\begin{frame}[t, shrink]{Inhalt}
+\begin{columns}
+\begin{column}[b]{6cm}
+\tableofcontents[sections = {1-4}]
+\end{column}
+\begin{column}[b]{4cm}
+\tableofcontents[sections = {5-7}]
+\centering \includegraphics[width = 0.8\textwidth]{Bilder/leer.png}
+\end{column}
+\end{columns}
 \end{frame}
 
 %------------------------------------------------------------------------------------------------------------------------------------------------
@@ -244,9 +252,9 @@ $$\Delta E_{\Delta m_F=1} = \frac{g_J}{2I+1}\mu_B B$$
 
 
 \subsection{Hyperfeinstrukturspektrum}
-\begin{frame}{Das Hyperfeinstrukturspektrum von Rubidium}
+\begin{frame}[plain]{Das Hyperfeinstrukturspektrum von Rubidium}
 	\begin{figure}[H]
-	\centering \includegraphics[width=0.94\textwidth]{Bilder/HFS.pdf}
+	\centering \includegraphics[width=\textwidth]{Bilder/HFS.pdf}
 	\end{figure}
 \end{frame}
 
@@ -269,9 +277,9 @@ $$\Delta E_{\Delta m_F=1} = \frac{g_J}{2I+1}\mu_B B$$
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Gemessenene Absorptionslinien}
+\begin{frame}[plain]{Gemessenene Absorptionslinien}
 	\begin{figure}[H]
-	\centering \includegraphics[width=0.95\textwidth]{Bilder/HFSAusw.pdf}
+	\centering \includegraphics[width=\textwidth]{Bilder/HFSAusw.pdf}
 	\end{figure}
 \end{frame}
 
@@ -446,7 +454,7 @@ Theorie: 42.9 $\mu T$, somit 5\% bzw 14 Standard-Abweichungen
 \end{frame}
 
 \begin{frame}{Messung mit anderen vertikalen Feldern}
-\centering \includegraphics[width=0.75\textwidth]{Bilder/praezfeld.pdf}
+\centering \includegraphics[width=0.7\textwidth]{Bilder/praezfeld.pdf}
 $$\text{Zusammenhang: } \nu_{osz} = (4.78\pm0.04)B_{vert} \frac{kHz}{\mu T} + (187.52 \pm 1.13)kHz$$
 \end{frame}
 
@@ -492,13 +500,13 @@ und $$T_{pump} \sim I^{-1}$$ %also I-->0 => 1/TP-->0
 
 \begin{frame}{Beispielmessung}
 \begin{center}
-\centering \includegraphics[width=0.9\textwidth]{Bilder/DehmeltBsp.pdf}
+\centering \includegraphics[width=0.85\textwidth]{Bilder/DehmeltBsp.pdf}
 \end{center}
 \end{frame}
 
 \begin{frame}{Ergebnis}
 \begin{center}
-\centering \includegraphics[width=0.9\textwidth]{Bilder/Dehmelt.pdf}
+\centering \includegraphics[width=0.85\textwidth]{Bilder/Dehmelt.pdf}
 \end{center}
 \end{frame}
 
@@ -522,13 +530,13 @@ $$ T_{relax} = (5.590 \pm 5.174)\ ms$$ %diskussion, korrekter bereich jedoch gro
 
 \begin{frame}{Beispielmessung}
 \begin{center}
-\centering \includegraphics[width=0.8\textwidth]{Bilder/FranzenBsp.pdf}
+\centering \includegraphics[width=0.75\textwidth]{Bilder/FranzenBsp.pdf}
 \end{center}
 \end{frame}
 
 \begin{frame}{Ergebnis}
 \begin{center}
-\centering \includegraphics[width=0.9\textwidth]{Bilder/Franzen.pdf}
+\centering \includegraphics[width=0.85\textwidth]{Bilder/Franzen.pdf}
 \end{center}
 \end{frame}
 
