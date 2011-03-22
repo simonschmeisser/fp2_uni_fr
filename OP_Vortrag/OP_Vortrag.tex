@@ -60,7 +60,7 @@ Erfinder: Alfred Kastler 1950 (Nobelpreis 1966)
 \begin{columns}
 \begin{column}{5cm}
 	\begin{figure}[H]
-	\includegraphics[width = \textwidth]{Movies/animation2197.png}
+	\includegraphics[width = 1.3\textwidth]{Movies/animation2197.png}
 	\caption{Feinstrukturpumpen}
 	\end{figure}
 \end{column}
@@ -139,8 +139,8 @@ $$ FSR = (9924 \pm 30) MHz $$
 	\end{figure}
 \end{column}
 \end{columns}
-$$\Delta\nu = (-3.86 \pm 0.06)\Delta I GHz/ma$$
-$$\Delta\nu = (-31.70 \pm 1.12)\Delta I GHz/^\circ C$$
+$$\Delta\nu = (-3.86 \pm 0.06)\Delta I\cdot GHz/ma$$
+$$\Delta\nu = (-31.70 \pm 1.12)\Delta T\cdot GHz/^\circ C$$
 \end{frame}
 
 
@@ -160,7 +160,7 @@ $$\Delta\nu = (-31.70 \pm 1.12)\Delta I GHz/^\circ C$$
 	\begin{figure}[H]
 	\centering \includegraphics[width=1.2\textwidth]{Bilder/bohrspektrum.pdf}
 	\caption{Klassische Energieniveaus}
-	\end{figure} %blabla entartet
+	\end{figure} 
 \end{column}
 \begin{column}{5.5cm}
 \pause Feinstruktur:
@@ -187,7 +187,7 @@ Feinstruktur:
 	\item Elektronenspin $\vec S$
 	\item Spin-Bahn-Kopplung, Gesamtdrehimpuls $\vec J = \vec L + \vec S$
 	\item Magnetisches Moment $\vec\mu_J$
-	\item Aufspaltung der Energieniveaus
+	\item Aufspaltung der Energieniveaus $E=-\vec\mu_S\vec B_L$
 	\item Aufhebung der Entartung
 \end{itemize}
 \end{column}
@@ -276,7 +276,7 @@ $$\Delta E_{\Delta m_F=1} = \frac{g_J}{2I+1}\mu_B B$$
 
 \begin{frame}[plain]{Gemessenene Absorptionslinien}
 	\begin{figure}[H]
-	\centering \includegraphics[width=\textwidth]{Bilder/HFSAusw.pdf}
+	\centering \includegraphics[width=1.1\textwidth]{Bilder/HFSAusw.pdf}
 	\end{figure}
 \end{frame}
 
@@ -431,6 +431,7 @@ für $I_2^L$	& $^{85}Rb$	& $2.42\pm0.01$ &	2.5	&	3.2\%	& 8\\ \hline
 
 \begin{frame}{Die Spinpräzession}
 \centering \includegraphics[width=\textwidth]{Bilder/praez.pdf}
+$$\text{Präzessionsfrequenz: \ \ \ } \nu = \frac{g_F\mu_B}{h}B $$
 \end{frame}
 
 \subsection{Messung}
@@ -439,9 +440,9 @@ für $I_2^L$	& $^{85}Rb$	& $2.42\pm0.01$ &	2.5	&	3.2\%	& 8\\ \hline
 \end{frame}
 
 \begin{frame}{Messergebnisse}
-Vetikales Erdmagnetfeld:
+Vertikales Erdmagnetfeld:
 
-$$ B_{vert} = \frac{h\nu_{osz}}{\mu_BB} $$
+$$ B_{vert} = \frac{h\nu_{osz}}{g_F\mu_B} $$
 
 \pause Ergebnis: $$\bar\nu_{osz} = (189.44 \pm 0.79)\ kHz$$
 
@@ -453,6 +454,15 @@ Theorie: 42.9 $\mu T$, somit 5\% bzw 14 Standard-Abweichungen
 \begin{frame}{Messung mit anderen vertikalen Feldern}
 \centering \includegraphics[width=0.7\textwidth]{Bilder/praezfeld.pdf}
 $$\text{Zusammenhang: } \nu_{osz} = (4.78\pm0.04)B_{vert} \frac{kHz}{\mu T} + (187.52 \pm 1.13)kHz$$
+\end{frame}
+
+\begin{frame}{Der Landé-Faktor}
+$$\frac{g_F\mu_B}{h} = (4.78 \pm 0.04) \frac{kHz}{\mu T}$$
+$$ \Leftrightarrow $$
+$$ g_F = 0.342 \pm 0.003 $$
+
+Theorie: $g_F = 1/3$, somit 3 Standardabweichungen.
+
 \end{frame}
 
 \section{Relaxationszeit}
