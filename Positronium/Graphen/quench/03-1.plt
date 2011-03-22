@@ -64,3 +64,11 @@ set output 'spektrum_5075.pdf'
 plot dateiname every ::3 title "Spektrum SZ3" with points, "../../Messdaten/3er/sz3-volles-spektrum.TKA" every ::3 title "SZ3 offen"  with points axes x1y2, 90,t notitle, 130,t notitle
 
 ###################################################
+
+dateiname = "../../Messdaten/quench/untergrund.TKA"
+set output 'spektrum_untergrund.pdf'
+
+plot dateiname every ::3 title "Spektrum SZ3" with points, "../../Messdaten/3er/sz3-volles-spektrum.TKA" every ::3 title "SZ3 offen"  with points axes x1y2, 90,t notitle, 130,t notitle
+
+###################################################
+

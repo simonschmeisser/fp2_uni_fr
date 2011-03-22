@@ -27,9 +27,12 @@ set output 'red-spektrum-sz3.pdf'
 
 replot
 
+x00 = 70
 x00_error = 70
 
-xscale_1 = (511)/(x0511)
-xscale_1_error = xscale/(x0511)*sqrt(x0511_err**2+x00_error**2)
+xscale_1 = (511)/(x0511-x00)
+xscale_1_error = xscale/(x0511-x00)*sqrt(x0511_err**2+x00_error**2)
 print "xscale_1: ", xscale_1, " \\pm ", xscale_1_error
 
+print x01275*xscale_1
+print 1200/xscale_1
