@@ -16,8 +16,16 @@
 \titlepage
 \end{frame}
 
-\begin{frame}[shrink]{Inhalt}
-\tableofcontents
+\begin{frame}[t, shrink]{Inhalt}
+\begin{columns}
+\begin{column}[b]{5cm}
+\tableofcontents[sections = {1-4}]
+\end{column}
+\begin{column}[b]{5cm}
+\tableofcontents[sections = {5-7}]
+\centering \includegraphics[width = 0.75\textwidth]{Bilder/leer.png}
+\end{column}
+\end{columns}
 \end{frame}
 
 %------------------------------------------------------------------------------------------------------------------------------------------------
