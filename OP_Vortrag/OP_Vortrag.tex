@@ -506,8 +506,6 @@ Ergebnis durch Achsenabschnitt:
 
 $$ T_{relax} = (5.590 \pm 5.174)\ ms$$ %diskussion, korrekter bereich jedoch großer fehler => föhnen
 
-\pause $$T_{theo} = \text{einige ms, \ \ \ Staatsexamensarbeit: 6.5 ms} \dots Temperatur?$$
-
 \end{frame}
 
 \subsection{Franzen}
@@ -532,11 +530,31 @@ $$ T_{relax} = (5.590 \pm 5.174)\ ms$$ %diskussion, korrekter bereich jedoch gro
 \end{frame}
 
 \begin{frame}{Ergebnis}
+$$I(\Delta t) = I_{min} + (I_{max}-I_{min})\exp\left(-\frac{\Delta t}{T_{relax}}\right)$$ %annahme dass U~I
+$$\frac{U_{abs}-U_{min}}{U_{max}-U_{min}} = \exp\left(-\frac{\Delta t}{T_{relax}}\right)$$
+
+Somit:
+
+$$T_{relax} = (7.744 \pm 1.244)\ ms$$ %diskussion korrekter fehlerbereich
+
 \end{frame}
 
 
 \subsection{Ergebnisse}
-\begin{frame}{Ermittelte Relaxationszeiten}
+\begin{frame}{Vergleich der Relaxationszeiten}
+$$T_{Dehmelt} = (5.590 \pm 5.174)\ ms$$
+$$T_{Franzen} = (7.744 \pm 1.244)\ ms$$
+
+Gewichtetes Mittel:
+
+$$\boxed{T_{relax} = (7.626 \pm 1.210)\ ms} $$
+
+\pause $$T_{theo} = \text{einige ms, \ \ \ Staatsexamensarbeit: 6.5 ms} \dots Temperatur?$$
+
+\end{frame}
+
+\section{Fazit}
+\begin{frame}{Fazit}
 \end{frame}
 
 \end{document}
