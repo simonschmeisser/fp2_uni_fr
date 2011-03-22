@@ -114,22 +114,27 @@
 \headcommand {\beamer@framepages {50}{50}}
 \headcommand {\slideentry {6}{2}{3}{51/51}{Dehmelt}{0}}
 \headcommand {\beamer@framepages {51}{51}}
-\headcommand {\slideentry {6}{2}{4}{52/53}{Dehmelt}{0}}
-\headcommand {\beamer@framepages {52}{53}}
-\headcommand {\beamer@subsectionentry {0}{6}{3}{54}{Franzen}}\headcommand {\beamer@subsectionpages {49}{53}}
-\headcommand {\slideentry {6}{3}{1}{54/54}{Franzen}{0}}
+\headcommand {\slideentry {6}{2}{4}{52/52}{Dehmelt}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\beamer@subsectionentry {0}{6}{3}{53}{Franzen}}\headcommand {\beamer@subsectionpages {49}{52}}
+\headcommand {\slideentry {6}{3}{1}{53/53}{Franzen}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {6}{3}{2}{54/54}{Franzen}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\slideentry {6}{3}{2}{55/55}{Franzen}{0}}
+\headcommand {\slideentry {6}{3}{3}{55/55}{Franzen}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\slideentry {6}{3}{3}{56/56}{Franzen}{0}}
+\headcommand {\slideentry {6}{3}{4}{56/56}{Franzen}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\slideentry {6}{3}{4}{57/57}{Franzen}{0}}
-\headcommand {\beamer@framepages {57}{57}}
-\headcommand {\beamer@subsectionentry {0}{6}{4}{58}{Ergebnisse}}\headcommand {\beamer@subsectionpages {54}{57}}
-\headcommand {\slideentry {6}{4}{1}{58/58}{Ergebnisse}{0}}
-\headcommand {\beamer@framepages {58}{58}}
-\headcommand {\beamer@partpages {1}{58}}
-\headcommand {\beamer@subsectionpages {58}{58}}
+\headcommand {\beamer@subsectionentry {0}{6}{4}{57}{Ergebnisse}}\headcommand {\beamer@subsectionpages {53}{56}}
+\headcommand {\slideentry {6}{4}{1}{57/58}{Ergebnisse}{0}}
+\headcommand {\beamer@framepages {57}{58}}
+\headcommand {\sectionentry {7}{Fazit}{59}{Fazit}{0}}
 \headcommand {\beamer@sectionpages {46}{58}}
-\headcommand {\beamer@documentpages {58}}
-\headcommand {\def \inserttotalframenumber {47}}
+\headcommand {\beamer@subsectionpages {57}{58}}
+\headcommand {\slideentry {7}{0}{2}{59/59}{}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\beamer@partpages {1}{59}}
+\headcommand {\beamer@subsectionpages {59}{59}}
+\headcommand {\beamer@sectionpages {59}{59}}
+\headcommand {\beamer@documentpages {59}}
+\headcommand {\def \inserttotalframenumber {48}}
