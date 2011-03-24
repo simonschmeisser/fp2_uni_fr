@@ -7,4 +7,6 @@ set ylabel "Intensität"
 
 M(x) = 1- besj0(x)
 
-plot M(x)  notitle 
+M_2(x) = (sin(x))**2
+
+plot M(x)  title "1-J_0({/Symbol d})", M_2(x) title "sin^2({/Symbol d})"
