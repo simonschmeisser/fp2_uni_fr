@@ -314,7 +314,7 @@ $$ B_{vert} = \frac{h}{g_F\mu B}\nu_{osz} $$
 We made 4 different measurements of this precession around the earth's vertical magnetic field. A measurement looks like this:
 
 \begin{figure}[H]
-\centering \includegraphics[width=\textwidth]{BilderAusw/Spinpr.pdf}
+\centering \includegraphics[width=\textwidth]{BilderAusw/Spinbsp.pdf}
 \caption{Spin precession around the earth's vertical magnetic field}
 \end{figure}
 
@@ -346,26 +346,33 @@ If we change the current through the induction coil 4, i.e. its magnetic field, 
 
 The relation between the oscillation frequency and the magnetic field is given by the equation
 
-$$\nu_{osz} = bx + a = (4.78\pm0.04)B_{vert} + (187.52\pm1.13)$$
+$$\nu_{osz} = bx + a = (4.78\pm0.04)B_{vert}\frac{kHz}{\mu T} + (187.52\pm1.13)kHz$$
 
 Here the intercept leads to
 
 $$B_{vert} = (40.18 \pm 0.24)\mu T$$
 
-respectively, one can calculate the compentsating field of the coil 4 by setting the frequency to zero, i.e. calculating the intercept at the x-axis. This means:
-
-$$ y = bx + a = 0 \Leftrightarrow x = \frac{-a}{b} = -39.19 \mu T $$
-
-Considering the error, this leads to a value of:
-
-$$ B_{vert} = (39.19 \pm 0.01)\ \mu T $$
-
-Both values lie pretty close to the theoretical value. The error of the latter one is not representative.
+and the theoretical value lies within the 12th standard deviation. Here once again, one can clearly see the previously dicussed systematic error, since the linear fit lies almost perfectly on the measured data but still our value lies 12 standard deviations away from the theory.
 
 \begin{figure}[H]
 \centering \includegraphics[width=1.1\textwidth]{BilderAusw/praezfeld.pdf}
 \caption{Spin precession around the resulting vertical magnetic field}
 \end{figure}
+
+Using the formula 
+
+$$ \nu_{osz} = \frac{g_F\mu B}{h}B_{vert} $$
+
+and the experimentally determined relation between $\nu_{osz}$ an $B_{vert}$ (and substracting the earth's  vertical magnetic field as an offset), one finds that:
+
+$$\frac{g_F\mu B}{h} = (4.78\pm0.04)\frac{kHz}{\mu T}$$
+
+From this relation, we can calculate the Landé factor using the literature values for the Bohr magneton and Planck's constant. We find:
+
+$$g_F = 0.342 \pm 0.003$$
+
+The theoretical value of $g_F = 1/3$ lies within the third error.
+
 
 %------------------------------------------------
 
@@ -437,30 +444,40 @@ We inserted a rotating chopper disc into the optical path, which cut off the las
 An absorption line looks like this:
 
 \begin{figure}[H]
-\centering \includegraphics[width=0.7\textwidth]{BilderAusw/FranzenBsp.pdf}
+\centering \includegraphics[width=\textwidth]{BilderAusw/FranzenBsp.pdf}
 \caption{Absorption line with Franzen's method}
 \end{figure}
 
-By plotting the relative voltage (the voltage where the absorption sets in normalized by the maximal voltage) against the dark time (the time during which the laser was blocked by the chopper disc) on gets the following curve
+Using the formula from the experiment description, one should plot the measured intensity of the time, when the absorption sets in, against the dark time for that measurement and fit the data according to the following formula:
+
+$$I(\Delta t) = I_{min} + (I_{max} - I_{min})\exp\left(\frac{-\Delta t}{T_R}\right) $$
+
+Since we registered the intensity of the laser beam using a photomultiplier, we measured a voltage corresponding to the intensity. So we replaced the intensities in the formula with voltages and normalized each measurement by dividing it by $U_{max} - U_{min}$.
+
+We got the following fomula:
+
+$$ \frac{U_{abs} - U_{min}}{U_{max}-U_{min}} = \exp\left(\frac{-\Delta t}{T_R}\right) $$
+
+and used it on our data:
 
 \begin{figure}[H]
-\centering \includegraphics[width=\textwidth]{BilderAusw/Franzen.pdf}
+\centering \includegraphics[width=1.1\textwidth]{BilderAusw/Franzen.pdf}
 \caption{Absorption line with Franzen's method}
 \end{figure}
 
-whose lifetime t1 is the relaxation time of the Rubidium, which leads to
+The lifetime t1 is the relaxation time of the Rubidium, which leads to
 
-$$\boxed{T_R = (0.69 \pm 0.28)\ ms}$$
+$$\boxed{T_R = (7.744 \pm 1.244)\ ms}$$
 
 Since it was hard to find the correct points in the location, we estimated a high error on the tension $s_U = 0.07 V$ which leads to $s_U^{norm} = 0.10$. The error on the dark time was estimated to be $s_t = 0.01 ms$
 
 \subsubsection{Synopsis}
 
-The two values determined for the relaxation time lie in the same range but differ a lot from each other. Since both errors are so big, we build a weighted average in order to find a satisfying value. We get:
+The two values determined for the relaxation time lie in the same range but differ from each other. Since both errors are so big, we build a weighted average in order to find a satisfying value. We get:
 
-$$\boxed{T_R = (0.70 \pm 0.28) ms}$$
+$$\boxed{T_R = (7.626 \pm 1.210) ms}$$
 
-One can clearly see that the value from Dehmelt's method is negligible because of its large error and that the value from Franzen's method is more significant.
+One can clearly see that the value from Dehmelt's method is negligible because of its large error and that the value from Franzen's method is more significant. Both errors are quite large which is because of the blow-drying, but this was the only possibility to see distinctive absorption. There are not enough informations known about the Rubidium cell in order to be able to calculate the theoretical relaxation time. In [Ba97] is given a theoretical relaxation time of 6.5ms but without any indication at which temperature this should be. But knowing that we had a quite large temperatur ($\sim60-70^\circ C$) we can estimate our value to lie not too far away from what we should have measured.
 
 
 
