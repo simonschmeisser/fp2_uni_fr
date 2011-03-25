@@ -11,7 +11,7 @@ Die \Na-Probe wurde laut Beschriftung am Versuchsaufbau am 29.09.1993 eingesetzt
 Die Messungen in der Staatsexamensarbeit wurden bei $A_{St} = 0,15\, mCurie = 5,55\e{6} Bq$ durchgeführt. Wir erwarten also dass die Rate der Ereignisse im Experiment bei uns in etwa zwei Größenordnungen kleiner sein wird. Für die statistische Genauigkeit der Messungen ist dies nicht von Vorteil.
 
 \subsection{Szintillatorspektren}
-Wir haben das Spektrum des \Na  mit jedem der drei Szintillatoren aufgenommen (siehe Abb. \ref{22na-schrottspektrum}). Dazu haben wir je einen direkt an den Multi Channel Analysator (MCA) angeschlossen und 20 min gemessen.
+Wir haben das Spektrum des \Na \ mit jedem der drei Szintillatoren aufgenommen (siehe Abb. \ref{22na-schrottspektrum}). Dazu haben wir je einen direkt an den Multi Channel Analysator (MCA) angeschlossen und 20 min gemessen.
 
 \begin{figure}[ht]
  \includegraphics[width=\textwidth]{Graphen/Na-Spektren/na-spektren-1.pdf}
@@ -31,18 +31,18 @@ SZ3:& 10,00
 Bei dem kleineren Peak mit hoher Energie (ca. Channel 850) handelt es sich nicht, wie von uns zuerst vermutet, um die 1270keV Gamma-Quanten des \Na-Zerfalls. Vielmehr scheint es sich um einen von der Elektronik erzeugten Störeffekt zu handeln. Der Peak mit der zweithöchsten Energie (Ch.250 bzw. 180) ist dann der eigentliche 1270keV Peak. Die 511keV des Zwei-Photonen-Zerfalls, die Photonen des 3er-Zerfalls und die Bremsstrahlung sind nur schlecht aufgelöst (SZ1 und SZ2) bzw. gar nicht unterscheidbar (SZ3).
 
 Da wir außerdem beim Zuschalten des Single Channel Analysators (SCA) eine Verschiebung des Spektrums beobachteten, haben wir die Energiekalibration dann mit diesem durchgeführt.
-\begin{figure}
- \includegraphics[height=0.3\textheight]{Graphen/SZ1.png}
+\begin{figure}[H]
+ \centering \includegraphics[height=0.4\textheight]{Graphen/SZ1.png}
  \caption{\Na-Spektrum mit SZ1}
 \end{figure}
 
-\begin{figure}
- \includegraphics[height=0.3\textheight]{Graphen/SZ2.png}
+\begin{figure}[H]
+ \centering  \includegraphics[height=0.4\textheight]{Graphen/SZ2.png}
  \caption{\Na-Spektrum mit SZ2}
 \end{figure}
 
-\begin{figure}
- \includegraphics[height=0.3\textheight]{Graphen/SZ3.png}
+\begin{figure}[H]
+ \centering  \includegraphics[height=0.4\textheight]{Graphen/SZ3.png}
  \caption{\Na-Spektrum mit SZ3}
 \end{figure}  
 
@@ -94,7 +94,7 @@ Somit konnten wir eine Energie-Channel-Eichung für die drei Szintillatoren vorn
 
 \subsection{Zwei-Photonen-Zerfall}
 
-Beim Zerfall des 0S0-Singulett-Zustands des Positroniums können die Photonen, wie in der Theorie näher erläutert, nur in einem $180^\circ$-Winkel abgestrahlt werden. Dies wollen wir über eine Winkelkorrelationsmessung verifizieren. Dazu stellen wir die Szintilatoren auf ein 511keV Fenster ein und drehen SZ1 oder SZ3 gegen den festen SZ2. 
+Beim Zerfall des $^1S_0$-Singulett-Zustands des Positroniums können die Photonen, wie in der Theorie näher erläutert, nur in einem $180^\circ$-Winkel abgestrahlt werden. Dies wollen wir über eine Winkelkorrelationsmessung verifizieren. Dazu stellen wir die Szintilatoren auf ein 511keV Fenster ein und drehen SZ1 oder SZ3 gegen den festen SZ2. 
 
 \begin{center}
 \begin{tabular}{llll}
@@ -128,7 +128,7 @@ Um den statistische Fehler möglichst klein zu halten (unter 2\%) berechnen wir 
 \end{equation}
 Dies entspricht $t \approx 13,89 \text{min}$. Wir wählen daher eine Messzeit von $t = 16,67 \text{min}$ pro Winkeleinstellung, da sich damit die 100Hz-Clock als Stoppsignal für den Hex-Scaler verwenden lässt (100 000 Counts). 
 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Graphen/2er/erste.pdf}
  \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls (mit SZ2-SZ3}
 \end{figure}
@@ -142,7 +142,7 @@ Bei einem Winkel von $182^\circ$ brach die Zählrate leider zusammen. Statt den 
 
 Um die Probleme mit SZ3 zu umgehen, haben wir eine erneute Messung mit SZ2-SZ1 durchgeführt. Dabei war die Koinzidenzrate deutlich höher als mit SZ2-SZ3 und somit nicht vergleichbar. Daher haben wir nochmals den kompletten Bereich von $150^\circ$ bis $210^\circ$ untersucht. Eine Messzeit von 100s erschien uns auf Grund der höheren Zählrate ausreichend. (Dies entspricht einem Fehler von ca. 5,8 \% bei $150^\circ$, bzw. 0,6\% bei $180^\circ$)
 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Graphen/180K.png}
  \caption{Winkelkorrelation des Zwei-Photonen-Zerfalls (mit SZ2-SZ1)}
 \end{figure}
@@ -167,29 +167,33 @@ Zu guter Letzt haben wir wieder die $180^\circ$-Konfiguration eingestellt und da
  n_{ZK-delay} = (0,019  \pm  0,004) s^{-1}
 \end{equation*}
 
+Da wir drei sehr unterschiedliche Werte haben, die sich sogar in der Größenordnung unterscheiden, bedarf diese Messung einer Diskussion. Wir haben uns sehr lange überlegt, welcher Wert denn der relevante sein könnte und sind zu dem Entschluss gekommen dass vermutlich der Wert bei der senkrechter Stellung zweier Szintillatoren der relevanteste ist. Dies begründen wir an erster Stelle damit, dass dieser der größte Wert ist und somit im Allgemeinen die zufälligen Koinzidenzen auch bei unserer Messung so hoch sein könnten. Wir gehen davon aus, dass der Fehler von einer zu langen Auflösungszeit stammt, also dass diese auch nicht ganz koinzidente Signale als gleichzeitig annimmt und somit die counts steigen. Dies würden wir bei der vorigen Messung also auch messen. Der Fehler bei dem verstellten Delay ist deshalb so klein, weil dieser Effekt dort nicht auftritt und nur tatsächliche Zufälle gemessen werden können. Da aber unsere Auflösungszeit fest eingestellt war, ist dieser Fehler in unserem Fall zu klein. \\
+
+Die in der Versuchsbeschreibung gegebene Formel scheint die von uns gemessene zufälligen Koinzidenzen stark zu unterschätzen. Wir müssen gezwungenermaßen den größeren Wert nehmen, da wir uns diesen nicht einfach wegdenken können und müssen somit von einer in unserem Fall nicht korrekten Formel ausgehen.
+ 
  
 %TODO: was bedeutet das? größte verwenden?
 
-\subsubsection{Austausch von SZ3}
+\subsubsection{Austausch vom SCA des SZ3}
 Wir haben die gesamte Elektronik ausführlich untersucht und daraufhin den SCA von SZ3 ausgetauscht, da bei diesem der Pseudo-Peak bei ca 2000 keV viel stärker als bei den anderen beiden war. Weiterhin haben wir die Verstärkung am AMP etwas reduziert, da wir auch ein Übersteuern nicht ausschließen konnten. Danach war zwar das Signal deutlich klarer und der Pseudo-Peak verschwunden. Auf Grund der geänderten Verstärkereinstellungen wurde eine erneute Energie-Kanal-Eichung nötig, die in den Graphen des folgenden Kapitels mit abgebildet ist. 
 
 \subsection{Drei-Photonen-Zerfall}
 
 Bei diesem Versuchsteil geht es zuerst um die Untersuchung des Energiespektrums. Dazu haben wir die Fenster von SCA 1 (Abb \ref{graphen-3er-red-spektrum-sz1}) und SCA 3 (Abb \ref{graphen-3er-red-spektrum-sz3}) so eingestellt, dass nur Events unterhalb der 511keV-Linie registriert werden. Weiterhin haben wir die Signale aller Szintillatoren synchronisiert. Anschließend haben wir über den MCA das Energiespektrum von SZ2 aufgenommen. 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz1.pdf}
  \caption{Einstellung des Energiefensters unterhalb der 511keV-Linie für SZ1}
  \label{graphen-3er-red-spektrum-sz1}
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz3.pdf}
  \caption{Einstellung des Energiefensters unterhalb der 511keV-Linie für SZ3}
  \label{graphen-3er-red-spektrum-sz3}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Graphen/3er/spektrum-2.pdf}
  \caption{Spektrum am SZ2 bei 3er-Koinzidenz}
  \label{graphen-3er-spektrum-2}
@@ -199,7 +203,7 @@ Wir haben dazu eine Messung von ca. 3h Dauer (11091s) durchgeführt. Im Graphen 
 
 %TODO: Parameter?
 
-\begin{figure}
+\begin{figure}[H]
 \includegraphics[width=\textwidth]{Graphen/3er/red-spektrum-sz2.pdf}
  \caption{Grobe Einstellung des Energiefensters von SZ2}
 \label{graphen-3er-red-spektrum-sz2}
@@ -234,7 +238,7 @@ Somit konnten wir eine Energie-Channel-Eichung für die drei Szintillatoren vorn
 \end{tabular}
 \end{center}
 
-Dabei fällt bei SZ3 (Abb \ref{graphen-3er-red-spektrum-sz3}) auf, dass angeblich einige Kanäle des MCA Photonen mit negativer Energie gemessen haben. Dies ist eher unwahrscheinlich und wir vermuten daher zwei Hauptfehlerquellen: einerseits könnten wir die Peaks verwechselt haben. Der 511 keV-Peak müsste dann in der abfallenden Flanke der Bremsstrahlung "`versteckt sein"' (momentan ca. 200keV) und der 1275keV Peak wäre dann der von uns als 511keV angenommene. Die gute Übereinstimmung des Kurvenverlaufs spricht allerdings eher gegen diese These. Eine andere Möglichkeit wäre eine Nichtlinearität, vermutlich bereits direkt in SZ3 oder eventuell auch im Verstärker. Diese erscheint uns wahrscheinlicher. Sollten wir allerdings tatsächlich die Peaks verwechselt haben, würde dies zwar die weitere Messgenauigkeit verschlechtern und zusätzliche Ereignisse erzeugen, nicht jedoch gültige Ereignisse verwerfen. Für die weitere Auswertung haben wir die Annahme getroffen, dass sich die Energie-Kanal-Einstellung auch im Bereich 0-551 keV linear ändert und haben Kanal 0 mit 0keV identifiziert. Es ergibt sich dann folgende (grobe) Energie-Kanal-Eichung:
+Dabei fällt bei SZ3 (Abb \ref{graphen-3er-red-spektrum-sz3}) auf, dass angeblich einige Kanäle des MCA Photonen mit negativer Energie gemessen haben. Dies ist eher unwahrscheinlich und wir vermuten daher zwei Hauptfehlerquellen: einerseits könnten wir die Peaks verwechselt haben. Der 511 keV-Peak müsste dann in der abfallenden Flanke der Bremsstrahlung "`versteckt sein"' (momentan ca. 200keV) und der 1275keV Peak wäre dann der von uns als 511keV angenommene. Die gute Übereinstimmung des Kurvenverlaufs spricht allerdings eher gegen diese These. Eine andere Möglichkeit wäre eine Nichtlinearität, vermutlich bereits direkt in SZ3 oder eventuell auch im Verstärker. Diese erscheint uns wahrscheinlicher. Sollten wir allerdings tatsächlich die Peaks verwechselt haben, würde dies zwar die weitere Messgenauigkeit verschlechtern und zusätzliche Ereignisse erzeugen, nicht jedoch gültige Ereignisse verwerfen. Für die weitere Auswertung haben wir die Annahme getroffen, dass sich die Energie-Kanal-Einstellung auch im Bereich 0-511 keV linear ändert und haben Kanal 0 mit 0keV identifiziert. Es ergibt sich dann folgende (grobe) Energie-Kanal-Eichung:
 
 \begin{equation}
  E(c) = \begin{cases}
@@ -246,16 +250,16 @@ Dabei fällt bei SZ3 (Abb \ref{graphen-3er-red-spektrum-sz3}) auf, dass angeblic
 
 \subsection{Quenching}
 
-Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zunehmendem Magnetfeld. Dazu haben wir zweistündige Messungen mit konstantem Magnetfeld durchgeführt und nach je zwei Messungen eine Kontrollmessung ohne Magnetfeld. Diese erlaubt es uns, grobe Drifts und Schwankungen in der Messung zu erkennen und zu kompensieren. Im Anschluss haben wir das Delay von SZ1 verändert. Mit einer weiteren Messung konnten wir sodie Zahl der zufälligen Koinzidenzen ermitteln.
+Beim Quenching untersuchen wir die Abnahme des Drei-Photonen-Zerfalls unter zunehmendem Magnetfeld. Dazu haben wir zweistündige Messungen mit konstantem Magnetfeld durchgeführt und nach je zwei Messungen eine Kontrollmessung ohne Magnetfeld. Diese erlaubt es uns, grobe Drifts und Schwankungen in der Messung zu erkennen und zu kompensieren. Im Anschluss haben wir das Delay von SZ1 verändert. Mit einer weiteren Messung konnten wir so die Zahl der zufälligen Koinzidenzen ermitteln.
 
 % \begin{figure}
 %  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_0-3.pdf}
 %  \caption{Spektrum 0,3A}
 % \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Graphen/quench/spektrum_1065.pdf}
- \caption{Spektrum 1065G}
+ \caption{Spektrum B=1065G}
 \end{figure}
 
 
@@ -293,7 +297,7 @@ Im Graph (Abb \ref{auswertung-quench-normiert}) ist sowohl ein Fit an die Datenp
 
 
 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Auswertung/quench-normiert.pdf}
  \caption{Normiertes Quenching des Drei-Photonen-Zerfalls in $120^\circ$-Konfiguration}
  \label{auswertung-quench-normiert}
@@ -308,7 +312,7 @@ Der theoretische Wert (vergl. \ref{theorie_gesamt}) beträgt $\Delta W = 8,45\e{
 
 Die relativen Zählraten sind bei mehreren Einstellungen zu hoch. Dies deutet darauf hin, dass falsche Ereignisse registriert werden, also zB von 2-Photonen-Zerfällen, Bremsstrahlung oder auch Rauschen. Diese werden nicht vom Magnetfeld unterdrückt und führen somit zu einer zu großen Zählrate. Theoretisch ließen sich solche Ereignisse weiter reduzieren, indem engere Energiefenster und auch ein kleineres Koinzidenzintervall gewählt werden. Praktisch müsste dann allerdings die Meßzeit noch weiter verlängert werden, um statistisch relevante Ergebnisse zu erhalten. Da wir aber bereits so deutliche Drifts in den Messwerten sehen, scheint dies nicht sinnvoll. Besser wäre es sicherlich die \Na-Probe zu erneuern, wodurch sich ca. 100-fach höhere Zählraten ergeben würden (siehe \ref{verbleibende_aktivitaet}).
 
-Eine weitere Fehlerquelle ist natürlich das Magnetfeld, bzw. die Spule die es erzeugt. So zeigte sich während den Messungen ein Absinken der Stromstärke um bis zu 2\%. Weiterhin ist die Eichtabelle schon fast 30 Jahre alt, was uns dazu veranlasst hat diese mit einer Hall-Sonde zu kontrollieren. Die Ergebnisse liegen systematisch ca. 1,6 \% über den tabellierten Werten. Da sich beide Fehler also im Endeffekt kompensieren, haben wir die tabellierten Werte verwendet und einen Fehler von 2\% angenommen. Die Messwerte sind in der folgenden Tabelle nochmals zusammengefasst: 
+Eine weitere Fehlerquelle ist natürlich das Magnetfeld, bzw. die Spule die es erzeugt. So zeigte sich während den Messungen ein Absinken der Stromstärke um bis zu 2\%. Weiterhin ist die Eichtabelle schon fast 30 Jahre alt, was uns dazu veranlasst hat diese mit einer Hall-Sonde zu kontrollieren. Die Ergebnisse liegen systematisch ca. 1,6 \% über den tabellierten Werten. Da sich beide Fehler also im Endeffekt kompensieren, haben wir die tabellierten Werte verwendet und einen Fehler von 2\% angenommen (dies ist auch der Fehler auf die Hallsonde). Die Messwerte sind in der folgenden Tabelle nochmals zusammengefasst: 
 
 \begin{center}
 \begin{tabular}{lllll}
