@@ -1,22 +1,20 @@
 
 set terminal pdf enhanced
-set output "biegung-balken3.pdf"
+set output "biegung-balken2.pdf"
 
 set xlabel "Position [cm]"
 set ylabel "Durchbiegung [µm]"
 
 lambda = 0.632 #µm
-xoffset = 2 #cm
-
-p0 = 0.03
+xoffset = 3 #cm
 
 f(x) = p0 * (x**2 *5 - x**3/6) + p1*x + p2
 
 set fit errorvariables
 
-fit f(x) "../Photos/digit/IMG_3919-korrigiert-gedreht.csv" every ::1 using ($1/10 + xoffset):($0 * lambda +lambda/2) via p0, p1, p2
+fit f(x) "../Photos/digit/IMG_3904-2.csv" every ::1 using 1:($0 * lambda +lambda/2) via p0, p1, p2
 
-plot "../Photos/digit/IMG_3919-korrigiert-gedreht.csv" every ::1 using ($1/10 + xoffset):($0 * lambda +lambda/2) title "gemessene Verbiegung", f(x)
+plot "../Photos/digit/IMG_3904-2.csv" every ::1 using 1:($0 * lambda +lambda/2) title "gemessene Verbiegung", f(x)
 
 ### Berechnung
 
