@@ -6,8 +6,9 @@ Bei der Echtzeitholographie wird ein Hologramm aufgenommen und dieses mit dem Bi
 
 Wir haben den Aufbau analog wie im vorherigen Versuchsteil verwendet. Anstelle der Stäbe haben wir allerdings die Aluminiumplatte eingebaut und den Lautsprecher hinter dieser plaziert. Da das Interferenzmuster Änderungen im Wellenlängenbereich anzeigt, sollte die Photoplatte nicht bewegt werden. Die Aufnahme und Entwicklung findet daher "`in-situ"' statt, d.h. in einem Tauchbecken am Ort der Aufnahme. Dazu werden anstelle der Planfilme nun Photoplatten, also Glasscheiben mit einseitig aufgetragener Photoemulsion, verwendet. Für deren Prozessierung haben wir wiederum mündlich überlieferte \cite{lena_christian} Prozessparameter verwendet:
 
-\begin{table}
+\begin{table}[H]
  \begin{tabular}{l}
+  \toprule
   10 min quellen\\
   6 min belichten\\
   4 min entwickeln\\
@@ -16,14 +17,15 @@ Wir haben den Aufbau analog wie im vorherigen Versuchsteil verwendet. Anstelle d
   1 min bleichen\\
   3 x 30 sec wässern\\
   1 min wässern\\
-  volllaufen lassen
+  volllaufen lassen\\
+ \bottomrule
  \end{tabular}
  \caption{Prozessschritte für die Erstellung von Holographien auf Photoplatten}
 \end{table}
 
 Unsere erste Aufnahme ist eher als Probelauf zu verstehen, da wir das Prinzip der Fixierung der Glasplatten mit Metallklammern nicht verstanden hatten. Ursache dafür war vermutlich das sich diese nicht beim Tauchbecken befanden, sondern erst von uns gesucht werden mussten. Die resultierende Aufnahme zeigte dann nich einmal das ungestörte Hologramm (nur Referenzbeleuchtung). Die zweite Aufnahme, diesmal mit Befestigung, schien ebenfalls kein Hologramm ergeben zu haben. Als wir jedoch am nächsten Tag wiederkamen und den Laser einschalteten, konnten wir klar und deutlich ein Hologramm der Aluminiumplatte erkennen. Auch hatte die Flüssigkeit im Tauchbecken in der Zwischenzeit eine braune Färbung angenommen. Es ist also vermutlich Entwickler durch den leicht undichten Hahn nachgelaufen und hat für eine Nachentwicklung gesorgt. Das Hologramm ist in Abbildung \ref{hologramm_aluplatte} zu sehen. Wir haben dann versucht, Schwingungsresonanzen der Platte aufzunehmen, konnten diese aber nicht finden. Vermutlich waren Tauchbecken und Aluminiumplatte in der Zwischenzeit durch Erschütterungen oder versehentliches Anstoßen schon gegeneinander verrückt. Dafür spricht auch, das wir die sonst bei ausgeschaltetem Lautsprecher sichtbaren Interferenzmuster auch nicht sehen konnten.  
 
-\begin{figure}[ht]
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Photos/IMG_3927.jpg}
  \caption{Hologramm der Aluminiumplatte}
  \label{hologramm_aluplatte}
@@ -31,20 +33,20 @@ Unsere erste Aufnahme ist eher als Probelauf zu verstehen, da wir das Prinzip de
 
 Nach dieser Aufnahme war leider die Bleiche nahezu aufgebraucht. Auch Herr Stützler konnte uns keinen Nachschub liefern, da die Chemikalienausgabe in dieser Woche urlaubsbedingt vakant war. Seinen Vorschlag die Reste aus dem Auffangbehälter zu recyceln mussten wir leider ebenfalls verwerfen, da Geruchs- und Sichtproben uns deutliche Hinweise auf eine Verunreinigung mit Entwicklerlösung gaben. Wir haben daher die verbleibenden Reste im Zulauf im Verhältnis 1:7 mit Wasser gestreckt. Zusätzlich haben wir noch die (teilweise schon auskristallisierten) Reste aus dem Bleichebecken für die Filmentwicklung hinzugegeben. Eine verlängerte Bleichezeit von 5min gab uns bei der dritten Photoplatte zwar kein vollkommen gebleichtes Bild, kam dem aber sehr nahe. Mit diesem waren jetzt auch im ungestörten Zustand der Platte Interferenzmuster erkennbar, wie wir es erwartet hatten.
 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Photos/IMG_3932.png}
  \caption{Aufnahme der Echtzeitholografie ohne Anregung durch den Lautsprecher}
  \label{echtzeit_ohne_ton}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
  \includegraphics[width=\textwidth]{Photos/IMG_3934.png}
  \caption{Nullte Schwingungsmode der Kupferplatte bei 481Hz}
  \label{echtzeit_481}
 \end{figure}
 
 
-Daher haben wir nun den Frequenzgenerator angeschaltet und versucht die Resonanzfrequenzen zu finden. Für die nullte Schwingungsmode ist uns dies auch gut gelungen. Bei einer Frequenz $f_{00} = 481 Hz$ konnten wir klar ein konzentrisches Kreismuster im Hologramm (Abb. \ref{echtzeit_481)} erkennen. Außerdem konnten wir dies auch akustisch anhand der resonanten Verstärkung bzw. der Schwebung bei geringfügiger Abweichung bestätigen. Das Muster war im Frequenzbereich von 478Hz bis 485Hz erkennbar. Die Lautstärke mussten wir dabei sehr gering wählen, an der Grenze der Hörschwelle, da die Minima sonst nur deutlich schwächer zu sehen wären. Da wir einen neuen Versuchstisch benutzten, auf dem die Pockelszelle noch nicht montiert und insbesondere nicht justiert war, konnten wir nur die Echtzeitmittelungstechnik verwenden. Die Intensität folgt bei dieser der Funktion $|M(\delta)|^2 = 1 - J_0(\delta)$ (Abb. \ref{echtzeit_intensität}) wobei $\delta = \frac{2\pi}{\lambda}\bar{d}(\cos \alpha + \cos \beta)$ ein Maß für die Phasendifferenz und somit die Auslenkung ist. Wenn mit zunehmender Lautstärke also die Auslenkung ebenfalls zunimmt, so werden Abstand und Intensitätsänderung der Minima kleiner und das Bild ist schlechter zu erkennen. Beleuchtet man hingegen nur die Momente maximaler Auslenkung stroboskobisch mit dem durch die Pockelszelle gepulsten Laser, so könnte ein stehendes Bild erzeugen. Dieses wäre dann äquivalent zu einer Echtzeitholographie, bei der die Intensität der Funktion $|M(\delta)|^2 = \sin^2 \delta$ folgt. Man erhielte also komplette Minima, was den Kontrast deutlich verbessern würde.
+Daher haben wir nun den Frequenzgenerator angeschaltet und versucht die Resonanzfrequenzen zu finden. Für die nullte Schwingungsmode ist uns dies auch gut gelungen. Bei einer Frequenz $f_{00} = 481 Hz$ konnten wir klar ein konzentrisches Kreismuster im Hologramm (Abb. \ref{echtzeit_481}) erkennen. Außerdem konnten wir dies auch akustisch anhand der resonanten Verstärkung bzw. der Schwebung bei geringfügiger Abweichung bestätigen. Das Muster war im Frequenzbereich von 478Hz bis 485Hz erkennbar. Die Lautstärke mussten wir dabei sehr gering wählen, an der Grenze der Hörschwelle, da die Minima sonst nur deutlich schwächer zu sehen wären. Da wir einen neuen Versuchstisch benutzten, auf dem die Pockelszelle noch nicht montiert und insbesondere nicht justiert war, konnten wir nur die Echtzeitmittelungstechnik verwenden. Die Intensität folgt bei dieser der Funktion $|M(\delta)|^2 = 1 - J_0(\delta)$ (Abb. \ref{echtzeit_intensität}) wobei $\delta = \frac{2\pi}{\lambda}\bar{d}(\cos \alpha + \cos \beta)$ ein Maß für die Phasendifferenz und somit die Auslenkung ist. Wenn mit zunehmender Lautstärke also die Auslenkung ebenfalls zunimmt, so werden Abstand und Intensitätsänderung der Minima kleiner und das Bild ist schlechter zu erkennen. Beleuchtet man hingegen nur die Momente maximaler Auslenkung stroboskobisch mit dem durch die Pockelszelle gepulsten Laser, so könnte ein stehendes Bild erzeugen. Dieses wäre dann äquivalent zu einer Echtzeitholographie, bei der die Intensität der Funktion $|M(\delta)|^2 = \sin^2 \delta$ folgt. Man erhielte also komplette Minima, was den Kontrast deutlich verbessern würde.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{Graphen/echtzeitmittelung.pdf}
