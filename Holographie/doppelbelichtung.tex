@@ -56,7 +56,7 @@ Mit diesen erhielten wir dann ein gutes Hologramm (Abb. \ref{doppelbelichtung-li
  \caption{Hologramm des rechten Stabes mit Perspektivenkorrektur}
  \label{doppelbelichtung-rechts-korrigiert}
 \end{figure}
-Das erste Minimum des Interferenzmusters ausgehend von der Befestigung entspricht einer Differenz von $\Delta x_1 = \nicefrac{\lambda}{2}$, die weiteren Minimas liegen dann bei $\Delta x_i = \Delta x_{i-1} + \lambda$. Wir haben also eine Perspektivenkorrektur (Abb. \ref{doppelbelichtung-rechts-korrigiert}) vorgenommen und mit dem Programm {\verb Engauge Digitizer} über die Skala des Schirms die Position der Minima abgelesen und die Verbiegung berechnet. 
+Das erste Minimum des Interferenzmusters ausgehend von der Befestigung entspricht einer Differenz von $\Delta x_1 = \nicefrac{\lambda}{2}$, die weiteren Minimas liegen dann bei $\Delta x_i = \Delta x_{i-1} + \lambda$. Wir haben also (falls nötig) eine Perspektivenkorrektur (Abb. \ref{doppelbelichtung-rechts-korrigiert}) vorgenommen und mit dem Programm {\verb Engauge Digitizer} über die Skala des Schirms die Position der Minima abgelesen und die Verbiegung berechnet. 
 
 \begin{figure}[H]
  \includegraphics[width=\textwidth]{Graphen/biegung-balken1.pdf}
@@ -72,5 +72,55 @@ Das erste Minimum des Interferenzmusters ausgehend von der Befestigung entsprich
  \includegraphics[width=\textwidth]{Graphen/biegung-balken3.pdf}
  \caption{Durchbiegung des Aluminium-Stabes}
 \end{figure}
+
+In den Graphen haben wir dann die Verbiegung $y = (n + \nicefrac{1}{2}) \cdot \lambda$ mit n der Nummer des Minimums gegen deren Position aufgetrage. Wir erwarten hier also einen konvexen Funktionsverlauf. Dieser ist aus der Theorie durch 
+$f(x) = p0 \cdot (5 x^2  - \frac{x^3}{6})$ gegeben. Wir ermitteln also durch Fitten den experimentellen Faktor $p0$ aus dem wir dann das Elastizitätsmodul bestimmen können: 
+\[
+ E = 12 \cdot \frac{F}{  p0 \cdot b \cdot c^3}
+\]
+wobei F die Gewichtskraft des 30g-Gewichts ist, b die Breite des Balkens und c seine Dicke (in Richtung der angreifenden Kraft). Der Fehler auf das Elastizitätsmodul setzt sich also zusammen aus dem Fehler auf den Fitparameter $p0$ sowie den Fehlern auf die Masse m, Breite b und Dicke c:
+
+\[
+  \sigma_E = E * \sqrt{(\sigma_b/b)^2 + (\sigma_c/c)^2 + (\sigma_p0/p0)^2 + (\sigma_m/m)**2}
+\]
+
+Wir haben für die einzelnen Stäbe folgende Parameter bestimmt:
+\begin{tabular}{rlll}
+ \toprule
+ & Stab 1 & Stab 2 & Stab 3 \\
+ \midrule
+Fitparameter:\\
+ p0 & & & \\
+ p1 & & & \\
+ p2 & & & \\
+Meßgrößen:\\
+b & & & \\
+c & & & \\
+Elastizitätsmodul:\\
+experimentell: & & & $(68.5 \pm 8.9)\e{9}$ \\
+theoretisch: & & & \\
+\end{tabular}
+ p0              = 0.0373444        +/- 0.002265     (6.064%)
+p1              = 1.16586          +/- 0.08047      (6.902%)
+p2              = -1.30994         +/- 0.1517       (11.58%)
+% m = 0.03
+% m_err = 0.001
+% 
+% F = m * 9.81 #kg *m/s**2
+% 
+% F_err = m_err * 9.81 #kg *m/s**2
+% 
+% b = 1.040 / 100
+% 
+% b_err = 0.05/100
+% 
+% c = 0.51 / 100
+% c_err = 0.05/100
+% 
+% E = 12 * F / (p0*b*c**3)
+% 
+% E_err = E * sqrt((b_err/b)**2 + (c_err/c)**2 + (p0_err/p0)**2 + (F_err/F)**2)
+% 
+% print "E = (", E/1e9, " \\pm ", E_err/1e9, ")e9 EINHEIT?"
 
 %TODO: ...

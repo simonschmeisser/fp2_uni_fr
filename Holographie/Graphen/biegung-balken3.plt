@@ -8,9 +8,13 @@ set ylabel "Durchbiegung [µm]"
 lambda = 0.632 #µm
 xoffset = 2 #cm
 
+a = 8.30
+
+a_err = 0.1 
+
 p0 = 0.03
 
-f(x) = p0 * (x**2 *5 - x**3/6) + p1*x + p2
+f(x) = p0 * (x**2 *a/2 - x**3/6) + p1*x + p2
 
 set fit errorvariables
 
@@ -26,6 +30,10 @@ m_err = 0.001
 F = m * 9.81 #kg *m/s**2
 
 F_err = m_err * 9.81 #kg *m/s**2
+
+a = 8.30/100
+
+a_err = 0.1 /100
 
 b = 1.040 / 100
 
