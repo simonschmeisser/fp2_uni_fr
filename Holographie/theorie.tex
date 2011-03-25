@@ -74,25 +74,59 @@ Die Beugung kann im allgemeinen mit dem sogenannten Beugungsintegral berechnet w
 
 Zwei Wellen sind kohärent, wenn sie die gleiche Frequenz und eine konstante Phasendifferenz haben. Ihre Interferenz ist somit stationär und ortsfest, was in vielen Experimenten von großem Nutzen ist. Nur Wellen, die von einem gleichen Emissionsprozess stammen können kohärent sein. Die Kohärenz zweier Strahlen ist jedoch begrenzt durch ihren Weglängenunterschied. Ist dieser größer als die sogenannte Kohärenzlänge, so ist das Interferenzmuster nicht mehr stationär, d.h. die Strahlen werden inkohärent. 
 
-%Michelson-Interferometer, Beugung am Amplituden/Phasengitter
 
+\subsubsection{Holographie}
+Holographie nutzt
+ kohärente
+ Interferenz
+ zweier
+ Lichtstrahlen
 
+um die Amplituden und Phaseninformation des an dem interessierenden
+Objekt gestreuten Strahls auf einem
+Speichermedium festzu-halten,
+das eigentlich unempfindlich gegenüber
+ der Phaseninformation 
+des einfallenden Lichts ist.
 
+Durch den anderen Strahl, die Interferenzwelle, kann diese Information vollständig wieder ausgelesen werden. Es ermöglicht also die Aufnahme eines dredimensionalen Bildes. Schematisch ist das in Abb. \ref{theo_holo} abgebildet. Der Laserstrahl wird geteilt, um zwei kohärente Teilstrahlen zu erzeugen. Nun wird mit dem einen Strahl das Objekt beleuchtet, weshalb dieser Objektstrahl genannt wird, so dass dessen Streulicht auf der Fotoplatte mit dem anderen Strahl, dem Referenzstrahl interferiert. Um das Blickfeld zu vergrößern müssen beide Strahlen zuvor mit Linsen aufgeweitet werden, ohne dabei die Kohärenz zu verlieren. Auf der Fotoplatte wird die Intensität des Referenzbildes gespeichert.
 
+\begin{figure}[H]
+ \includegraphics{BilderTheo/holo.png}
+\caption{Prinzip der Aufnahme einer Holographie \cite{staatsex}}
+\label{theo_holo}
+\end{figure}
 
+Um zu verstehen, weshalb man auf diese Weise die gesamte Amplituden- und Phaseninformation der Objektwelle gespeichert hat, kann man wieder auf das Huygensche Prinzip zurückgreifen:
 
+Die am Objekt gestreute Objektwelle kann man als Superposition von von jedem Punkt des Objekts ausgehenden Kugelwellen beschreiben. Für die Kugelwelle eines Punktes gilt also:
 
+\[
+ A_1(r) = E_1(r) e^{ikr}
+\]
 
+Für die Intensität des resultierenden Interferenzbildes folgt:
+\[
+ I = I_1 + I_2 + 2 \sqrt{I_1 I_2} \cos \left( k(r-x \sin \Theta) \right)
+\]
 
+Wird nun der Objektstrahl abgeblockt und das Hologramm nur noch von der ebenen Referenzwelle beleuchtet, so folgt für die Welle auf Seite des Beobachters:
 
+\[
+ A(r) ) T_0 A_R e^{ikx \sin \Theta} - C t_B A_R e^{ikx \sin \Theta} \left[I_1 + I_2 + \sqrt{I_1 I_2} \left( e^{ik(r-\sin \Theta)} + e^{-ik(r-x \sin \Theta)} \right) \right]
+\]
 
+mit $t_b$ Belichtungszeit, $T_0$ und $C$ materialabhängigen Konstanten. Durch Ausmultiplizieren ergibt sich
 
+\[
+A(r) = [T_0 - C t_B (I_1 + I_2)] A_R e^{ikx \sin \Theta} - \sqrt{I_1 I_2} A_RCt_Be^{ikr} - \sqrt{I_1I_2} A_RCt_Be^{-ikr}e^{2ikr\sin \Theta} 
+\]
 
+Die drei Summanden lassen sich hinter der Fotoplatte aus drei verschiedenen Richtungen getrennt beobachten (die negativen Intensitäten weisen auf eine Phasenverschiebung von $\pi$ hin, die sich jedoch nicht direkt beobachten lässt):
+\begin{itemize}
+ \item Der erste Summand stellt wieder eine ebene Welle dar, die nicht gebeugt wird und die auch keine Information über die Objektwelle enthält.
+ \item Der zweite Summand stellt eine auslaufende Bildwelle dar. Er ist bis auf die Intensität mit der Objektwelle identisch - diese lässt sich also wieder beinahe vollständig rekonstruieren und man bekommt den Eindruck, das reale Objekt zu betrachten.
+ \item Der dritte Summand erzeugt nun ein virtuelles Bild, das man zB mit einer Photoplatte aufnehmen kann.
+\end{itemize}
 
-
-
-
-
-
-
-
+Durch Superposition von Kugelwellen von allen Objektpunkten lässt sich so auch das Hologramm eines ausgedehnten Körpers beschreiben.
