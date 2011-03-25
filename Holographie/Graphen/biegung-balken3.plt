@@ -8,7 +8,7 @@ set ylabel "Durchbiegung [µm]"
 lambda = 0.632 #µm
 xoffset = 2 #cm
 
-a = 8.30
+a = 10.0
 
 a_err = 0.1 
 
@@ -30,10 +30,6 @@ m_err = 0.001
 F = m * 9.81 #kg *m/s**2
 
 F_err = m_err * 9.81 #kg *m/s**2
-
-a = 8.30/100
-
-a_err = 0.1 /100
 
 b = 1.040 / 100
 
